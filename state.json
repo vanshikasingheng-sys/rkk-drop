@@ -1,9 +1,10 @@
 {
  "posted": [
-  "flat7-1-light-in-window"
+  "flat7-1-light-in-window",
+  "ai-1-boss-deepfake-leave"
  ],
  "days": {
-  "2026-11-20": 2
+  "2026-11-20": 3
  },
  "drop_files": [],
  "log": [
@@ -15,6 +16,11 @@
    "id": "flat7-1-light-in-window",
    "at": "2026-11-20T17:46+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_flat7-1-light-in-window.mp4"
+  },
+  {
+   "id": "ai-1-boss-deepfake-leave",
+   "at": "2026-11-20T23:06+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_ai-1-boss-deepfake-leave.mp4"
   }
  ]
 }
