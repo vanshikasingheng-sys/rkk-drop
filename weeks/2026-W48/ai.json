@@ -1,0 +1,1499 @@
+[
+ {
+  "id": "ai-8-upi-collect-trap",
+  "series": "ai",
+  "ep": "EP 8",
+  "title": "UPI से पैसे मिलने थे, उल्टे कटने वाले थे! 😱 #Shorts",
+  "description": "रमेश को लगा कोई उसे ₹2000 भेज रहा है, लेकिन UPI Request का खेल कुछ और था!\n#RameshVsAI #UPIScam #CyberSafety #Shorts",
+  "caption": "पैसे मिलने की खुशी में रमेश लगभग पैसे गँवा बैठा! 😱\nक्या तुम UPI Collect Request पहचानते हो?\nऐसी और कहानियों के लिए फॉलो करो!\n#UPI #OnlineScam #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "रमेश को लगा आज मुफ्त में ₹2000 मिलेंगे, लेकिन खेल उल्टा निकला!",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "happy"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "💸",
+     "text": "₹2000 मिलने वाले हैं"
+    }
+   },
+   {
+    "who": "N",
+    "text": "चाय पीते समय उसके Phone पर अचानक UPI Request आ गई।",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "UPI Collect Request"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "वाह! किसी ने मुझे दो हजार रुपये भेजने की Request की है!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    }
+   },
+   {
+    "who": "F",
+    "text": "भाई, पहले देख तो सही, पैसा आ रहा है या जा रहा है!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "F": "point"
+    },
+    "ex": {
+     "F": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने Request खोली, सामने लिखा था Pay ₹2000।",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🔴",
+     "text": "Pay ₹2000"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ध्यान दो, Collect Request स्वीकार करने का मतलब पैसा भेजना है।",
+    "cast": [
+     "R",
+     "F",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🤖",
+     "text": "पैसे जाने का खतरा"
+    }
+   },
+   {
+    "who": "B",
+    "text": "पैसे पाने के लिए UPI PIN डालने की ज़रूरत नहीं होती।",
+    "cast": [
+     "R",
+     "F",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔐",
+     "text": "PIN कभी मत डालो"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने Payee का नाम देखा, वहाँ कोई अनजान Account था।",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "👤",
+     "text": "अनजान Payee"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे! ये तो पैसे देने वाली Request है, मैं Reject करता हूँ!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "❌",
+     "text": "Request Reject"
+    }
+   },
+   {
+    "who": "F",
+    "text": "शाबाश! अब चाय का बिल भी इसी समझदारी से भरना!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "F": "cheer"
+    },
+    "ex": {
+     "F": "happy"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तभी F ने ₹20 की Collect Request भेजी, रमेश फिर चौंक गया!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "☕",
+     "text": "चाय के ₹20"
+    },
+    "fx": [
+     "phone",
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "तुम UPI Request कैसे जाँचते हो? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-9-whatsapp-task-job-scam",
+  "series": "ai",
+  "ep": "EP 9",
+  "title": "WhatsApp पर घर बैठे कमाई का खतरनाक खेल! 😱 #Shorts",
+  "description": "रमेश को Likes करने के ₹150 मिले, फिर नौकरी के नाम पर माँगे गए हजारों रुपये!\n#RameshVsAI #TaskScam #WhatsAppScam #Shorts",
+  "caption": "पहले पैसे दिए, फिर रमेश से ही पैसे माँग लिए! 😱\nक्या तुम ऐसी Part-time Job करते?\nऐसी और कहानियों के लिए फॉलो करो!\n#TaskScam #OnlineJobs #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "रमेश को WhatsApp पर ऐसी नौकरी मिली, जिसमें बस Likes करने थे!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "happy"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "Part-time Job Offer"
+    }
+   },
+   {
+    "who": "N",
+    "text": "Message में लिखा था, रोज़ घर बैठे पाँच हजार रुपये कमाओ।",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "💰",
+     "text": "₹5000 रोज़ कमाओ"
+    }
+   },
+   {
+    "who": "R",
+    "text": "वाह! बिना Office जाए अब मैं भी अमीर बनूँगा!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    }
+   },
+   {
+    "who": "W",
+    "text": "पहले कंपनी का नाम देखो, इतनी कमाई कुछ ज़्यादा नहीं है?",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "W": "point"
+    },
+    "ex": {
+     "W": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने पाँच Videos Like किए, खाते में ₹150 आ गए।",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "✅",
+     "text": "₹150 मिल गए"
+    }
+   },
+   {
+    "who": "R",
+    "text": "देखा! असली नौकरी है, मेरी मेहनत का पैसा भी आ गया!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "💳",
+     "text": "पहली कमाई"
+    }
+   },
+   {
+    "who": "N",
+    "text": "फिर अगले Task के लिए उनसे ₹2000 जमा करने को कहा गया।",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "💸",
+     "text": "₹2000 जमा करो"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे, नौकरी करने के लिए पैसे भी देने पड़ेंगे क्या?",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   },
+   {
+    "who": "B",
+    "text": "असली नौकरी में काम के लिए पैसे जमा नहीं करवाए जाते।",
+    "cast": [
+     "R",
+     "W",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "Company Verify करो, Advance माँगने वाले Task Groups से दूर रहो।",
+    "cast": [
+     "R",
+     "W",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔍",
+     "text": "Company Verify करो"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने पैसे रोके, तभी Group ने उसका ₹150 भी वापस माँग लिया!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "📩",
+     "text": "₹150 वापस करो"
+    },
+    "fx": [
+     "phone",
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "ऐसी Job पर भरोसा करते? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-10-fake-news-ai-photo",
+  "series": "ai",
+  "ep": "EP 10",
+  "title": "AI की Fake Photo देखकर पूरी Society डर गई! 😱 #Shorts",
+  "description": "आंटी ने सोसाइटी में बाघ की Photo भेजी और पूरा गलियारा खाली हो गया!\n#RameshVsAI #FakeNews #AIMisinformation #Shorts",
+  "caption": "एक Fake Photo ने पूरी Society में दहशत फैला दी! 😂\nक्या तुम बिना जाँचे कोई खबर Forward करते हो?\nऐसी और कहानियों के लिए फॉलो करो!\n#FakeNews #AIPhoto #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "एक Photo देखकर रमेश की पूरी Society घरों में बंद हो गई!",
+    "set": "society corridor",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🐅",
+     "text": "Gate पर बाघ"
+    }
+   },
+   {
+    "who": "N",
+    "text": "सुबह आंटी ने WhatsApp Group में बाघ की तस्वीर Forward कर दी।",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "A": "walkPhone"
+    },
+    "ex": {
+     "A": "happy"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "WhatsApp पर तस्वीर"
+    }
+   },
+   {
+    "who": "A",
+    "text": "जल्दी सबको बताओ, Society के Gate पर बाघ घूम रहा है!",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "A": "point"
+    },
+    "ex": {
+     "A": "shock"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे! अब मैं दूध लेने भी हेलमेट पहनकर जाऊँगा!",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने फोटो ज़ूम की, बाघ के पंजे कुछ अजीब दिखे।",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🔎",
+     "text": "अजीब पंजे"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "तस्वीर AI से बनी हो सकती है, सिर्फ देखकर सच मत मानो।",
+    "cast": [
+     "R",
+     "A",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "Reverse Image Search करो और भरोसेमंद News से खबर Verify करो।",
+    "cast": [
+     "R",
+     "A",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔍",
+     "text": "Reverse Image Search"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने Search किया, असली तस्वीर में बाघ नहीं बल्कि खिलौना था।",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "🧸",
+     "text": "बाघ का खिलौना"
+    }
+   },
+   {
+    "who": "R",
+    "text": "आंटी, ये बाघ तो खिलौना है, पूरी खबर ही नकली निकली!",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "happy"
+    }
+   },
+   {
+    "who": "A",
+    "text": "अरे मैंने भी तो बस किसी के Message से Forward किया था!",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "A": "slump"
+    },
+    "ex": {
+     "A": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तभी पता चला, AI तस्वीर आंटी ने खुद Good Morning बनाने के लिए बनाई थी!",
+    "cast": [
+     "R",
+     "A",
+     "B"
+    ],
+    "pose": {
+     "A": "shock",
+     "R": "shock"
+    },
+    "ex": {
+     "A": "smile",
+     "R": "shock"
+    },
+    "show": {
+     "icon": "🌅",
+     "text": "Good Morning Photo"
+    },
+    "fx": [
+     "zoom",
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "तुम खबर Forward करने से पहले जाँचते हो? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-11-chatgpt-homework-copy",
+  "series": "ai",
+  "ep": "EP 11",
+  "title": "ChatGPT का Homework Copy किया और पकड़ा गया! 😂 #Shorts",
+  "description": "बच्चे ने ChatGPT का पूरा जवाब कॉपी किया, लेकिन एक लाइन ने उसकी पोल खोल दी!\n#RameshVsAI #ChatGPT #StudyTips #Shorts",
+  "caption": "Homework में AI की Copy और Teacher ने पकड़ लिया! 😂\nतुम ChatGPT से पढ़ते हो या सीधे Copy करते हो?\nऐसी और कहानियों के लिए फॉलो करो!\n#ChatGPT #StudySmart #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "रमेश के घर Homework की ऐसी कॉपी आई कि Teacher भी चौंक गईं!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📚",
+     "text": "Homework की कॉपी"
+    }
+   },
+   {
+    "who": "N",
+    "text": "बच्चे ने ChatGPT से पूरा निबंध लिखवाया और बिना पढ़े Copy कर दिया।",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "C": "cheer"
+    },
+    "ex": {
+     "C": "happy"
+    },
+    "show": {
+     "icon": "💻",
+     "text": "ChatGPT का जवाब"
+    }
+   },
+   {
+    "who": "C",
+    "text": "चाचा, Homework पाँच मिनट में पूरा, अब मैं खेलने जाऊँ?",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "C": "cheer"
+    },
+    "ex": {
+     "C": "happy"
+    }
+   },
+   {
+    "who": "R",
+    "text": "इतनी जल्दी? बेटा, पढ़ाई की Speed तो गज़ब है!",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "R": "happy"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "अगले दिन कॉपी लौटी, लाल पेन से पूरा पन्ना भरा था।",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "C": "shock"
+    },
+    "ex": {
+     "C": "worried"
+    },
+    "show": {
+     "icon": "📝",
+     "text": "लाल पेन की मार्किंग"
+    }
+   },
+   {
+    "who": "C",
+    "text": "Teacher ने कैसे पकड़ लिया? मैंने तो सब बहुत साफ़ लिखा था!",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "C": "shock"
+    },
+    "ex": {
+     "C": "worried"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ChatGPT का जवाब हमेशा सही नहीं होता, समझकर इस्तेमाल करो।",
+    "cast": [
+     "R",
+     "C",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "AI से Concept समझो, उदाहरण माँगो, फिर अपना जवाब खुद लिखो।",
+    "cast": [
+     "R",
+     "C",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "💡",
+     "text": "समझो फिर खुद लिखो"
+    }
+   },
+   {
+    "who": "R",
+    "text": "और Facts को किताब से मिलाना, हर जवाब सच नहीं होता।",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "R": "explain"
+    },
+    "ex": {
+     "R": "neutral"
+    },
+    "show": {
+     "icon": "📖",
+     "text": "किताब से जाँचो"
+    }
+   },
+   {
+    "who": "C",
+    "text": "मैंने तो AI का पूरा जवाब ज्यों का त्यों उतार दिया था!",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "C": "slump"
+    },
+    "ex": {
+     "C": "sad"
+    }
+   },
+   {
+    "who": "N",
+    "text": "Teacher ने नीचे लिखा था—अगली बार AI से अपना नाम भी लिखवाना!",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "R": "shock",
+     "C": "shock"
+    },
+    "ex": {
+     "R": "smile",
+     "C": "worried"
+    },
+    "show": {
+     "icon": "🖊️",
+     "text": "Teacher की टिप्पणी"
+    },
+    "fx": [
+     "zoom",
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "तुम AI से Homework कैसे करते हो? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "C"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-12-fake-qr-parking-bill",
+  "series": "ai",
+  "ep": "EP 12",
+  "title": "Parking के QR Code ने माँगे ₹3000! 😱 #Shorts",
+  "description": "रमेश Parking Bill भरने लगा, लेकिन QR Code किसी ठग के खाते में पैसे भेज रहा था!\n#RameshVsAI #FakeQRCode #UPISafety #Shorts",
+  "caption": "एक QR Scan और पैसे गलत खाते में पहुँच जाते! 😱\nतुम QR Payment से पहले नाम चेक करते हो?\nऐसी और कहानियों के लिए फॉलो करो!\n#QRCodeScam #UPI #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "सोसाइटी की Parking का QR Scan करते ही रमेश के पैसे अटक गए!",
+    "set": "society corridor",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🅿️",
+     "text": "Parking Fee का QR"
+    }
+   },
+   {
+    "who": "N",
+    "text": "दीवार पर नया Sticker लगा था, जिसमें तीन हजार रुपये भरने लिखे थे।",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "show": {
+     "icon": "📄",
+     "text": "₹3000 Parking Bill"
+    }
+   },
+   {
+    "who": "R",
+    "text": "काका, अब Parking की Fee भी QR से भरनी पड़ेगी क्या?",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   },
+   {
+    "who": "K",
+    "text": "बेटा, नया नियम मुझे भी किसी ने नहीं बताया!",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "K": "shock"
+    },
+    "ex": {
+     "K": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने QR Scan किया, स्क्रीन पर किसी निजी व्यक्ति का नाम आया।",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "show": {
+     "icon": "📲",
+     "text": "QR Payment Screen"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "ये सोसाइटी का नाम नहीं, यहाँ तो किसी राहुल का नाम है!",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "👤",
+     "text": "अलग Payee नाम"
+    }
+   },
+   {
+    "who": "B",
+    "text": "Payment से पहले Receiver का नाम और Amount हमेशा Verify करो।",
+    "cast": [
+     "R",
+     "K",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "QR को भरोसेमंद Official App या बिल से मिलाए बिना Pay मत करो।",
+    "cast": [
+     "R",
+     "K",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "✅",
+     "text": "Official QR Verify"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने पुराना बिल खोला, उसमें अलग Official QR Code था।",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "idea"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "🧾",
+     "text": "असली Parking Bill"
+    }
+   },
+   {
+    "who": "K",
+    "text": "अरे! किसी ने हमारा असली QR Sticker के नीचे छिपा दिया!",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "K": "shock"
+    },
+    "ex": {
+     "K": "shock"
+    },
+    "show": {
+     "icon": "🏷️",
+     "text": "नकली QR Sticker"
+    },
+    "fx": [
+     "flash",
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने उसे हटाया, पीछे लिखा मिला—चाय के पैसे भी भेज देना!",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "☕",
+     "text": "चाय के पैसे"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "तुम QR Scan से पहले क्या जाँचते हो? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-13-instant-loan-permission-trap",
+  "series": "ai",
+  "ep": "EP 13",
+  "title": "Instant Loan App ने माँगे सारे Contacts! 😱 #Shorts",
+  "description": "रमेश को तुरंत Loan चाहिए था, लेकिन App ने Contacts और Photos माँग लिए!\n#RameshVsAI #LoanAppScam #DataPrivacy #Shorts",
+  "caption": "Loan चाहिए था, App को पूरे Contacts चाहिए थे! 😨\nक्या तुम किसी Loan App को Contacts की Permission देते हो?\nऐसी और कहानियों के लिए फॉलो करो!\n#InstantLoan #Privacy #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "रमेश को तुरंत Loan चाहिए था, तभी Phone पर एक चमकता Offer आया!",
+    "set": "home",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "happy"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "Instant Loan Offer"
+    }
+   },
+   {
+    "who": "N",
+    "text": "App ने दावा किया, बिना कागज़ के पाँच मिनट में पचास हजार।",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "show": {
+     "icon": "💰",
+     "text": "₹50000 का Loan"
+    }
+   },
+   {
+    "who": "R",
+    "text": "वाह! अब तो मेरी आर्थिक परेशानी चुटकियों में खत्म!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    }
+   },
+   {
+    "who": "F",
+    "text": "भाई, पहले देख तो सही, ये App किस कंपनी का है?",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "F": "point"
+    },
+    "ex": {
+     "F": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "Apply दबाते ही App ने Contacts, Photos और SMS की Permission माँगी।",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📇",
+     "text": "Contacts Permission"
+    }
+   },
+   {
+    "who": "R",
+    "text": "Loan के लिए मेरी पूरी Contact List क्यों चाहिए इन्हें?",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "shock"
+    }
+   },
+   {
+    "who": "B",
+    "text": "Contacts और Photos माँगना बड़ा खतरे का संकेत हो सकता है।",
+    "cast": [
+     "R",
+     "F",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "⚠️",
+     "text": "Privacy खतरे में"
+    }
+   },
+   {
+    "who": "B",
+    "text": "Loan देने वाली कंपनी का नाम और RBI से जुड़ी जानकारी Verify करो।",
+    "cast": [
+     "R",
+     "F",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔍",
+     "text": "Lender Verify करो"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ज़रूरत से बाहर की Permissions मत दो, Advance Fee भी मत भरो।",
+    "cast": [
+     "R",
+     "F",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🛑",
+     "text": "अनचाही Permission बंद"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने Permission Deny की, App ने तुरंत धमकी वाला Message दिखाया।",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📩",
+     "text": "Permission दो अभी"
+    },
+    "fx": [
+     "phone",
+     "shake"
+    ]
+   },
+   {
+    "who": "F",
+    "text": "अरे! ये Loan App है या मेरी पूरी ज़िंदगी का मालिक?",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "F": "shock"
+    },
+    "ex": {
+     "F": "shock"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तुम Loan App को कौन-सी Permission देते हो? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-14-smart-speaker-privacy",
+  "series": "ai",
+  "ep": "EP 14",
+  "title": "Smart Speaker को घर की सारी बातें पता थीं! 😳 #Shorts",
+  "description": "रमेश ने Smart Speaker और Phone की Permissions जाँचीं, लेकिन घर में एक मज़ेदार राज़ खुल गया!\n#RameshVsAI #SmartSpeaker #PrivacyTips #Shorts",
+  "caption": "Smart Speaker को सब पता है या रमेश को बस शक है? 😂\nतुमने अपने Phone की Mic Permissions चेक की हैं?\nऐसी और कहानियों के लिए फॉलो करो!\n#SmartHome #DigitalPrivacy #RameshVsAI",
+  "lines": [
+   {
+    "who": "N",
+    "text": "रमेश ने घर में Pizza का नाम लिया और Speaker ने जवाब दे दिया!",
+    "set": "kitchen (raat)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "🔊",
+     "text": "Smart Speaker चालू"
+    }
+   },
+   {
+    "who": "R",
+    "text": "मैंने तो कुछ पूछा भी नहीं, ये Speaker मेरी बातें क्यों सुन रहा है?",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   },
+   {
+    "who": "W",
+    "text": "हो सकता है Wake Word सुनकर सक्रिय हुआ हो, पहले Settings देखो।",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "W": "explain"
+    },
+    "ex": {
+     "W": "neutral"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने Phone उठाया और Privacy Settings खोलकर बैठ गया।",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "⚙️",
+     "text": "Privacy Settings"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "Privacy Dashboard में देखो, कौन-सा App Microphone इस्तेमाल कर रहा है।",
+    "cast": [
+     "R",
+     "W",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🎙️",
+     "text": "Microphone Access"
+    }
+   },
+   {
+    "who": "B",
+    "text": "जिन Apps को Mic की ज़रूरत नहीं, उनकी Permission बंद कर दो।",
+    "cast": [
+     "R",
+     "W",
+     "B"
+    ],
+    "pose": {
+     "B": "point"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔒",
+     "text": "अनचाही Permission बंद"
+    }
+   },
+   {
+    "who": "B",
+    "text": "Smart Speaker का Mic Mute करो और Voice History भी जाँचो।",
+    "cast": [
+     "R",
+     "W",
+     "B"
+    ],
+    "pose": {
+     "B": "explain"
+    },
+    "ex": {
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔇",
+     "text": "Mic Mute करो"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अब मैं घर में आराम से अपनी बातें कर सकता हूँ!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    }
+   },
+   {
+    "who": "N",
+    "text": "उसने Speaker का Mic बंद किया और खुशी से सोफ़े पर बैठ गया।",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "🔕",
+     "text": "Speaker Mic बंद"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तभी Phone बोला—आपका Pizza Order Confirm हो चुका है!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "🍕",
+     "text": "Pizza Order Confirm"
+    },
+    "fx": [
+     "phone",
+     "zoom"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "मैंने Order किया था, तुम्हारा Phone नहीं, मेरा Phone था!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "W": "cheer",
+     "R": "shock"
+    },
+    "ex": {
+     "W": "happy",
+     "R": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तुम Phone की Mic Permission चेक करते हो? कमेंट करो! ऐसी और कहानियों के लिए फॉलो करो!",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   }
+  ]
+ }
+]
