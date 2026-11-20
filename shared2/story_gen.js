@@ -44,6 +44,7 @@ function build(){
     if(ln.set&&SETS[ln.set]) set=ln.set;
     if(!SCENES.length||SCENES[SCENES.length-1].set!==set) SCENES.push({t0:t,set});
     if(Array.isArray(ln.cast)&&ln.cast.length) cast=ln.cast.filter(k=>CASTDEF[k]).slice(0,3);
+    if(CASTDEF[ln.who]&&!cast.includes(ln.who)){cast=cast.concat([ln.who]);if(cast.length>3)cast=cast.filter(k=>k===ln.who||k==='R').concat(cast.filter(k=>k!==ln.who&&k!=='R')).slice(0,3)}
     const slots=SLOTS[cast.length]||SLOTS[1];
     // visibility in/out
     for(const k of Object.keys(CASTDEF)){
@@ -66,7 +67,11 @@ function build(){
     CH[k]={...CASTDEF[k],x:tr.x,face:tr.face,vis:tr.vis,pose:tr.pose,ex:tr.ex,talk:tr.talk,jy:tr.jy,dip:[]};
   }
 }
-window.LOOK={bg(T){const f=SETS[setAt(T)]||SETS.home;return f(T)},cap:CAPS,chip:CHPS,
+const DARKSETS=new Set(['door','hall','room','kitchen','store','gaming','bedroom']);
+window.LOOK={bg(T){const k=setAt(T),f=SETS[k]||SETS.home;const r=f(T);
+    if(SPEC.series==='flat7'&&!DARKSETS.has(k)){X.save();X.globalCompositeOperation='multiply';X.fillStyle='#3a4580';X.fillRect(0,0,W,H);X.restore();
+      const g=X.createRadialGradient(540,700,80,540,800,1100);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,10,.55)');X.fillStyle=g;X.fillRect(0,0,W,H)}
+    return r},cap:CAPS,chip:CHPS,
   frame(T){X.strokeStyle='#0a0d2a';X.lineWidth=26;X.strokeRect(0,0,W,H);X.strokeStyle=SER.ink;X.lineWidth=5;X.strokeRect(24,24,W-48,H-48)},
   over(T){}};
 function world(T){
