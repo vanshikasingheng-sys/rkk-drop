@@ -1,1 +1,20 @@
-{"posted":[],"days":{"2026-11-20":1},"drop_files":[],"log":[{"id":"gta6-sick-leave (manual)","at":"2026-11-20T12:14+05:30"}]}
+{
+ "posted": [
+  "flat7-1-light-in-window"
+ ],
+ "days": {
+  "2026-11-20": 2
+ },
+ "drop_files": [],
+ "log": [
+  {
+   "id": "gta6-sick-leave (manual)",
+   "at": "2026-11-20T12:14+05:30"
+  },
+  {
+   "id": "flat7-1-light-in-window",
+   "at": "2026-11-20T17:46+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_flat7-1-light-in-window.mp4"
+  }
+ ]
+}
