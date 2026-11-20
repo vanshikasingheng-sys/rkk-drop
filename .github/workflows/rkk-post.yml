@@ -26,6 +26,12 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji > /dev/null
           pip install -q numpy playwright
           python -m playwright install --with-deps chromium > /dev/null
+      - name: Restore voice cache (keeps finished voice parts if a run hit the daily limit)
+        uses: actions/cache@v4
+        with:
+          path: work
+          key: rkk-work-${{ github.run_id }}
+          restore-keys: rkk-work-
       - name: Build next reel
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
