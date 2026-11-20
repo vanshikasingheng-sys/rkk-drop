@@ -153,7 +153,12 @@ def audio(spec, wd, TL):
         prev_set = l.get("set") or prev_set
         if l.get("burst"): sfx.append([t + .3, "pop", .6])
         if l.get("card"): sfx.append([t, "ping", .7])
-        if l.get("fx") == "phone": sfx.append([t + .1, "ring", .5])
+        fx = l.get("fx") or []; fx = fx if isinstance(fx, list) else [fx]
+        if "phone" in fx: sfx.append([t + .1, "ring", .5])
+        if "flash" in fx: sfx.append([t, "thud", .8])
+        if "shadow" in fx: sfx.append([t + .2, "heart", .7])
+        if "shake" in fx: sfx.append([t, "thud", .6])
+        if l.get("show"): sfx.append([t + .15, "pop2", .6])
         if (l.get("ex") or {}).get("R") == "shock": sfx.append([t, "sting", .7])
     if spec.get("series") == "flat7": sfx.append([LS[last] - .2, "heart", .8])
     json.dump(sfx, open(os.path.join(wd, "sfx.json"), "w"))

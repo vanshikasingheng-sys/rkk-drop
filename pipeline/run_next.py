@@ -55,6 +55,7 @@ def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "build"
     st = load_state(); ready = os.path.join(ROOT, "work", "ready.json")
     if mode == "build":
+        if os.path.exists(ready): os.remove(ready)
         force = sys.argv[sys.argv.index("--id") + 1] if "--id" in sys.argv else None
         spec = next((s for s in queue() if s["id"] == force), None) if force else pick(st)
         if not spec: return
