@@ -1,73 +1,71 @@
-# Weekly scripts — paste into ChatGPT (Think mode), 3 messages
+# Weekly scripts: ChatGPT brief (Think mode, NEW chat every week)
 
-Every week you send ChatGPT the **SETUP** message once, then the 3 **BATCH** messages.
-Each batch answer is one JSON block. Copy each JSON into a file:
-
-- `weeks/<week>/flat7.json`
-- `weeks/<week>/ai.json`
-- `weeks/<week>/comedy.json`
-
-Example: `weeks/2026-W48/flat7.json`. Upload the folder to the `rkk-drop` repo (GitHub web: Add file → Upload files). The automation does everything else: voice, video, and posting 3 reels a day.
+Send the **SETUP** first, then the 3 **BATCH** messages one by one. Each answer is one JSON array.
+Save them as `weeks/<YYYY-Www>/flat7.json`, `ai.json`, `comedy.json` in the rkk-drop repo.
 
 ---
 
-## SETUP (send once per chat)
+## SETUP
 
 ```
-Tum "Ramesh Ki Kahaniya" (Hindi cartoon reels) ke script writer ho. Main tumse har baar 7 reels ka ek JSON maangunga. Rules:
+Tum "Ramesh Ki Kahaniya" ke head writer ho — Hindi animated reels (30-40 sec) jo log end tak dekhein, share karein aur follow karein.
 
-FORMAT — sirf ek valid JSON array, koi aur text nahi:
-[
- {"id":"<series>-<number>-<short-english-slug>",
-  "series":"flat7" | "ai" | "comedy",
-  "ep":"Part 3"  (flat7 ke liye)  |  "EP 5" (ai)  |  "" (comedy),
-  "title":"YouTube title, Hindi + emoji, max 70 chars, end with #Shorts",
+LIKHNE KA TAREEKA (sabse zaroori):
+1. Pehle dimaag me poori kahani socho: shuru (hook) -> beech (ek ke baad ek badhta hua tension/mazaak) -> end (twist ya cliffhanger). Har line pichhli line se NATURALLY judi ho — jaise koi dost kahani suna raha ho. Koi line achanak kahin se nahi aani chahiye.
+2. Narrator (N) kahani ko jodta hai: "Us raat...", "Tabhi...", "Agle din subah..." — scene badalne se pehle narrator batata hai kya hua.
+3. Dialogue asli bolchaal wali Hindi me — chhote, punchy, character ke hisaab se. Ramesh darpok + funny, AI Robot shaant + deadpan, aunty nosy, etc. Bhaari/kitaabi Hindi nahi.
+4. Har reel 10-13 lines, har line 6-16 words. Total 110-150 words.
+5. Line 1 = HOOK: sabse curious sawaal ya shocking baat (pehle 3 sec me viewer ruk jaye).
+6. ENDING:
+   - flat7 (series): aakhri se pehle line = sabse bada cliffhanger moment. Aakhri line exactly is style me: "Aage kya hua? Jaanne ke liye abhi follow karo — Part <N+1> jaldi aa raha hai!" (Devanagari me likho)
+   - ai / comedy: aakhri se pehle line = twist/punchline. Aakhri line = ek comment-sawaal + "Aisi aur kahaniyon ke liye follow karo!" (Devanagari me)
+7. SCREEN PE JO DIKHE (bahut zaroori): jab bhi kisi line me koi cheez/ghatna ka zikr ho (chitthi, torch, phone message, bill, khaana, chaabi, video, OTP, parcel, scorecard...), us line me "show" do: {"icon":"<1 emoji>","text":"<screen pe chhota text, max 5 words>"}. 12 me se kam se kam 5-6 lines me "show" ho.
+   Effects "fx" (list): "light" (Flat 7 ki khidki me roshni), "shadow" (khidki me parchhaai chalti hui), "flash" (achanak jhatka/dhamaka), "dark" (andhera/darr), "shake" (jhatka), "zoom" (bada reveal), "phone" (phone pe baat).
+   "pose" aur "ex" bhi line ke mood ke hisaab se do.
+
+JSON FORMAT — sirf valid JSON array, koi aur text nahi:
+[{"id":"<series>-<number>-<english-slug>","series":"flat7|ai|comedy","ep":"Part 1 | EP 1 | \"\"",
+  "title":"YouTube title: Hindi + 1 emoji, max 70 chars, end with #Shorts",
   "description":"2 lines Hindi + 4-5 hashtags",
-  "caption":"Instagram caption: hook line + comment question + hashtags",
-  "lines":[ {"who":"N","text":"...","set":"home","cast":["R"],"pose":{"R":"shock"},"ex":{"R":"shock"},"burst":"...","card":["TITLE","line 1","line 2"],"fx":"phone"} ]
- }
-]
+  "caption":"Instagram caption: hook line + comment sawaal + follow line + hashtags",
+  "lines":[{"who":"N","text":"...","set":"society","cast":["R","B"],"pose":{"R":"shock"},"ex":{"R":"shock"},"show":{"icon":"✉️","text":"किसी को मत बताना"},"fx":["light"]}]}]
 
-LINES:
-- 8 se 12 lines per reel, har line max 18 words. Total reel 25–40 sec.
-- Line 1 = HOOK (curiosity question / shock), narrator ya Ramesh bole.
-- Last line = comment-bait question (ya flat7 me CLIFFHANGER + "Part X kal").
-- "text" sirf woh jo bola jayega (Hindi, Devanagari). English words (GTA, live, AI, OTP) Latin me chalenge. Koi stage direction text me nahi.
-- "who" (speaker): N=Narrator, R=Ramesh, B=AI Robot, W=Wife, A=Padosan Aunty, K=Chowkidar Kaka, M=Manager/Boss, F=Dost, D=Dadi, U=Rishtedar Uncle, C=Bachcha.
-- Ek reel me Narrator + zyada se zyada 2 aur speakers (voice cost kam rakhne ke liye).
-- "set" (jab scene badle tab hi likho): bedroom, home (din ka kamra), hall (raat ka living room), room (raat ka kamra), kitchen (raat), store (store room), door (andhera corridor/darwaza), society (society corridor, flats 101/102), office, cabin (boss cabin), gaming (TV pe game), stadium.
-- "cast" (jab screen pe log badlein tab hi): max 3 codes, Ramesh hamesha jahan ho sake.
-- "pose" (optional): idle, ear (phone kaan pe), shock, point, pointUp, idea, slump, cheer, explain, wave, walkPhone.
-- "ex" (optional): neutral, worried, happy, shock, angry, evil, sad, smile.
-- "burst" (optional, max 3 words): bada comic text pop (e.g. "Flat 7?", "SCAM!").
-- "card" (optional): screen pe message/notification card — [heading, line, small line].
-- "fx" (optional): "phone" jab koi phone pe ho.
-Tone: real, relatable, Indian middle-class; jo abhi trending hai uss style me. Har reel me ek mazedaar ya chaunkane wala moment.
+CODES:
+- who: N=Narrator, R=Ramesh, B=AI Robot, W=Wife, A=Padosan Aunty, K=Chowkidar Kaka, M=Manager, F=Dost, D=Dadi, U=Rishtedar Uncle, C=Bachcha. Ek reel me Narrator + max 3 characters.
+- text: sirf bola jaane wala Hindi (Devanagari). English words (GTA, AI, OTP, EMI) Latin me. Brackets/stage directions kabhi nahi.
+- set (scene badle tab): bedroom, home, hall (raat), room (raat), kitchen (raat), store, door (andhera corridor), society (society corridor), office, cabin (boss cabin), gaming (TV pe game), stadium.
+- cast (jab screen pe log badlein): max 3 codes.
+- pose: idle, ear, shock, point, pointUp, idea, slump, cheer, explain, wave, walkPhone.
+- ex: neutral, worried, happy, shock, angry, evil, sad, smile.
+- burst (optional, max 2 words): comic pop text.
+- card (optional): ["HEADING","line","small line"] — message/notification screen.
+
 Samajh gaye to sirf "OK" likho.
 ```
 
-## BATCH 1 — Flat No. 7 (7 parts)
+## BATCH 1 — Flat No. 7
 
 ```
-Batch: series "flat7", Season 1 "Flat No. 7", Part <START> se Part <START+6>.
-Premise: Ramesh ki society me saalon se bandh Flat 7 me achanak light jalti hai, koi move-in nahi dikha. Har part = ek naya clue + Ramesh ki thodi comedy + AI Robot (B) ka deadpan line, END pe CLIFFHANGER aur last line me "Part <N+1> kal…".
-Cast: Ramesh (darpok, curious), AI Robot, Chowkidar Kaka, Padosan Aunty, Wife.
-Final reveal (Part 9 tak chhupa rahe): Flat 7 me kaka ka pota chhupa hai jo bol/sun nahi sakta; saari "bhootiya" cheezein darre hue bachche ki wajah se.
-Pichhle parts ka summary: <SUMMARY or "pehli baar">.
-Sets zyada tar: society, door, hall, room. 7 reels ka JSON do.
+BATCH flat7: Season 1 "Flat No. 7", Part <START> se Part <START+6>.
+Premise: Ramesh ki society me saalon se bandh Flat 7 me ek raat achanak light jalti hai — koi move-in karte nahi dikha. Har part = ek naya clue, Ramesh ka darr + comedy, AI Robot ka deadpan logic, aur end me cliffhanger.
+Cast: Ramesh, AI Robot, Chowkidar Kaka, Padosan Aunty, Wife.
+Chhupa sach (Part 9 me khulega, abhi sirf hints): Flat 7 me kaka ka pota chhupa hai jo bol/sun nahi sakta; kaka use kisi darr se chhupa ke rakh rahe hain.
+Kahani ab tak: <SUMMARY ya "shuruaat">.
+Har part pichhle part ke cliffhanger se seedha shuru ho.
 ```
 
-## BATCH 2 — Ramesh vs AI (7 reels)
+## BATCH 2 — Ramesh vs AI
 
 ```
-Batch: series "ai", "Ramesh vs AI: Sach Ka Scanner", EP <START> se EP <START+6>.
-Har reel: Ramesh ek real AI/tech situation me comedy wali galti karta hai, AI Robot (B) ek SACH kaam ki tip deta hai. Topics (ek-ek): <TOPICS — e.g. deepfake video, AI voice scam call, AI ka confident galat jawab, fake profile photo, OTP/phishing link, password, free AI gift scam>.
-7 reels ka JSON do.
+BATCH ai: "Ramesh vs AI: Sach Ka Scanner", EP <START> se EP <START+6>.
+Har reel ek chhoti kahani: Ramesh ek real AI/tech situation me phasta hai (comedy), AI Robot ek SACH, kaam ki tip deta hai jo viewer turant use kar sake, end me twist.
+Topics: <7 topics>.
 ```
 
-## BATCH 3 — Trending comedy (7 reels)
+## BATCH 3 — Comedy
 
 ```
-Batch: series "comedy", 7 alag standalone reels. Abhi jo trending hai (news, festival, cricket, office life, shaadi season, naya phone/game launch) usse jodo, jaise "sick leave le ke GTA 6 live stream, boss followers me nikla".
-Har reel ka twist end me, aur last line comment-bait. 7 reels ka JSON do.
+BATCH comedy: 7 alag standalone comedy kahaniyan, jo abhi trending hai uss par (festival, cricket, office, shaadi season, naya phone/game, society life).
+Har kahani me ek clear setup -> badhta hua mazaak -> end me unexpected twist.
+Topics: <7 topics>.
 ```
