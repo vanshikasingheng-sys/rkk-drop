@@ -1,0 +1,13 @@
+{
+ "R": {"name":"Ramesh",  "voice":"Orus",    "style":"Ramesh, a funny relatable young Indian office guy. Natural, lively, good comic timing"},
+ "N": {"name":"Narrator","voice":"Puck",    "style":"a fast, energetic Hindi cartoon narrator with snappy comic timing"},
+ "M": {"name":"Manager", "voice":"Charon",  "style":"a strict, sarcastic Indian office manager. Deep and smug"},
+ "F": {"name":"Dost",    "voice":"Fenrir",  "style":"an excitable young Indian friend, fast and hyped"},
+ "W": {"name":"Wife",    "voice":"Despina", "style":"Ramesh's wife, warm but sharp, natural Hindi"},
+ "A": {"name":"Aunty",   "voice":"Kore",    "style":"a nosy padosan aunty, dramatic and gossipy"},
+ "D": {"name":"Dadi",    "voice":"Sulafat", "style":"a sweet but strict elderly Indian grandmother, slightly slow, old-sounding"},
+ "K": {"name":"Kaka",    "voice":"Algenib", "style":"an old society chowkidar kaka, gravelly, slow and mysterious"},
+ "B": {"name":"Robot",   "voice":"Iapetus", "style":"a calm deadpan AI robot, flat and precise"},
+ "U": {"name":"Uncle",   "voice":"Rasalgethi","style":"a loud know-it-all Indian uncle"},
+ "C": {"name":"Bachcha", "voice":"Leda",    "style":"a small scared child, soft voice"}
+}
