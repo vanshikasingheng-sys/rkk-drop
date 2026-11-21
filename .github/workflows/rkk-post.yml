@@ -61,11 +61,25 @@ jobs:
         env:
           MAKE_WEBHOOK: ${{ secrets.MAKE_WEBHOOK }}
         run: python pipeline/run_next.py post
+      - name: Keep Flat No. 7 parts for the weekly long video
+        if: success() && hashFiles('work/ready.json') != '' && inputs.dry_run != true && inputs.write_only != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ID=$(python -c "import json;print(json.load(open('work/ready.json'))['id'])")
+          case "$ID" in flat7-*)
+            FINAL=$(python -c "import json;print(json.load(open('work/ready.json'))['final'])")
+            cp "$FINAL" "/tmp/rkk_$ID.mp4"
+            gh release view flat7-parts >/dev/null 2>&1 || gh release create flat7-parts --title "Flat No. 7 parts" --notes "Posted parts, used for the weekly long video."
+            gh release upload flat7-parts "/tmp/rkk_$ID.mp4" --clobber ;;
+          esac
       - name: Save state
         if: always()
         run: |
           git config user.name "rkk-bot"; git config user.email "rkk-bot@users.noreply.github.com"
-          git add state.json weeks ideas.md 2>/dev/null || true
+          KIND=reel; [ "${{ inputs.write_only }}" = "true" ] && KIND=write
+          python pipeline/status.py "${{ job.status }}" $KIND || true
+          git add state.json status.json weeks ideas.md 2>/dev/null || true
           git diff --cached --quiet || (git commit -qm "auto: state/scripts update" && git pull -q --rebase && git push -q)
       - name: Keep the built video (download from the run page)
         if: always()
