@@ -73,6 +73,13 @@ jobs:
             gh release view flat7-parts >/dev/null 2>&1 || gh release create flat7-parts --title "Flat No. 7 parts" --notes "Posted parts, used for the weekly long video."
             gh release upload flat7-parts "/tmp/rkk_$ID.mp4" --clobber ;;
           esac
+      - name: Prefetch voice for the next reels (uses spare free quota)
+        if: inputs.write_only != true && inputs.dry_run != true
+        continue-on-error: true
+        timeout-minutes: 20
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: python pipeline/run_next.py prefetch
       - name: Save state
         if: always()
         run: |
