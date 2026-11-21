@@ -1,0 +1,1613 @@
+[
+ {
+  "id": "ai-15-free-wifi-trap",
+  "series": "ai",
+  "ep": "EP 15",
+  "title": "फ्री Wi-Fi के चक्कर में बैंक खाली होने वाला था! 😱 #Shorts",
+  "description": "पब्लिक Wi-Fi इस्तेमाल करने से पहले यह वीडियो ज़रूर देखें। जानिए कैसे हैकर्स आपका डेटा चुराते हैं।\n#TechSafety #CyberScam #RameshKiKahaniya #PublicWifi #Shorts",
+  "caption": "क्या आप भी कहीं भी फ्री Wi-Fi कनेक्ट कर लेते हैं? 😱\n\nसच्चाई जानकर होश उड़ जाएंगे!\n\nक्या आप पब्लिक Wi-Fi यूज़ करते हैं? कमेंट में बताओ!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#OnlineSafety #CyberSecurity #TechTips #RameshVsAI #ScamAlert",
+  "lines": [
+   {
+    "who": "N",
+    "text": "क्या फ्री Wi-Fi देखकर आप भी बिना सोचे समझे तुरंत फोन कनेक्ट कर लेते हैं?",
+    "set": "store",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "idle"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📶",
+     "text": "फ्री वाई-फाई मिला"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश मॉल में घूमते हुए फ्री पब्लिक नेटवर्क से कनेक्ट करके मूवी डाउनलोड करने लगा।",
+    "set": "store",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📲",
+     "text": "मूवी डाउनलोडिंग 99%"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे वाह भाई! इतनी तेज़ स्पीड, आज तो पूरा इंटरनेट निचोड़ कर ही दम लूँगा!",
+    "set": "store",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तभी उसके फोन की स्क्रीन झिलमिलाने लगी और बैकग्राउंड में पासवर्ड बदलने के मैसेज आने लगे।",
+    "set": "store",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "⚠️",
+     "text": "Password Changed!"
+    },
+    "fx": [
+     "shake",
+     "flash"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "रोबोट भाई बचाओ! मैंने तो सिर्फ फ्री Wi-Fi चालू किया था, ये क्या हो रहा है?",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "N",
+    "text": "AI रोबोट ने फौरन उसका Wi-Fi बंद कराया और शांत आवाज़ में उसे समझाया।",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "point"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🛑",
+     "text": "Wi-Fi Disconnected"
+    },
+    "fx": [
+     "light"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "ओपन Wi-Fi पर हैकर्स फर्जी हॉटस्पॉट बनाकर आपका सारा पर्सनल डेटा और पासवर्ड चुरा लेते हैं।",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔓",
+     "text": "Data Stolen Risk"
+    }
+   },
+   {
+    "who": "B",
+    "text": "पब्लिक नेटवर्क पर कभी बैंकिंग मत करो और इंटरनेट चलाना ही हो तो हमेशा VPN इस्तेमाल करो।",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🛡️",
+     "text": "Use Secure VPN"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने राहत की सांस ली पर देखा कि उसने तो समोसे वाले का पर्सनल Wi-Fi चुराया था!",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🥟",
+     "text": "काका समोसे वाला"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "और सामने से समोसे वाला गरम कड़छी लहराते हुए सीधा रमेश की तरफ ही भागा आ रहा था!",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "smile"
+    },
+    "show": {
+     "icon": "🏃",
+     "text": "भागो रमेश भागो!"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "क्या आप बाहर फ्री Wi-Fi इस्तेमाल करते हैं? कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "store",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-16-bijli-bill-scam",
+  "series": "ai",
+  "ep": "EP 16",
+  "title": "आज रात घर की बिजली कटने का भयानक मैसेज! ⚡ #Shorts",
+  "description": "बिजली बिल के नाम पर आने वाले फर्जी SMS से सावधान रहें! AI रोबोट ने बताया इस स्कैम का सच।\n#ElectricityBillScam #CyberCrime #RameshKiKahaniya #SafetyFirst #Shorts",
+  "caption": "बिजली कटने का ऐसा मैसेज आपको भी आया होगा! ⚡\n\nअनजान नंबर पर कभी कॉल मत करना!\n\nक्या आपको ऐसा SMS आया है कभी? कमेंट में बताएं!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#OnlineFraud #ScamAlert #TechTips #RameshVsAI #ShortsIndia",
+  "lines": [
+   {
+    "who": "N",
+    "text": "क्या आपके फोन पर भी बिजली कटने का ऐसा डरावना मैसेज कभी आया है?",
+    "set": "home",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "⚡",
+     "text": "Power Cut Tonight!"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रात को रमेश के फोन पर मैसेज आया कि बिल न भरने पर तुरंत बिजली काट दी जाएगी।",
+    "set": "home",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📩",
+     "text": "Call Officer Immediately"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे बाप रे! इस भयंकर गर्मी में रात को बिना पंखे के पूरे घर का क्या हाल होगा!",
+    "set": "home",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "slump"
+    },
+    "ex": {
+     "R": "worried"
+    }
+   },
+   {
+    "who": "N",
+    "text": "मैसेज में दिए गए अनजान नंबर पर रमेश घबराकर तुरंत फोन मिलाने ही वाला था।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "point",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "📞",
+     "text": "Calling 98765xxxxx"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "तभी AI रोबोट ने फोन रमेश के हाथ से छीन लिया और मैसेज को तुरंत स्कैन किया।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔍",
+     "text": "Scanning Message"
+    }
+   },
+   {
+    "who": "B",
+    "text": "रमेश बाबू, सरकारी बिजली विभाग कभी किसी पर्सनल मोबाइल नंबर से ऐसी धमकियां नहीं भेजता।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ये स्कैमर्स आपसे फर्जी ऐप डाउनलोड करवाकर आपके बैंक खाते के सारे पैसे उड़ा लेते हैं।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "point"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "💸",
+     "text": "Bank Drain Trap"
+    }
+   },
+   {
+    "who": "B",
+    "text": "बिजली बिल का स्टेटस हमेशा बिजली बोर्ड की आधिकारिक वेबसाइट या ऐप पर ही चेक करें।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "✅",
+     "text": "Official App Only"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने ऐप पर चेक किया तो पता चला कि इस महीने का बिल तो उसकी पत्नी पहले ही भर चुकी थी!",
+    "set": "home",
+    "cast": [
+     "R",
+     "B",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "idle",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral",
+     "W": "angry"
+    },
+    "show": {
+     "icon": "🧾",
+     "text": "Bill Already Paid"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "सुबह ही रसीद फ्रिज पर चिपकाई थी, फोन में घुसने के अलावा कभी घर पर भी ध्यान दे लिया करो!",
+    "set": "home",
+    "cast": [
+     "R",
+     "B",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle",
+     "W": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "smile",
+     "W": "angry"
+    }
+   },
+   {
+    "who": "N",
+    "text": "क्या आपको भी ऐसा बिजली बिल वाला फर्जी SMS आया है? कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-17-courier-address-link",
+  "series": "ai",
+  "ep": "EP 17",
+  "title": "₹5 का पार्सल अपडेट और बैंक से गायब ₹50,000! 📦 #Shorts",
+  "description": "कूरियर डिलीवरी के नाम पर आने वाले लिंक्स से सावधान रहें। जानिए स्कैमर्स कैसे फंसाते हैं।\n#CourierScam #OnlineFraud #RameshKiKahaniya #DeliveryScam #Shorts",
+  "caption": "गलत पते का झांसा देकर स्कैमर्स खाली कर रहे हैं अकाउंट! 📦😱\n\n₹5 की फीस कभी मत भरना!\n\nक्या आपके साथ ऐसा हुआ है? कमेंट में बताएं!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#ScamWarning #TechTips #CyberSafety #RameshVsAI #ShortsFeed",
+  "lines": [
+   {
+    "who": "N",
+    "text": "आपका पार्सल गलत पते की वजह से अटक गया है, क्या आप भी इस लिंक पर क्लिक करेंगे?",
+    "set": "hall (raat)",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "idle"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📦",
+     "text": "Delivery Failed Link"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "दोपहर को रमेश के फोन पर मैसेज आया कि पता अपडेट करने के लिए तुरंत ₹5 की फीस भरें।",
+    "set": "home",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📩",
+     "text": "Pay ₹5 Update Address"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे वाह! शायद किसी अमीर रिश्तेदार ने मुझे सरप्राइज गिफ्ट भेजा है, सिर्फ ₹5 ही तो देने हैं!",
+    "set": "home",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने बिना सोचे लिंक खोला और उसमें अपने डेबिट कार्ड का नंबर और CVV भरने लगा।",
+    "set": "home",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "neutral"
+    },
+    "show": {
+     "icon": "💳",
+     "text": "Card Details Entered"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "AI रोबोट ने तुरंत फोन की स्क्रीन लॉक कर दी और लाल बत्ती जलाकर जोर से अलार्म बजाया।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🚨",
+     "text": "PHISHING ALERT!"
+    },
+    "fx": [
+     "flash",
+     "shake"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "संभल जाओ रमेश! असली डिलीवरी कंपनियां कभी भी एड्रेस अपडेट के लिए अनजान लिंक से पैसे नहीं मांगतीं।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ये फर्जी पेमेंट पेज आपके कार्ड की पूरी जानकारी चुराकर खाते से सारे पैसे उड़ा देता।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🛑",
+     "text": "Fake Payment Page"
+    }
+   },
+   {
+    "who": "B",
+    "text": "पार्सल का सही स्टेटस हमेशा शॉपिंग ऐप के अंदर जाकर ओरिजिनल ट्रैकिंग नंबर से ही चेक करो।",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "📲",
+     "text": "Track in Official App"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तभी दरवाजे की घंटी बजी और असली डिलीवरी वाले ने आकर रमेश को एक लिफाफा थमाया।",
+    "set": "door",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "point",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "✉️",
+     "text": "पार्सल आ गया"
+    },
+    "fx": [
+     "light"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने लिफाफा खोला तो अंदर रिश्तेदार का भेजा हुआ सादा शादी का कार्ड निकला, कोई महंगा गिफ्ट नहीं!",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "B": "smile"
+    },
+    "show": {
+     "icon": "💌",
+     "text": "शादी का निमंत्रण"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "क्या आपको कभी डिलीवरी वाला ऐसा फर्जी मैसेज आया है? कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "home",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-18-face-app-privacy",
+  "series": "ai",
+  "ep": "EP 18",
+  "title": "AI ने बुढ़ापे का चेहरा दिखाया और डेटा उड़ा ले गया! 👴 #Shorts",
+  "description": "फिल्टर और फोटो ऐप्स को परमिशन देने से पहले यह वीडियो देखें। जानिए फेस डेटा का गलत इस्तेमाल कैसे होता है।\n#FaceAppScam #PrivacyAlert #RameshKiKahaniya #DeepfakeRisk #Shorts",
+  "caption": "AI फिल्टर के चक्कर में अपना चेहरा मत बेच देना! 😱\n\nजानिए कैसे ऐप्स आपका बायोमेट्रिक डेटा चुराते हैं।\n\nक्या आप फोटो ऐप्स को गैलरी परमिशन देते हैं? कमेंट में बताओ!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#DataPrivacy #TechScams #AIAlert #RameshVsAI #ViralShorts",
+  "lines": [
+   {
+    "who": "N",
+    "text": "क्या आपने कभी सोचा है कि फोटो सुंदर बनाने वाले AI ऐप्स आपकी शक्ल का क्या करते हैं?",
+    "set": "bedroom",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "idle"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📸",
+     "text": "AI Aging Filter"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने इंटरनेट पर ट्रेंड देखा और बुढ़ापे की शक्ल दिखाने वाला एक अनजान AI ऐप डाउनलोड कर लिया।",
+    "set": "bedroom",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📲",
+     "text": "App Installed"
+    }
+   },
+   {
+    "who": "R",
+    "text": "ज़रा देखूं तो सही कि सत्तर साल की उम्र में रमेश कितना हैंडसम और रौबदार दिखेगा!",
+    "set": "bedroom",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "ऐप चालू होते ही उसने रमेश की पूरी गैलरी, कॉन्टैक्ट्स और लोकेशन की परमिशन मांग ली।",
+    "set": "bedroom",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "neutral"
+    },
+    "show": {
+     "icon": "⚠️",
+     "text": "Allow All Permissions?"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश बिना पढ़े सब पर 'Allow' दबाने ही वाला था कि AI रोबोट ने उसका हाथ पकड़ लिया।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🛑",
+     "text": "Access Denied"
+    }
+   },
+   {
+    "who": "B",
+    "text": "रुको रमेश! किसी भी अनजान ऐप को अपने पूरे चेहरे का बायोमेट्रिक डेटा देना बहुत बड़ा खतरा है।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ये थर्ड-पार्टी ऐप्स आपकी फेशियल मैपिंग चुराकर बाद में डीपफेक या फ्रॉड के लिए बेच देते हैं।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "👤",
+     "text": "Face Data Sold!"
+    }
+   },
+   {
+    "who": "B",
+    "text": "बिना डेवलपर की रेटिंग और प्राइवेसी पॉलिसी पढ़े किसी भी ऐप को गैलरी की खुली परमिशन कभी मत दो।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔒",
+     "text": "Protect Your Privacy"
+    }
+   },
+   {
+    "who": "N",
+    "text": "फिर भी रमेश ने डेमो फोटो देखी तो AI ने उसे सत्तर साल का बूढ़ा नहीं, उसकी सास जैसा बना दिया था!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "👵",
+     "text": "सास जैसी शक्ल!"
+    },
+    "fx": [
+     "zoom",
+     "flash"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे देवा! अगर बुढ़ापे में मैं अपनी सास जैसा दिखने वाला हूँ, तो मुझे बूढ़ा होना ही नहीं है!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "B": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "क्या आप भी बिना सोचे अनजान ऐप्स को परमिशन दे देते हैं? कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-19-screen-share-scam",
+  "series": "ai",
+  "ep": "EP 19",
+  "title": "Customer Care ने Screen Share कराई और सब देख लिया! 📱 #Shorts",
+  "description": "स्क्रीन शेयरिंग ऐप्स जैसे AnyDesk या TeamViewer के नाम पर होने वाले नए फ्रॉड से बचें।\n#ScreenShareScam #AnyDeskScam #RameshKiKahaniya #TechSafety #Shorts",
+  "caption": "Customer Care बनकर स्क्रीन शेयर कराने वाले जालसाज! 📱😱\n\nकभी किसी अनजान को स्क्रीन कोड मत देना!\n\nक्या आपको कभी ऐसा कस्टमर केयर कॉल आया है? कमेंट में बताएं!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#OnlineScam #CustomerCareScam #CyberCrime #RameshVsAI #Shorts",
+  "lines": [
+   {
+    "who": "N",
+    "text": "अगर कोई कस्टमर केयर आपसे फोन पर कोई ऐप डाउनलोड करने को कहे, तो गलती से भी मत करना!",
+    "set": "office",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "idle"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📞",
+     "text": "Fake Customer Support"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश का ऑनलाइन शॉपिंग का रिफंड अटका हुआ था, तभी एक अनजान नंबर से मीठी आवाज़ में कॉल आया।",
+    "set": "office",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "neutral"
+    },
+    "show": {
+     "icon": "💰",
+     "text": "Refund Pending Call"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "हाँ भाई! मेरे पाँच सौ रुपये कब वापस आएंगे, तीन दिन से चक्कर काट रहा हूँ!",
+    "set": "office",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "angry"
+    }
+   },
+   {
+    "who": "N",
+    "text": "कॉलर बोला, सर रिफंड के लिए प्लेस्टोर से बस एक क्विक-सपोर्ट स्क्रीन शेयरिंग ऐप डाउनलोड कर लीजिए।",
+    "set": "office",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "ear"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📲",
+     "text": "Install Screen Share"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने ऐप डाउनलोड करके कॉलर को स्क्रीन पर आया नौ अंकों का सीक्रेट कोड बोलने ही वाला था।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "point",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔢",
+     "text": "9-Digit Access Code"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "AI रोबोट ने झपट्टा मारकर तुरंत फोन की स्क्रीन बंद की और सीधे इंटरनेट डिस्कनेक्ट कर दिया।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "📴",
+     "text": "Internet Killed"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "मूर्ख इंसान! वो स्क्रीन शेयरिंग ऐप थी, कोड देते ही वो तुम्हारा पूरा फोन अपने कंप्यूटर पर लाइव देख लेता।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "जैसे ही तुम बैंक ऐप खोलते, वो तुम्हारा पासवर्ड और OTP देखकर पूरा खाता खाली कर देता।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🏦",
+     "text": "Account Danger"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तभी फोन पर कॉलर का मैसेज आया, अरे भाई बैंक ऐप तो खोलो, मुझे तुम्हारी पुरानी कविताएं क्यों दिख रही हैं!",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "📝",
+     "text": "रमेश की गुप्त शायरी"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "हाय रब्बा! वो स्कैमर मेरे पाँच सौ रुपये से ज़्यादा मेरी लिखी हुई शायरी चुरा कर ले गया!",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "B": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "क्या आपको कभी कस्टमर केयर से ऐसा फर्जी कॉल आया है? कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-20-bluetooth-bluebugging",
+  "series": "ai",
+  "ep": "EP 20",
+  "title": "24 घंटे Bluetooth On रखने की सबसे बड़ी भूल! 🎧 #Shorts",
+  "description": "पब्लिक प्लेस में हर वक्त ब्लूटूथ ऑन रखना कितना खतरनाक है? जानिए ब्लू-बगिंग से बचने के तरीके।\n#BluetoothScam #Bluebugging #RameshKiKahaniya #CyberSecurity #Shorts",
+  "caption": "क्या आपका ब्लूटूथ भी 24 घंटे चालू रहता है? 🎧⚠️\n\nपब्लिक प्लेस में हैकर्स कैसे फोन हैक करते हैं, देखिए!\n\nक्या आपका ब्लूटूथ अभी ऑन है? कमेंट में चेक करके बताओ!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#TechAwareness #CyberAwareness #RameshVsAI #BluetoothHack #ShortsIndia",
+  "lines": [
+   {
+    "who": "N",
+    "text": "क्या आपके फोन का ब्लूटूथ भी हर वक्त चालू रहता है? यह भयंकर गलती आज ही बंद करो!",
+    "set": "society",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "idle"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📶",
+     "text": "Bluetooth Always ON"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश मेट्रो स्टेशन की बेंच पर बैठकर कान में ईयरफोन लगाए मजे से गाने सुन रहा था।",
+    "set": "society",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "🎧",
+     "text": "Listening Music"
+    }
+   },
+   {
+    "who": "R",
+    "text": "आज मौसम भी क्या मस्त है, और मेरा यह सस्ता ब्लूटूथ ईयरफोन तो एकदम बवाल आवाज़ दे रहा है!",
+    "set": "society",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "अचानक फोन की स्क्रीन पर किसी अनजान डिवाइस से पेयरिंग की रिक्वेस्ट बार-बार पॉप अप होने लगी।",
+    "set": "society",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "📲",
+     "text": "Pair With Unknown?"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे यार, गाने के बीच में यह पेयरिंग का बटन क्यों आ रहा है, चलो एक्सेप्ट दबाकर खत्म करता हूँ!",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "point",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "N",
+    "text": "AI रोबोट ने तुरंत रमेश का हाथ झटका और एक तेज़ बीप की आवाज़ के साथ स्क्रीन बंद कर दी।",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🚫",
+     "text": "Pairing Rejected"
+    },
+    "fx": [
+     "flash",
+     "shake"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "सावधान रमेश! पब्लिक प्लेस में ब्लूटूथ खुला रखना मतलब हैकर्स को अपने फोन की चाबी थमाना है।",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "इसे ब्लू-बगिंग कहते हैं, पेयर होते ही हैकर बिना छुए आपके कॉल्स सुन सकता है और मैसेज पढ़ सकता है।",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🐛",
+     "text": "Bluebugging Threat"
+    }
+   },
+   {
+    "who": "B",
+    "text": "काम खत्म होते ही ब्लूटूथ बंद रखो और हमेशा उसकी विजिबिलिटी को 'हिडन' सेट करके रखो।",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔒",
+     "text": "Set Bluetooth Hidden"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने ब्लूटूथ बंद किया तो देखा पड़ोस की बेंच पर बैठा लड़का मायूस होकर अपना लैपटॉप बैग में रख रहा था!",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "point",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "💻",
+     "text": "Hacker Failed!"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "क्या आपके फोन का ब्लूटूथ अभी ऑन है? चेक करके कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "society",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ai-21-reward-points-expiry",
+  "series": "ai",
+  "ep": "EP 21",
+  "title": "क्रेडिट कार्ड के Reward Points के चक्कर में बड़ा झटका! 💳 #Shorts",
+  "description": "रिवॉर्ड पॉइंट्स एक्सपायर होने का झांसा देकर हो रहे फिशिंग फ्रॉड से सावधान रहें।\n#RewardPointsScam #CreditCardScam #RameshKiKahaniya #CyberFraud #Shorts",
+  "caption": "रिवॉर्ड पॉइंट्स कैश में बदलने का लालच पड़ सकता है भारी! 💳😱\n\nSMS के लिंक से कभी लॉगिन मत करना!\n\nक्या आपको ऐसे रिवॉर्ड मैसेज आते हैं? कमेंट में बताएं!\nऐसी और कहानियों के लिए फॉलो करो!\n\n#BankFraud #PhishingLink #TechAlert #RameshVsAI #ViralScams",
+  "lines": [
+   {
+    "who": "N",
+    "text": "आपके क्रेडिट कार्ड के दस हज़ार रिवॉर्ड पॉइंट्स आज रात एक्सपायर हो रहे हैं, क्या यह सच है?",
+    "set": "cabin",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "idle"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "💳",
+     "text": "Points Expiring Tonight!"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "सुबह-सुबह रमेश के फोन पर मैसेज आया कि उसके ₹9,999 के पॉइंट्स आज ही खत्म हो जाएंगे।",
+    "set": "cabin",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "📩",
+     "text": "Redeem ₹9,999 Cash"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "वाह भाई वाह! दस हज़ार रुपये सीधे बैंक में, आज शाम को दोस्तों के साथ पार्टी एकदम पक्की!",
+    "set": "cabin",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "मैसेज में नीचे एक लिंक दिया था जिस पर क्लिक करते ही बिल्कुल असली जैसी दिखने वाली बैंक साइट खुल गई।",
+    "set": "cabin",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "point"
+    },
+    "ex": {
+     "R": "neutral"
+    },
+    "show": {
+     "icon": "🌐",
+     "text": "Fake Bank Portal"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश अपना नेट बैंकिंग यूजरनेम और पासवर्ड डालने ही वाला था कि AI रोबोट ने सायरन बजा दिया।",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🚨",
+     "text": "PHISHING SITE!"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "स्क्रीन का URL ध्यान से देखो रमेश! बैंक के नाम की स्पेलिंग गलत है, यह पूरी तरह से फर्जी वेबसाइट है।",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🔍",
+     "text": "Wrong Spelling URL"
+    }
+   },
+   {
+    "who": "B",
+    "text": "कोई भी बैंक पॉइंट्स रिडीम करने के लिए कभी भी SMS में डायरेक्ट लॉगिन लिंक नहीं भेजता।",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "रिवॉर्ड पॉइंट्स केवल ऑफिशियल बैंकिंग ऐप के अंदर जाकर ही चेक और रिडीम करने चाहिए।",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "idle",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🛡️",
+     "text": "Use Official Banking App"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने जब ध्यान से कार्ड देखा तो जोर से अपना माथा पीट लिया और रोने लगा।",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे देवा! जिस क्रेडिट कार्ड के पॉइंट्स मैं रिडीम कर रहा था, वो तो बैंक ने तीन साल पहले ही बंद कर दिया था!",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "B": "smile"
+    },
+    "show": {
+     "icon": "💳",
+     "text": "Card Expired 2021"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "क्या आपको भी रिवॉर्ड पॉइंट्स वाले फर्जी SMS आते हैं? कमेंट में बताओ और ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "cabin",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "wave"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   }
+  ]
+ }
+]
