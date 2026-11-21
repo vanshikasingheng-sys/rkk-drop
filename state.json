@@ -3,11 +3,12 @@
   "flat7-1-light-in-window",
   "ai-1-boss-deepfake-leave",
   "comedy-1-rishtedaar-interview",
-  "kahani-1-gta-6-emi-jugaad"
+  "kahani-1-gta-6-emi-jugaad",
+  "flat7-2-mysterious-note"
  ],
  "days": {
   "2026-11-20": 3,
-  "2026-11-21": 2
+  "2026-11-21": 3
  },
  "drop_files": [],
  "log": [
@@ -34,6 +35,11 @@
    "id": "kahani-1-gta-6-emi-jugaad",
    "at": "2026-11-21T17:31+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_kahani-1-gta-6-emi-jugaad.mp4"
+  },
+  {
+   "id": "flat7-2-mysterious-note",
+   "at": "2026-11-21T22:37+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_flat7-2-mysterious-note.mp4"
   }
  ]
 }
