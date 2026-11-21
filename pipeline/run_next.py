@@ -56,6 +56,31 @@ def pick(st):
     if not todo: print("QUEUE EMPTY - add next week's scripts in weeks/."); return None
     print("Next reel:", todo[0]["id"], "|", len(todo) - 1, "more waiting"); return todo[0]
 
+def prefetch(st, n=2):
+    """Use spare free TTS quota: make the voice for the next reels now (cached in work/, reused when they are built).
+    Also deletes work folders of reels that are already posted, so the cache stays small."""
+    import shutil
+    ready = os.path.join(ROOT, "work", "ready.json")
+    keep = json.load(open(ready))["id"] if os.path.exists(ready) else None
+    for d in glob.glob(os.path.join(ROOT, "work", "*")):
+        b = os.path.basename(d)
+        if b.startswith("flat7-") and b not in st.get("long_done", []): continue   # still needed for the weekly long video
+        if os.path.isdir(d) and b in st["posted"] and b != keep: shutil.rmtree(d, ignore_errors=True)
+    key = os.environ.get("GEMINI_KEY", "").strip()
+    todo = [s for s in queue() if s["id"] not in st["posted"] and s["id"] != keep][:n]
+    for spec in todo:
+        wd = os.path.join(ROOT, "work", spec["id"]); os.makedirs(wd, exist_ok=True)
+        need = len(build_reel.chunk_lines(spec["lines"]))
+        have = len([f for f in glob.glob(os.path.join(wd, "chunk*.pcm")) if os.path.getsize(f) > 1000])
+        if have >= need: print("voice ready:", spec["id"]); continue
+        print("prefetching voice:", spec["id"], "(%d/%d parts done)" % (have, need))
+        try:
+            build_reel.make_voice(spec, wd, key)
+        except build_reel.DailyLimit:
+            print("free voice quota used up for today - stopping"); return
+        except Exception as e:
+            print("prefetch stopped:", str(e)[:150]); return
+
 def main():
     """build: make the next reel -> work/ready.json   |   post: send ready reel to Make + update state"""
     mode = sys.argv[1] if len(sys.argv) > 1 else "build"
@@ -71,6 +96,8 @@ def main():
             print("TTS daily limit - will retry next run:", e); return
         json.dump({"id": spec["id"], "final": final, "name": "rkk_%s.mp4" % spec["id"]}, open(ready, "w"))
         print("READY", spec["id"])
+    elif mode == "prefetch":
+        prefetch(st)
     elif mode == "post":
         r = json.load(open(ready)); spec = next(s for s in queue() if s["id"] == r["id"])
         url = "https://raw.githubusercontent.com/%s/media/%s" % (os.environ.get("GITHUB_REPOSITORY", "vanshikasingheng-sys/rkk-drop"), r["name"])

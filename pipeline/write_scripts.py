@@ -13,7 +13,7 @@ ROOT = build_reel.ROOT
 sys.stdout.reconfigure(line_buffering=True)
 LOW_WATER = 9          # write a new batch when fewer than this many reels are waiting
 PER_SERIES = 7
-MODELS = ["gemini-3.1-pro-preview", "gemini-3.1-pro", "gemini-pro-latest", "gemini-flash-latest", "gemini-flash-lite-latest"]
+MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest", "gemini-3.1-pro-preview"]   # free tier: Flash works, Pro needs billing
 IDEAS = os.path.join(ROOT, "ideas.md")
 
 def brief():
@@ -52,7 +52,7 @@ def gemini(prompt, key, search=False, raw_text=False, models=None):
     if search: body["tools"] = [{"google_search": {}}]
     else: body["generationConfig"]["responseMimeType"] = "application/json"
     errs = []
-    for rnd in range(3):                       # 3 rounds over all models; busy models (503) often free up
+    for rnd in range(1 if search else 3):      # rounds over all models; busy models (503) often free up
         for m in (models or MODELS):
             try:
                 req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (m, key),
@@ -142,7 +142,7 @@ def trends(key):
          "naye phone/tech/AI, festivals/shaadi season, viral memes/trends, sarkari naye rules jo aam aadmi ko lagte hain. "
          "Har topic ek line: topic — kyon trending hai (1 chhota reason). Politics, dharm, kisi asli insaan par aarop, dukhad haadse NAHI.") % today
     try:
-        return gemini(q, key, search=True, raw_text=True, models=["gemini-flash-latest", "gemini-3.1-pro-preview", "gemini-pro-latest"])
+        return gemini(q, key, search=True, raw_text=True, models=["gemini-flash-latest", "gemini-flash-lite-latest"])
     except Exception as e:
         print("   trends failed:", e); return ""
 
@@ -165,6 +165,7 @@ SABSE ZAROORI — kahani ZINDA lage, robot jaisi nahi:
 - Poori kahani pehle socho: Part 1 = mazedaar setup + bada problem; beech ke parts = problem badhta jaye, naye mod; Part %d = climax + twist + achha ending.
 - Har part ki pehli line = hook (pichhle part ki yaad ya naya jhatka) taaki naya viewer bhi samajh jaye.
 - Har part 11-13 lines, har line 6-16 words.
+- Har part me bolne wale sirf Narrator + 2 characters (baaki log scene me dikh sakte hain par bolein nahi) — voice limit ke liye zaroori. Alag part me alag 2 characters chal sakte hain.
 - Part 1 se Part %d tak: aakhri se pehle line = cliffhanger; aakhri line exactly: "आगे क्या हुआ? जानने के लिए फॉलो करो — Part <agla number> जल्दी आ रहा है!"
 - Part %d (last): aakhri se pehle line = twist/payoff; aakhri line = comment-sawaal + "ऐसी और कहानियों के लिए फॉलो करो!"
 - Asli game/movie/phone ka naam le sakte ho (jaise GTA 6), par kisi asli insaan ka mazaak ya aarop nahi. Politics/dharm nahi.
@@ -184,7 +185,7 @@ def write_kahani(key, by, ideas, start, folder):
     tt = "" if ideas else trends(key)
     if tt: print("   trending now:\n" + "\n".join("     " + l for l in tt.strip().split("\n")[:12]))
     data = gemini(brief() + "\n\n" + kahani_prompt(start, by, ideas, tt), key,
-                  models=["gemini-3.1-pro-preview", "gemini-3.1-pro", "gemini-pro-latest", "gemini-flash-latest"])
+                  models=["gemini-flash-latest", "gemini-3.1-pro-preview", "gemini-flash-lite-latest"])
     parts = data.get("parts", []) if isinstance(data, dict) else data
     sname = (data.get("story") if isinstance(data, dict) else "") or "नई कहानी"
     badge = (data.get("badge") if isinstance(data, dict) else "") or "RAMESH KI KAHANI"
