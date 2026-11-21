@@ -1,2 +1,806 @@
-Melody Farm, behind Apno Ghar,
-Near MBLM School, Sector 77, Gurugram (Hr.)
+[
+ {
+  "id": "kahani-1-gta-6-emi-jugaad",
+  "ep": "Part 1",
+  "title": "GTA 6 की EMI | Part 1 | रमेश ने चुपके से क्या बुक किया? 😱 #Shorts",
+  "description": "रमेश ने GTA 6 के चक्कर में नया पंगा ले लिया है, और घर में पहला शक जाग चुका है।\nपूरी 5-part कॉमेडी सीरीज़ यहाँ देखें।\n#RameshKiKahaniya #GTA6 #HindiComedy #ReelStory #DesiHumor",
+  "caption": "रमेश ने GTA 6 के चक्कर में गुपचुप EMI सेट कर ली, क्या पत्नी पकड़ेगी? कमेंट में बताओ! ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #GTA6 #HindiReels #ComedyShorts",
+  "lines": [
+   {
+    "who": "R",
+    "text": "भाई, GTA 6 आ रहा है, मैं बिना खेले कैसे जी पाऊँगा?",
+    "set": "home",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idea"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "🎮",
+     "text": "GTA 6 Pre-Order Alert"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "F",
+    "text": "तो EMI पर ले ले यार, तेरा बजट कौन सा चेक कर रहा है?",
+    "pose": {
+     "F": "point"
+    },
+    "ex": {
+     "F": "smile"
+    },
+    "show": {
+     "icon": "💳",
+     "text": "Zero Cost EMI Offer"
+    }
+   },
+   {
+    "who": "R",
+    "text": "सही बोला, बस घर में किसी को पता नहीं चलना चाहिए।",
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "neutral"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "OTP Received: 849201"
+    },
+    "card": [
+     "BANK ALERT",
+     "EMI Auto-Debit Active",
+     "Monthly due next week"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश ने तो बटन दबा दिया, पर असली टेंशन घर पहुँचते ही शुरू हुई।"
+   },
+   {
+    "who": "W",
+    "text": "अजी सुनते हो, ये SMS में किस चीज़ की EMI कटी है?",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "W": "point"
+    },
+    "ex": {
+     "W": "angry"
+    },
+    "show": {
+     "icon": "📩",
+     "text": "SMS: EMI Deduction"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे वो... वो तो मिक्सर के नए ब्लेड का जुगाड़ था, जान!",
+    "pose": {
+     "R": "ear"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "burst": "JUGAAD FAIL!"
+   },
+   {
+    "who": "W",
+    "text": "मिक्सर के ब्लेड पर गेमिंग कंसोल का लोगो कब से छपने लगा?",
+    "pose": {
+     "W": "explain"
+    },
+    "ex": {
+     "W": "shock"
+    },
+    "show": {
+     "icon": "🧾",
+     "text": "Gaming Console Invoice"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे वो प्रिंटिंग मिस्टेक होगी, आजकल सब ऑनलाइन उल्टा-सीधा आता है।",
+    "pose": {
+     "R": "slump"
+    },
+    "ex": {
+     "R": "sad"
+    }
+   },
+   {
+    "who": "W",
+    "text": "कल बैंक स्टेटमेंट आएगा, तब देखेंगे किसका ब्लेड घूमता है।",
+    "pose": {
+     "W": "pointUp"
+    },
+    "ex": {
+     "W": "angry"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "रमेश की नींद उड़ गई, क्योंकि अगली सुबह ऑफिस में भी मुसीबत तैयार थी।"
+   },
+   {
+    "who": "R",
+    "text": "यार, मेरी पगार आने से पहले ही EMI का झटका लग गया!",
+    "set": "office",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "show": {
+     "icon": "📉",
+     "text": "Low Balance Warning"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "आगे क्या हुआ? जानने के लिए फॉलो करो — Part 2 जल्दी आ रहा है!"
+   }
+  ],
+  "series": "kahani",
+  "sname": "GTA 6 की EMI और रमेश का जुगाड़",
+  "badge": "GTA 6 KA CHAKKAR"
+ },
+ {
+  "id": "kahani-2-boss-aur-5-percent-battery",
+  "ep": "Part 2",
+  "title": "GTA 6 की EMI | Part 2 | बॉस के सामने 5% बैटरी का ड्रामा! 🔋 #Shorts",
+  "description": "EMI के टेंशन में रमेश ऑफिस में फँसा है और फोन की बैटरी भी 5% पर आ गई है।\nदेखो रमेश कैसे नया बहाना बनाता है।\n#RameshKiKahaniya #OfficeComedy #GTA6 #HindiReels #DesiDrama",
+  "caption": "5% बैटरी और खड़ूस बॉस के बीच रमेश बच पाएगा? कमेंट में अपना बहाना लिखो! आगे क्या हुआ? जानने के लिए फॉलो करो — Part 3 जल्दी आ रहा है! #RameshKiKahaniya #OfficeHumor #HindiShorts",
+  "lines": [
+   {
+    "who": "R",
+    "text": "पार्ट वन में मेरी EMI खुल गई, अब बॉस के सामने इज्ज़त बचानी है।",
+    "set": "office",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "worried"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "💼",
+     "text": "Office Group Chat Ping"
+    }
+   },
+   {
+    "who": "M",
+    "text": "रमेश, कल की रिपोर्ट कहाँ है, या GTA के सपने देख रहे हो?",
+    "set": "cabin (boss cabin)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "M": "point"
+    },
+    "ex": {
+     "M": "angry"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "सर, फाइल क्लाउड में थी, पर मेरा फोन बस पाँच परसेंट पर है।",
+    "pose": {
+     "R": "explain"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🪫",
+     "text": "Battery 5% Critical"
+    },
+    "card": [
+     "BATTERY ALERT",
+     "5% Remaining",
+     "Plug in charger now"
+    ]
+   },
+   {
+    "who": "M",
+    "text": "पाँच परसेंट में तुम्हारी फाइल गायब और तुम्हारा गेमिंग ट्रेलर चल रहा है?",
+    "pose": {
+     "M": "shock"
+    },
+    "ex": {
+     "M": "evil"
+    },
+    "show": {
+     "icon": "🖥️",
+     "text": "Screen Cast Accident"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "मिरर कास्ट ऑन रह गया और केबिन की टीवी पर गाड़ी उड़ती दिखी।"
+   },
+   {
+    "who": "R",
+    "text": "सर ये... ये ट्रैफिक सिम्युलेशन है, शहर का जाम समझ रहे हैं?",
+    "pose": {
+     "R": "ear"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "burst": "TRAFFIC JUGAD!"
+   },
+   {
+    "who": "M",
+    "text": "ऐसा ट्रैफिक होता तो मैं भी शाम को घर जल्दी पहुँच जाता।",
+    "pose": {
+     "M": "idle"
+    },
+    "ex": {
+     "M": "neutral"
+    }
+   },
+   {
+    "who": "N",
+    "text": "उसी वक्त रमेश के फोन पर मम्मी की कॉल और पत्नी का मैसेज आ गया।"
+   },
+   {
+    "who": "R",
+    "text": "सर, मम्मी की कॉल आ रही है, शायद दही-जमावट का पूछ रही हैं।",
+    "pose": {
+     "R": "walkPhone"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📞",
+     "text": "Incoming Call: Mummy"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "M",
+    "text": "दही बाद में जमाना, पहले ये रिपोर्ट डेस्क पर रखो।",
+    "pose": {
+     "M": "pointUp"
+    },
+    "ex": {
+     "M": "angry"
+    }
+   },
+   {
+    "who": "R",
+    "text": "जैसे ही मैं बाहर निकला, फोन शटडाउन हो गया और चार्जर भी गायब!",
+    "set": "office",
+    "cast": [
+     "R"
+    ],
+    "pose": {
+     "R": "slump"
+    },
+    "ex": {
+     "R": "sad"
+    },
+    "show": {
+     "icon": "⚫",
+     "text": "Phone Switched Off"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "आगे क्या हुआ? जानने के लिए फॉलो करो — Part 3 जल्दी आ रहा है!"
+   }
+  ],
+  "series": "kahani",
+  "sname": "GTA 6 की EMI और रमेश का जुगाड़",
+  "badge": "GTA 6 KA CHAKKAR"
+ },
+ {
+  "id": "kahani-3-aunty-aur-dadi-ki-entry",
+  "ep": "Part 3",
+  "title": "GTA 6 की EMI | Part 3 | आंटी और दादी ने पकड़ा रमेश का राज! 👵 #Shorts",
+  "description": "फोन बंद होने के बाद रमेश घर पहुँचा, जहाँ आंटी और दादी पहले से इंतज़ार कर रही थीं।\nदेखो सोसाइटी में क्या बवाल मचता है।\n#RameshKiKahaniya #DesiFamily #GTA6 #ComedyReels #HindiStory",
+  "caption": "दादी और पड़ोसी आंटी के बीच रमेश की पोल खुल जाएगी? कमेंट में बताओ! आगे क्या हुआ? जानने के लिए फॉलो करो — Part 4 जल्दी आ रहा है! #RameshKiKahaniya #FamilyComedy #HindiShorts",
+  "lines": [
+   {
+    "who": "R",
+    "text": "बॉस से बचकर घर पहुँचा तो सोसाइटी के बाहर ही पहला झटका मिल गया।",
+    "set": "society (society corridor)",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "worried"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📦",
+     "text": "Parcel Delivered at Gate"
+    }
+   },
+   {
+    "who": "A",
+    "text": "अरे रमेश बेटा, ये बड़ा सा डिब्बा किस चीज़ का आया है?",
+    "pose": {
+     "A": "point"
+    },
+    "ex": {
+     "A": "smile"
+    },
+    "show": {
+     "icon": "👀",
+     "text": "Aunty Checking Label"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "आंटी जी, ये... ये वाटर प्यूरीफायर का फिल्टर बॉक्स है।",
+    "pose": {
+     "R": "explain"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "burst": "PANIC MODE!"
+   },
+   {
+    "who": "A",
+    "text": "अच्छा, तो पानी साफ करने वाले बॉक्स से गेमिंग की आवाज़ आती है?",
+    "pose": {
+     "A": "idea"
+    },
+    "ex": {
+     "A": "evil"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "आंटी की बात सुनकर रमेश हड़बड़ाया और सीधा हॉल के अंदर भागा।"
+   },
+   {
+    "who": "D",
+    "text": "रमेश, सुनते हो, तुम्हारी पत्नी ने बैंक का कागज़ दिखाया है।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D",
+     "W"
+    ],
+    "pose": {
+     "D": "point"
+    },
+    "ex": {
+     "D": "neutral"
+    },
+    "show": {
+     "icon": "📄",
+     "text": "Bank Statement Page"
+    }
+   },
+   {
+    "who": "W",
+    "text": "दादी जी, इन्हें तो गेम का इतना चस्का है कि सब्जी का बजट भूल गए।",
+    "pose": {
+     "W": "explain"
+    },
+    "ex": {
+     "W": "angry"
+    }
+   },
+   {
+    "who": "D",
+    "text": "अरे गेम खेलने में क्या बुराई है, बस उधार लेकर हवा में मत उड़ो।",
+    "pose": {
+     "D": "wave"
+    },
+    "ex": {
+     "D": "smile"
+    },
+    "burst": "DADI LOGIC!"
+   },
+   {
+    "who": "R",
+    "text": "दादी, मैंने उधार नहीं लिया, बस दोस्त के साथ मिलकर प्लान बनाया था।",
+    "pose": {
+     "R": "ear"
+    },
+    "ex": {
+     "R": "sad"
+    }
+   },
+   {
+    "who": "W",
+    "text": "अच्छा, तो अब तुम्हारा दोस्त भी इस जुगाड़ में हिस्सेदार है?",
+    "pose": {
+     "W": "shock"
+    },
+    "ex": {
+     "W": "shock"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "बाहर से आंटी ने भी घंटी बजा दी, लगा पूरा मोहल्ला जुट गया है!",
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🔔",
+     "text": "Doorbell Ringing Nonstop"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "आगे क्या हुआ? जानने के लिए फॉलो करो — Part 4 जल्दी आ रहा है!"
+   }
+  ],
+  "series": "kahani",
+  "sname": "GTA 6 की EMI और रमेश का जुगाड़",
+  "badge": "GTA 6 KA CHAKKAR"
+ },
+ {
+  "id": "kahani-4-dost-ka-bakra-aur-naya-twist",
+  "ep": "Part 4",
+  "title": "GTA 6 की EMI | Part 4 | दोस्त निकला असली मास्टरमाइंड? 😱 #Shorts",
+  "description": "घर में हंगामे के बीच रमेश ने दोस्त को बुलाया, लेकिन वहाँ नया राज खुल गया।\nदेखो किसकी EMI किसके नाम निकली।\n#RameshKiKahaniya #PlotTwist #GTA6 #HindiComedy #ReelSeries",
+  "caption": "दोस्त ने ऐसा क्या किया कि रमेश दंग रह गया? कमेंट में गेस करो! आगे क्या हुआ? जानने के लिए फॉलो करो — Part 5 जल्दी आ रहा है! #RameshKiKahaniya #TwistAlert #HindiShorts",
+  "lines": [
+   {
+    "who": "R",
+    "text": "घर के तूफान में मैंने दोस्त को बुलाया कि आकर सच संभाले।",
+    "set": "home",
+    "cast": [
+     "R",
+     "F",
+     "W"
+    ],
+    "pose": {
+     "R": "worried"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "🚪",
+     "text": "Friend Arrives at Home"
+    }
+   },
+   {
+    "who": "F",
+    "text": "भाई, टेंशन मत ले, मैं हूँ ना, सब सेट कर दूँगा।",
+    "pose": {
+     "F": "cheer"
+    },
+    "ex": {
+     "F": "smile"
+    },
+    "burst": "HERO ENTRY?"
+   },
+   {
+    "who": "W",
+    "text": "तुम वही हो जिसने इन्हें EMI का आइडिया दिया था?",
+    "pose": {
+     "W": "point"
+    },
+    "ex": {
+     "W": "angry"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "F",
+    "text": "जी भाभी, पर असली बात ये है कि कंसोल मेरे नाम पर बुक हुआ है।",
+    "pose": {
+     "F": "explain"
+    },
+    "ex": {
+     "F": "shock"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "Order Name: Friend's ID"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "क्या बोल रहा है तू, पैसे तो मेरे अकाउंट से कटे थे!",
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "shock"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "दोस्त ने फोन दिखाया तो पता चला कि वो सिर्फ रिफंडेबल होल्ड अमाउंट था।"
+   },
+   {
+    "who": "F",
+    "text": "भाई, तेरा कार्ड लिमिट चेक कर रहा था, पैसा वापस आ जाएगा।",
+    "pose": {
+     "F": "wave"
+    },
+    "ex": {
+     "F": "smile"
+    },
+    "show": {
+     "icon": "↩️",
+     "text": "Refund Processing: ₹0 Due"
+    }
+   },
+   {
+    "who": "W",
+    "text": "मतलब तुम दोनों ने मिलकर घर में फालतू का ड्रामा किया?",
+    "pose": {
+     "W": "angry"
+    },
+    "ex": {
+     "W": "angry"
+    }
+   },
+   {
+    "who": "R",
+    "text": "हाँ पर... फिर वो बक्सा किसका है जो दरवाज़े पर रखा है?",
+    "pose": {
+     "R": "pointUp"
+    },
+    "ex": {
+     "R": "worried"
+    },
+    "show": {
+     "icon": "📦",
+     "text": "Mystery Box Outside"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "सबने मिलकर बक्सा खोला तो अंदर से कुछ ऐसा निकला जिसकी उम्मीद नहीं थी।"
+   },
+   {
+    "who": "W",
+    "text": "अरे ये तो तुम्हारे जन्मदिन का सरप्राइज है, पागल इंसान!",
+    "pose": {
+     "W": "happy"
+    },
+    "ex": {
+     "W": "happy"
+    },
+    "show": {
+     "icon": "🎁",
+     "text": "Birthday Gift Tag"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "आगे क्या हुआ? जानने के लिए फॉलो करो — Part 5 जल्दी आ रहा है!"
+   }
+  ],
+  "series": "kahani",
+  "sname": "GTA 6 की EMI और रमेश का जुगाड़",
+  "badge": "GTA 6 KA CHAKKAR"
+ },
+ {
+  "id": "kahani-5-climax-aur-pyara-payoff",
+  "ep": "Part 5",
+  "title": "GTA 6 की EMI | Part 5 | असली ट्विस्ट और दिल छू लेने वाला एंड! ❤️ #Shorts",
+  "description": "आखिरी पार्ट में रमेश के जुगाड़, बर्थडे सरप्राइज और गेमिंग के सपने का मज़ेदार अंत।\nपूरी कहानी देखकर कमेंट में ज़रूर बताएं।\n#RameshKiKahaniya #GTA6 #HappyEnding #HindiComedy #ReelFinale",
+  "caption": "रमेश का ये एंड आपको कैसा लगा? क्या आप भी गेम या गैजेट के लिए ऐसा जुगाड़ करते हैं? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #DesiComedy #HindiReels",
+  "lines": [
+   {
+    "who": "R",
+    "text": "आखिरी पार्ट में सच सामने आया कि मैं बेवजह ही डर रहा था।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W",
+     "D"
+    ],
+    "pose": {
+     "R": "shock"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "🎉",
+     "text": "Birthday Surprise Revealed"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "मैंने पिछले महीने से थोड़ा-थोड़ा बचाया था ताकि तुम्हारा सपना पूरा हो।",
+    "pose": {
+     "W": "smile"
+    },
+    "ex": {
+     "W": "happy"
+    },
+    "show": {
+     "icon": "🐷",
+     "text": "Secret Savings Jar"
+    }
+   },
+   {
+    "who": "D",
+    "text": "देखा रमेश, परिवार साथ हो तो हर जुगाड़ कामयाब हो जाता है।",
+    "pose": {
+     "D": "cheer"
+    },
+    "ex": {
+     "D": "smile"
+    },
+    "burst": "SWEET TWIST!"
+   },
+   {
+    "who": "R",
+    "text": "यार, मैं तो कंजूस बनकर बैठा था और यहाँ पूरा प्लान चल रहा था।",
+    "pose": {
+     "R": "slump"
+    },
+    "ex": {
+     "R": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "उसी वक्त दोस्त ने भी आकर अपना शेयर जोड़ दिया और महफ़िल जम गई।"
+   },
+   {
+    "who": "F",
+    "text": "भाई, अब GTA 6 आए या कोई भी गेम, वीकेंड पक्का है।",
+    "set": "gaming (TV pe game)",
+    "cast": [
+     "R",
+     "F",
+     "W"
+    ],
+    "pose": {
+     "F": "cheer"
+    },
+    "ex": {
+     "F": "happy"
+    },
+    "show": {
+     "icon": "🕹️",
+     "text": "Weekend Gaming Setup Ready"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "हाँ, पर पहले एक घंटा साथ में चाय और स्नैक्स होंगे।",
+    "pose": {
+     "W": "point"
+    },
+    "ex": {
+     "W": "smile"
+    },
+    "show": {
+     "icon": "☕",
+     "text": "Chai & Snacks Break"
+    }
+   },
+   {
+    "who": "R",
+    "text": "चाय के साथ गेमिंग हो तो कौन मना करेगा, ये तो बोनस है!",
+    "pose": {
+     "R": "cheer"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "burst": "BEST BIRTHDAY!"
+   },
+   {
+    "who": "D",
+    "text": "बस शोर इतना मत मचाना कि पड़ोसी आंटी फिर दरवाज़ा खटखटाएं।",
+    "pose": {
+     "D": "wave"
+    },
+    "ex": {
+     "D": "smile"
+    }
+   },
+   {
+    "who": "R",
+    "text": "असली गेम तो ज़िंदगी है, जहाँ हर मुसीबत के बाद प्यार मिलता है।",
+    "pose": {
+     "R": "explain"
+    },
+    "ex": {
+     "R": "happy"
+    },
+    "show": {
+     "icon": "❤️",
+     "text": "Family First Always"
+    }
+   },
+   {
+    "who": "N",
+    "text": "तुम्हारे हिसाब से रमेश का सबसे मज़ेदार जुगाड़ कौन सा था? ऐसी और कहानियों के लिए फॉलो करो!"
+   }
+  ],
+  "series": "kahani",
+  "sname": "GTA 6 की EMI और रमेश का जुगाड़",
+  "badge": "GTA 6 KA CHAKKAR"
+ }
+]
