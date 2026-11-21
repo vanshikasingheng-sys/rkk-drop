@@ -31,7 +31,7 @@ JSON FORMAT — sirf valid JSON array, koi aur text nahi:
   "lines":[{"who":"N","text":"...","set":"society","cast":["R","B"],"pose":{"R":"shock"},"ex":{"R":"shock"},"show":{"icon":"✉️","text":"किसी को मत बताना"},"fx":["light"]}]}]
 
 CODES:
-- who: N=Narrator, R=Ramesh, B=AI Robot, W=Wife, A=Padosan Aunty, K=Chowkidar Kaka, M=Manager, F=Dost, D=Dadi, U=Rishtedar Uncle, C=Bachcha. Ek reel me Narrator + max 3 characters.
+- who: N=Narrator, R=Ramesh, B=AI Robot, W=Wife, A=Padosan Aunty, K=Chowkidar Kaka, M=Manager, F=Dost, D=Dadi, U=Rishtedar Uncle, C=Bachcha. Ek reel me Narrator + max 2 characters (voice limit ki wajah se — zyada log ho to scene me dikha sakte ho par bolein sirf 2).
 - text: sirf bola jaane wala Hindi (Devanagari). English words (GTA, AI, OTP, EMI) Latin me. Brackets/stage directions kabhi nahi.
 - set (scene badle tab): bedroom, home, hall (raat), room (raat), kitchen (raat), store, door (andhera corridor), society (society corridor), office, cabin (boss cabin), gaming (TV pe game), stadium.
 - cast (jab screen pe log badlein): max 3 codes.
