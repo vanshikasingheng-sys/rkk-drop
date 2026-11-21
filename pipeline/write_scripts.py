@@ -24,15 +24,17 @@ def brief():
 def read_ideas():
     if not os.path.exists(IDEAS): return {}, []
     lines = open(IDEAS, encoding="utf-8").read().split("\n")
-    out, raw = {"flat7": [], "ai": [], "comedy": []}, []
+    out, raw = {"flat7": [], "ai": [], "comedy": [], "dil": []}, []
     in_new = True
     for ln in lines:
         if ln.strip().lower().startswith("## used"): in_new = False
         m = re.match(r"\s*[-*]\s+(.*\S)", ln)
         if in_new and m:
             t = m.group(1); k = "comedy"
-            mm = re.match(r"(flat7|ai|comedy)\s*:\s*(.*)", t, re.I)
-            if mm: k, t = mm.group(1).lower(), mm.group(2)
+            mm = re.match(r"(flat7|ai|comedy|dil|emotional|sad)\s*:\s*(.*)", t, re.I)
+            if mm:
+                k, t = mm.group(1).lower(), mm.group(2)
+                if k in ("emotional", "sad"): k = "dil"
             out[k].append(t); raw.append(ln)
     return out, raw
 
@@ -74,7 +76,7 @@ def clean(items, series, start):
         s["series"] = series
         num = start + n
         slug = re.sub(r"[^a-z0-9]+", "-", str(s.get("id", "")).lower()).strip("-")
-        slug = re.sub(r"^(flat7|ai|comedy)-\d+-?", "", slug) or "reel"
+        slug = re.sub(r"^(flat7|ai|comedy|dil)-\d+-?", "", slug) or "reel"
         s["id"] = "%s-%d-%s" % (series, num, slug[:40])
         s["ep"] = ("Part %d" % num) if series == "flat7" else (("EP %d" % num) if series == "ai" else "")
         try:
@@ -85,7 +87,7 @@ def clean(items, series, start):
     return good
 
 def history():
-    by = {"flat7": [], "ai": [], "comedy": []}
+    by = {"flat7": [], "ai": [], "comedy": [], "dil": []}
     for s in run_next.queue(): by.setdefault(s.get("series", "comedy"), []).append(s)
     return by
 
@@ -105,6 +107,16 @@ def task_text(series, n, start, by, ideas):
         return ("ABHI YE BATCH DO (sirf JSON array): series \"ai\" — \"Ramesh vs AI: Sach Ka Scanner\", EP %d se EP %d. "
                 "Har reel ek alag mazedaar kahani: Ramesh ek real AI/tech situation me phasta hai, AI Robot (B) ek SACH, kaam ki tip deta hai, end me twist. "
                 "%s Pehle ho chuke (repeat mat karna): %s") % (start, start + n - 1, topics, used_titles)
+    if series == "dil":
+        topics = ("Topics (owner ke ideas, pehle ye): " + " | ".join(ideas)) if ideas else \
+                 ("Topics khud chuno — jo emotional reels sabse zyada dekhi/share hoti hain: naukri jaana, maa-papa ki qurbani, "
+                  "middle-class sangharsh, dosti, budhe maa-baap, bachchon ki masoomiyat, struggle se success, ajnabi ki madad ka phal, tyohaar par akelapan.")
+        return ("ABHI YE BATCH DO (sirf JSON array): series \"dil\" — \"Dil Se\" emotional kahaniyan, %d alag standalone reels (number %d se %d). "
+                "Har kahani: line 1 me dard bhara hook -> Ramesh ki mushkil/dukh dheere dheere badhe -> aakhri se pehle line me dil chhoo lene wala twist "
+                "(umeed, pyaar ya kisi ki qurbani ka sach). Rona-dhona nahi, sachchi aur relatable feel. Maut, khoon, hinsa ya aatmahatya bilkul nahi. "
+                "Characters: Maa ke liye D, Papa ke liye U ya K, beti/beta C, patni W. "
+                "Aakhri line = ek comment-sawaal + \"अगर कहानी दिल को छू गई, तो ऐसी और कहानियों के लिए फॉलो करो!\" "
+                "%s Pehle ho chuke (repeat mat karna): %s") % (n, start, start + n - 1, topics, used_titles)
     topics = ("Topics (owner ke ideas, pehle ye): " + " | ".join(ideas)) if ideas else \
              "Topics khud chuno: abhi jo trending/relatable hai (festival, cricket, office, shaadi, family, society, naya phone/game, mausam)."
     return ("ABHI YE BATCH DO (sirf JSON array): series \"comedy\", %d alag standalone comedy kahaniyan (number %d se %d). "
@@ -124,7 +136,7 @@ def main():
     folder = os.path.join(ROOT, "weeks", "auto-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M"))
     os.makedirs(folder, exist_ok=True)
     wrote = 0
-    for series in ("flat7", "ai", "comedy"):
+    for series in ("flat7", "ai", "comedy", "dil"):
         prev = by.get(series, [])
         nums = [int(m.group(1)) for s in prev for m in [re.match(r"%s-(\d+)" % series, s["id"])] if m]
         start = (max(nums) + 1) if nums else 1

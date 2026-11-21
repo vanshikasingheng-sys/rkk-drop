@@ -19,20 +19,26 @@ def load_state():
 def save_state(s): json.dump(s, open(STATE, "w"), ensure_ascii=False, indent=1)
 
 def queue():
-    """Reels in posting order: week folders sorted; inside a week one of each series per day (flat7, ai, comedy)."""
-    order = []
+    """Reels in posting order: week folders sorted; inside a week one of each series per day (flat7, ai, comedy).
+    Emotional "dil" reels are pooled from all folders and slotted in as every 4th reel."""
+    order, dil = [], []
     for wk in sorted(glob.glob(os.path.join(ROOT, "weeks", "*"))):
         series = {}
         for f in sorted(glob.glob(os.path.join(wk, "*.json"))):
             data = json.load(open(f))
             for spec in (data if isinstance(data, list) else [data]):
+                if spec.get("series") == "dil": dil.append(spec); continue
                 series.setdefault(spec.get("series", "comedy"), []).append(spec)
         keys = [k for k in ("flat7", "ai", "comedy") if k in series] + [k for k in series if k not in ("flat7", "ai", "comedy")]
         n = max(len(v) for v in series.values()) if series else 0
         for i in range(n):
             for k in keys:
                 if i < len(series[k]): order.append(series[k][i])
-    return order
+    out = []
+    for n, spec in enumerate(order):
+        out.append(spec)
+        if n % 3 == 2 and dil: out.append(dil.pop(0))
+    return out + dil
 
 def post(spec, url, hook):
     payload = {"video_url": url, "title": spec.get("title", "")[:100], "description": spec.get("description", ""),
