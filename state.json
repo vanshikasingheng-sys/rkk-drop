@@ -1,10 +1,12 @@
 {
  "posted": [
   "flat7-1-light-in-window",
-  "ai-1-boss-deepfake-leave"
+  "ai-1-boss-deepfake-leave",
+  "comedy-1-rishtedaar-interview"
  ],
  "days": {
-  "2026-11-20": 3
+  "2026-11-20": 3,
+  "2026-11-21": 1
  },
  "drop_files": [],
  "log": [
@@ -21,6 +23,11 @@
    "id": "ai-1-boss-deepfake-leave",
    "at": "2026-11-20T23:06+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_ai-1-boss-deepfake-leave.mp4"
+  },
+  {
+   "id": "comedy-1-rishtedaar-interview",
+   "at": "2026-11-21T11:43+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_comedy-1-rishtedaar-interview.mp4"
   }
  ]
 }
