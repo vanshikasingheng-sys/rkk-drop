@@ -10,9 +10,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_reel, run_next
 
 ROOT = build_reel.ROOT
+sys.stdout.reconfigure(line_buffering=True)
 LOW_WATER = 9          # write a new batch when fewer than this many reels are waiting
 PER_SERIES = 7
-MODELS = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-flash-lite"]
+MODELS = ["gemini-3.1-pro-preview", "gemini-3.1-pro", "gemini-pro-latest", "gemini-flash-latest", "gemini-flash-lite-latest"]
 IDEAS = os.path.join(ROOT, "ideas.md")
 
 def brief():
