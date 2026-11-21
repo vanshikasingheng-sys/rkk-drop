@@ -2,11 +2,12 @@
  "posted": [
   "flat7-1-light-in-window",
   "ai-1-boss-deepfake-leave",
-  "comedy-1-rishtedaar-interview"
+  "comedy-1-rishtedaar-interview",
+  "kahani-1-gta-6-emi-jugaad"
  ],
  "days": {
   "2026-11-20": 3,
-  "2026-11-21": 1
+  "2026-11-21": 2
  },
  "drop_files": [],
  "log": [
@@ -28,6 +29,11 @@
    "id": "comedy-1-rishtedaar-interview",
    "at": "2026-11-21T11:43+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_comedy-1-rishtedaar-interview.mp4"
+  },
+  {
+   "id": "kahani-1-gta-6-emi-jugaad",
+   "at": "2026-11-21T17:31+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_kahani-1-gta-6-emi-jugaad.mp4"
   }
  ]
 }
