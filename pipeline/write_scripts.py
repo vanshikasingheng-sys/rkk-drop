@@ -12,7 +12,7 @@ import build_reel, run_next
 ROOT = build_reel.ROOT
 LOW_WATER = 9          # write a new batch when fewer than this many reels are waiting
 PER_SERIES = 7
-MODELS = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-flash-latest"]
+MODELS = ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-flash-lite"]
 IDEAS = os.path.join(ROOT, "ideas.md")
 
 def brief():
@@ -46,9 +46,9 @@ def mark_used(raw):
 def gemini(prompt, key):
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.9}}
-    last = ""
-    for m in MODELS:
-        for a in range(3):
+    errs = []
+    for rnd in range(3):                       # 3 rounds over all models; busy models (503) often free up
+        for m in MODELS:
             try:
                 req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (m, key),
                                              data=json.dumps(body).encode(), headers={"Content-Type": "application/json"}, method="POST")
@@ -57,12 +57,15 @@ def gemini(prompt, key):
                 data = json.loads(txt[txt.find("["): txt.rfind("]") + 1])
                 print("   written by", m); return data
             except urllib.error.HTTPError as e:
-                last = "%s HTTP %s" % (m, e.code)
-                if e.code == 429: time.sleep(30); continue
-                break
+                msg = e.read().decode("utf-8", "ignore")
+                msg = re.sub(r"key=[\w-]+", "key=***", msg)
+                errs.append("%s HTTP %s %s" % (m, e.code, re.sub(r"\s+", " ", msg)[:160]))
+                print("   ", errs[-1])
+                if e.code in (429, 500, 503, 504): time.sleep(20)
             except Exception as e:
-                last = "%s %s" % (m, str(e)[:100]); time.sleep(5)
-    raise RuntimeError("Gemini failed: " + last)
+                errs.append("%s %s" % (m, str(e)[:120])); print("   ", errs[-1]); time.sleep(5)
+        time.sleep(60)
+    raise RuntimeError("Gemini failed: " + " | ".join(errs[-3:]))
 
 def clean(items, series, start):
     good = []
@@ -117,7 +120,7 @@ def main():
     key = os.environ.get("GEMINI_KEY", "").strip()
     if not key: raise SystemExit("GEMINI_KEY not set")
     by = history(); ideas, raw = read_ideas()
-    folder = os.path.join(ROOT, "weeks", "auto-" + datetime.datetime.utcnow().strftime("%Y%m%d-%H%M"))
+    folder = os.path.join(ROOT, "weeks", "auto-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M"))
     os.makedirs(folder, exist_ok=True)
     wrote = 0
     for series in ("flat7", "ai", "comedy"):
