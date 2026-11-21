@@ -1,0 +1,87 @@
+name: RKK auto reel
+on:
+  schedule:
+    # 3 slots a day (UTC). Each scheduled run also waits a random 0-80 min, so post times vary.
+    - cron: "17 4 * * *"    # ~10:00-11:20 IST
+    - cron: "41 10 * * *"   # ~16:10-17:30 IST
+    - cron: "23 15 * * *"   # ~20:50-22:10 IST
+  workflow_dispatch:
+    inputs:
+      reel_id: {description: "Build a specific reel id (optional)", required: false, default: ""}
+      dry_run: {description: "Only build (no posting)", type: boolean, default: false}
+      write_only: {description: "Only write new scripts now (test the auto-writer)", type: boolean, default: false}
+permissions:
+  contents: write
+concurrency: {group: rkk-post, cancel-in-progress: false}
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - name: Random wait
+        if: github.event_name == 'schedule'
+        run: sleep $(( RANDOM % 4800 ))
+      - name: Setup
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji > /dev/null
+          pip install -q numpy playwright
+          python -m playwright install --with-deps chromium > /dev/null
+      - name: Restore voice cache (keeps finished voice parts if a run hit the daily limit)
+        uses: actions/cache@v4
+        with:
+          path: work
+          key: rkk-work-${{ github.run_id }}
+          restore-keys: rkk-work-
+      - name: Auto-write new scripts when the queue is low
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: |
+          git pull -q || true
+          if [ "${{ inputs.write_only }}" = "true" ]; then python pipeline/write_scripts.py --force; else python pipeline/write_scripts.py || echo "writer skipped"; fi
+      - name: Build next reel
+        if: inputs.write_only != true
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: |
+          git pull -q || true
+          if [ -n "${{ inputs.reel_id }}" ]; then python pipeline/run_next.py build --id "${{ inputs.reel_id }}"; else python pipeline/run_next.py build; fi
+      - name: Publish video file (media branch)
+        if: hashFiles('work/ready.json') != '' && inputs.write_only != true
+        run: |
+          NAME=$(python -c "import json;print(json.load(open('work/ready.json'))['name'])")
+          FINAL=$(python -c "import json;print(json.load(open('work/ready.json'))['final'])")
+          mkdir -p /tmp/media && cp "$FINAL" "/tmp/media/$NAME" && cd /tmp/media
+          git init -q && git checkout -q -b media && git add . 
+          git -c user.name=rkk-bot -c user.email=rkk-bot@users.noreply.github.com commit -qm "video $NAME"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" media
+          sleep 25
+      - name: Post (YouTube + Instagram + Facebook via Make)
+        if: hashFiles('work/ready.json') != '' && inputs.dry_run != true && inputs.write_only != true
+        env:
+          MAKE_WEBHOOK: ${{ secrets.MAKE_WEBHOOK }}
+        run: python pipeline/run_next.py post
+      - name: Keep Flat No. 7 parts for the weekly long video
+        if: success() && hashFiles('work/ready.json') != '' && inputs.dry_run != true && inputs.write_only != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ID=$(python -c "import json;print(json.load(open('work/ready.json'))['id'])")
+          case "$ID" in flat7-*)
+            FINAL=$(python -c "import json;print(json.load(open('work/ready.json'))['final'])")
+            cp "$FINAL" "/tmp/rkk_$ID.mp4"
+            gh release view flat7-parts >/dev/null 2>&1 || gh release create flat7-parts --title "Flat No. 7 parts" --notes "Posted parts, used for the weekly long video."
+            gh release upload flat7-parts "/tmp/rkk_$ID.mp4" --clobber ;;
+          esac
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "rkk-bot"; git config user.email "rkk-bot@users.noreply.github.com"
+          KIND=reel; [ "${{ inputs.write_only }}" = "true" ] && KIND=write
+          python pipeline/status.py "${{ job.status }}" $KIND || true
+          git add state.json status.json weeks ideas.md 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "auto: state/scripts update" && git pull -q --rebase && git push -q)
+      - name: Keep the built video (download from the run page)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: reel, path: work/*/final.mp4, retention-days: 5, if-no-files-found: ignore}
