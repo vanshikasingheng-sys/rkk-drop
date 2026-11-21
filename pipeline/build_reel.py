@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build one RKK reel from a spec: voice (Gemini TTS) -> captions timeline -> render -> music/SFX -> outro.
 Usage: python3 pipeline/build_reel.py <spec.json> [--skip-tts]
-Spec: {"id","series":"flat7|ai|comedy|dil","ep","title","description","caption",
+Spec: {"id","series":"flat7|ai|comedy|dil|kahani","ep","title","description","caption",
        "lines":[{"who","text","set","cast","pose","ex","burst","card","fx"}]}
 Env: GEMINI_KEY (never printed).  Output: work/<id>/final.mp4
 """
@@ -141,7 +141,8 @@ def align(spec, wd):
 
 # ---------------------------------------------------------------- audio bed
 MUSIC = {"flat7": [["dark", 0], ["tense", "LAST"]], "ai": [["techno", 0], ["warm", "LAST"]], "comedy": [["groove", 0], ["warm", "LAST"]],
-         "dil": [["lofi", 0], ["warm", "LAST"]]}
+         "dil": [["lofi", 0], ["warm", "LAST"]],
+         "kahani": [["groove", 0], ["tense", "LAST"]]}
 def audio(spec, wd, TL):
     LS = [l['start'] for l in TL['lines']]; last = len(LS) - 1
     mus = [[name, ("L%d" % last) if at == "LAST" else at] for name, at in MUSIC.get(spec.get("series"), MUSIC["comedy"])]
