@@ -1,0 +1,54 @@
+name: RKK weekly long video
+on:
+  schedule:
+    - cron: "37 12 * * 0"   # Sunday ~18:07 IST
+  workflow_dispatch:
+    inputs:
+      dry_run: {description: "Only build (no posting)", type: boolean, default: false}
+permissions:
+  contents: write
+concurrency: {group: rkk-post, cancel-in-progress: false}
+jobs:
+  long:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Restore built reels (fallback for parts not in the release)
+        uses: actions/cache/restore@v4
+        with:
+          path: work
+          key: rkk-work-none
+          restore-keys: rkk-work-
+      - name: Build long video
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: rm -f work/long_ready.json; git pull -q || true; python pipeline/make_long.py build
+      - name: Publish video file (media branch)
+        if: hashFiles('work/long_ready.json') != ''
+        run: |
+          NAME=$(python -c "import json;print(json.load(open('work/long_ready.json'))['name'])")
+          FINAL=$(python -c "import json;print(json.load(open('work/long_ready.json'))['final'])")
+          mkdir -p /tmp/media && cp "$FINAL" "/tmp/media/$NAME" && cd /tmp/media
+          git init -q && git checkout -q -b media && git add .
+          git -c user.name=rkk-bot -c user.email=rkk-bot@users.noreply.github.com commit -qm "long $NAME"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" media
+          sleep 25
+      - name: Post to YouTube (via Make)
+        if: hashFiles('work/long_ready.json') != '' && inputs.dry_run != true
+        env:
+          MAKE_WEBHOOK: ${{ secrets.MAKE_WEBHOOK }}
+        run: python pipeline/make_long.py post
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "rkk-bot"; git config user.email "rkk-bot@users.noreply.github.com"
+          python pipeline/status.py "${{ job.status }}" long || true
+          git add state.json status.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "auto: long video state" && git pull -q --rebase && git push -q)
+      - name: Keep the long video (download from the run page)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: long, path: work/long/long_*.mp4, retention-days: 7, if-no-files-found: ignore}
