@@ -6,10 +6,11 @@ const SERIES={
   flat7: {name:'FLAT NO. 7', sub:'सस्पेंस', col:'#e63946', fill:'#1a0d12', ink:'#ff6b6b', txt:'#ffe9e9', hl:'#ffd23f'},
   ai:    {name:'RAMESH vs AI', sub:'सच का स्कैनर', col:'#0096d6', fill:'#071a2a', ink:'#4dc3ff', txt:'#e6f6ff', hl:'#7cff9b'},
   comedy:{name:'COMEDY', sub:'कॉमेडी', col:'#8a3bff', fill:'#180a38', ink:'#b58bff', txt:'#ece3ff', hl:'#7cff9b'},
+  kahani:{name:'RAMESH KI KAHANI', sub:'नई सीरीज़', col:'#ff4d6d', fill:'#220b14', ink:'#ff8fa3', txt:'#ffe9ee', hl:'#ffd23f'},
   dil:   {name:'DIL SE', sub:'दिल की कहानी', col:'#ff8c42', fill:'#24120a', ink:'#ffb07a', txt:'#fff0e3', hl:'#ffd23f'},
 };
 const SER=SERIES[SPEC.series]||SERIES.comedy;
-const META={name:SER.name, sub:SER.sub, ep:SPEC.ep||'', col:SER.col};
+const META={name:SPEC.badge||SER.name, sub:SPEC.sname||SER.sub, ep:SPEC.ep||'', col:SER.col};
 const THEME={hl:SER.hl};
 const CAPS={fill:SER.fill,ink:SER.ink,lw:6,sh:10,shc:'#000',txt:SER.txt,hl:SER.hl,hls:SER.fill,r:26};
 const CHPS={fill:SER.fill,ink:SER.ink,sh:'#000',a:SER.txt,b:SER.ink,r:.5};
