@@ -55,9 +55,16 @@
    "result": "success",
    "reel": "comedy-2-iphone-emi-flex",
    "run": "45017067896"
+  },
+  {
+   "at": "2026-11-22T19:05+05:30",
+   "kind": "long",
+   "result": "success",
+   "reel": "comedy-2-iphone-emi-flex",
+   "run": "45028289210"
   }
  ],
- "updated": "2026-11-22T17:30+05:30",
+ "updated": "2026-11-22T19:05+05:30",
  "waiting": 66,
  "next": [
   "kahani-2-boss-aur-5-percent-battery",
