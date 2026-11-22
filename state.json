@@ -6,12 +6,13 @@
   "kahani-1-gta-6-emi-jugaad",
   "flat7-2-mysterious-note",
   "ai-2-son-voice-clone",
-  "comedy-2-iphone-emi-flex"
+  "comedy-2-iphone-emi-flex",
+  "kahani-2-boss-aur-5-percent-battery"
  ],
  "days": {
   "2026-11-20": 3,
   "2026-11-21": 3,
-  "2026-11-22": 2
+  "2026-11-22": 3
  },
  "drop_files": [],
  "log": [
@@ -53,6 +54,11 @@
    "id": "comedy-2-iphone-emi-flex",
    "at": "2026-11-22T17:28+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_comedy-2-iphone-emi-flex.mp4"
+  },
+  {
+   "id": "kahani-2-boss-aur-5-percent-battery",
+   "at": "2026-11-22T21:58+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_kahani-2-boss-aur-5-percent-battery.mp4"
   }
  ]
 }
