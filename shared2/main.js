@@ -66,7 +66,7 @@ function drawReel(T){
   world(T);compose();
   if(window.afterWorld)afterWorld(T);
   if(window.LOOK&&LOOK.over)LOOK.over(T);
-  if(COVER){X.save();X.translate(0,COVER.chipDy==null?150:COVER.chipDy);chip(.9);X.restore();coverTitle()}else if(!(window.LOOK&&LOOK.coverOn&&LOOK.coverOn(T))){chip(T);captions(T)}
+  if(COVER){X.save();X.translate(0,COVER.chipDy==null?150:COVER.chipDy);chip(.9);X.restore();coverTitle()}else if(!(window.LOOK&&LOOK.coverOn&&LOOK.coverOn(T))){if(window.LOOK&&LOOK.chip2)LOOK.chip2(T);else chip(T);captions(T)}
   if(window.LOOK&&LOOK.top)LOOK.top(T);
   if(window.LOOK&&LOOK.frame)LOOK.frame(T);else{X.strokeStyle='#111';X.lineWidth=26;X.strokeRect(0,0,W,H)}
   const fo=clamp((T-(END-.5))/.45,0,1);if(fo>0){X.globalAlpha=fo;X.fillStyle='#111';X.fillRect(0,0,W,H);X.globalAlpha=1}

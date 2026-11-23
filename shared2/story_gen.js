@@ -15,18 +15,13 @@ const META={name:SPEC.badge||SER.name, sub:SPEC.sname||SER.sub, ep:SPEC.ep||'', 
 const SEED=(()=>{let h=0;for(const c of String(SPEC.id||'x'))h=(h*31+c.charCodeAt(0))%100003;return h})();
 const pick=(arr,salt)=>arr[Math.floor(hash(SEED*7.13+salt*3.7)*arr.length)%arr.length];
 const HL=pick(['#ffd23f','#7cff9b','#4dd8ff','#ffd23f','#ff9ecb'],1);
-const STY={cap:pick(['box','outline','white','sticker','bar'],2), capy:pick([1560,1610,1520],3), frame:pick(['double','clean','comic','cine'],4),
+const STY={frame:pick(['none','none','cine'],4),
   grade:pick(['none','warm','cool','none','dusk'],5), trans:pick(['flash','wipe','iris','slide'],6), slots:pick(['std','tight','wide'],7),
   cover:pick(['center','band','sticker'],8), cam:pick(['cinema','cinema','push'],9)};
 const THEME={hl:HL};
-const CAPV={
-  box:{fill:SER.fill,ink:SER.ink,lw:6,sh:10,shc:'#000',txt:SER.txt,hl:HL,hls:SER.fill,r:26},
-  outline:{mode:'none',font:'800 88px "Baloo 2",Arial',size:88,rowh:104,txt:'#fff',ink:'#111',hlw:16,hl:HL,hls:null,sh:0,lw:0},
-  white:{fill:'#fff',ink:'#111',lw:7,sh:12,shc:'#111',txt:'#111',hl:'#fff',hls:null,hlbg:SER.col,r:22},
-  sticker:{fill:'#ffd23f',ink:'#111',lw:8,sh:12,shc:'#111',txt:'#111',hl:SER.col,hls:'#fff',hlw:10,r:18,rot:-.035},
-  bar:{mode:'bar',fill:'rgba(8,8,24,.86)',ink:null,lw:0,sh:0,txt:'#fff',hl:HL,hls:'#000',r:0},
-};
-const CAPS=CAPV[STY.cap];CAPY=STY.capy;
+// v2 rule (17 Nov): captions = small plain text, no box, never over a face; sit in the floor zone
+const CAPS={mode:'none',font:'800 60px "Baloo 2",Arial',size:60,rowh:74,maxw:880,txt:'#fff',ink:'#111',hlw:11,hl:HL,hls:null,sh:0,lw:0,pad:40};
+CAPY=1705;
 const CHPS={fill:SER.fill,ink:SER.ink,sh:'#000',a:SER.txt,b:SER.ink,r:.5};
 PS={ink:'#0a0d2a',lw:9};
 
@@ -48,7 +43,7 @@ const SLOTS=({std:{1:[430],2:[320,770],3:[210,540,870]},tight:{1:[540],2:[380,71
 
 const fxOf=ln=>Array.isArray(ln.fx)?ln.fx:(ln.fx?[ln.fx]:[]);
 function lineAt(T){const N=SPEC.lines.length;let i=0;for(let k=0;k<N;k++){if((k?LS(k):0)<=T)i=k;else break}return i}
-const COVER_T=1.35;
+let COVER_T=1.35;
 function focusX(k,T){const c=CH[k];if(!c)return 540;const st=cstate(c,T);return st&&st.vis>.3?st.x:540}
 function camFor(T){const i=lineAt(T),ln=SPEC.lines[i],t0=i?LS(i):0,t1=Math.max(t0+.5,LE(i)),u=clamp((T-t0)/(t1-t0),0,1);
   const f=fxOf(ln);let z=1+.045*sm(u),cx=540,cy=1050,sx=0,sy=0;
@@ -76,7 +71,7 @@ function normSet(v){if(!v)return null;v=String(v).toLowerCase().trim();if(SETS[v
 let SCENES=[];   // [{t0,t1,set}]
 function setAt(T){let s=SCENES.length?SCENES[0].set:'home';for(const c of SCENES){if(c.t0<=T)s=c.set;else break}return s}
 
-function build(){
+function build(){COVER_T=null;
   const N=SPEC.lines.length, ls=i=>LS(i), le=i=>LE(i);
   let set='home', cast=['R'];
   const tracks={};
@@ -106,6 +101,7 @@ function build(){
     });
     if(CASTDEF[ln.who]) tracks[ln.who].talk.push([t+.05,t1]);
   }
+  COVER_T=clamp(LE(0)+.15,2.0,4.5);
   for(const k of Object.keys(CASTDEF)){
     const tr=tracks[k]; if(!tr.x.length) continue;
     CH[k]={...CASTDEF[k],x:tr.x,face:tr.face,vis:tr.vis,pose:tr.pose,ex:tr.ex,talk:tr.talk,jy:tr.jy,dip:[]};
@@ -119,10 +115,7 @@ window.LOOK={bg(T){applyCam(T);const k=setAt(T),f=SETS[k]||SETS.home;const r=f(T
     {const fx=fxOf(SPEC.lines[lineAt(T)]);if(fx.includes('shadow'))winFx(T,'shadow');else if(fx.includes('light'))winFx(T,'light');}
     return r},cap:CAPS,chip:CHPS,
   frame(T){X.setTransform(1,0,0,1,0,0);
-    if(STY.frame==='double'){X.strokeStyle='#0a0d2a';X.lineWidth=26;X.strokeRect(0,0,W,H);X.strokeStyle=SER.ink;X.lineWidth=5;X.strokeRect(24,24,W-48,H-48)}
-    else if(STY.frame==='clean'){X.strokeStyle='#0a0d2a';X.lineWidth=14;X.strokeRect(0,0,W,H)}
-    else if(STY.frame==='comic'){X.strokeStyle='#111';X.lineWidth=34;X.strokeRect(0,0,W,H);X.fillStyle=SER.col;for(const [x,y] of [[0,0],[W,0],[0,H],[W,H]]){X.beginPath();X.moveTo(x,y);X.lineTo(x+(x?-90:90),y);X.lineTo(x,y+(y?-90:90));X.closePath();X.fill()}}
-    else {X.fillStyle='#000';X.fillRect(0,0,W,46);X.fillRect(0,H-46,W,46);const g=X.createRadialGradient(540,960,500,540,960,1150);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.35)');X.fillStyle=g;X.fillRect(0,0,W,H)}},
+    if(STY.frame==='cine'){const g=X.createRadialGradient(540,900,520,540,960,1200);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.32)');X.fillStyle=g;X.fillRect(0,0,W,H)}},
   over(T){X.setTransform(1,0,0,1,0,0);const i=lineAt(T),ln=SPEC.lines[i],t0=i?LS(i):0,f=fxOf(ln);
     if(STY.grade!=='none'){X.save();X.globalCompositeOperation='soft-light';X.fillStyle=STY.grade==='warm'?'rgba(255,150,60,.35)':STY.grade==='cool'?'rgba(60,140,255,.32)':'rgba(255,90,140,.3)';X.fillRect(0,0,W,H);X.restore()}
     for(const c of SCENES){if(c.t0<=0)continue;const d=T-c.t0;if(d<-.2||d>.35)continue;const u=clamp((d+.2)/.55,0,1);
@@ -132,34 +125,31 @@ window.LOOK={bg(T){applyCam(T);const k=setAt(T),f=SETS[k]||SETS.home;const r=f(T
       else {const k=Math.sin(u*Math.PI);for(let b=0;b<5;b++){X.fillStyle=b%2?'#111':SER.col;X.fillRect(0,b*H/5,W*k*(1-.12*b),H/5)}}}
     if(f.includes('dark')){const g=X.createRadialGradient(540,900,120,540,900,900);g.addColorStop(0,'rgba(0,0,0,.15)');g.addColorStop(1,'rgba(0,0,0,.8)');X.fillStyle=g;X.fillRect(0,0,W,H)}
     if(f.includes('flash')){const a=clamp(1-(T-t0)/.35,0,1);if(a>0){X.fillStyle='rgba(255,255,255,'+(.85*a)+')';X.fillRect(0,0,W,H)}}}};
-function coverText(){let t=String(SPEC.thumb||SPEC.title||'').replace(/#\S+/g,'').trim();
+function coverText(){let t=String(SPEC.hook||SPEC.thumb||(SPEC.lines[0]&&SPEC.lines[0].text)||SPEC.title||'').replace(/#\S+/g,'').trim();
   const em=(t.match(/\p{Extended_Pictographic}/u)||[''])[0];t=t.replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,'').trim();
   const segs=t.split('|').map(x=>x.trim()).filter(x=>x&&!/^part\s*\d+/i.test(x));let txt=segs.length>1?segs[segs.length-1]:(segs[0]||'');
   return {txt,em:em||'😱'}}
 function wrapWords(txt,font,maxw){X.font=font;const ws=txt.split(/\s+/);const out=[];let cur='';for(const w of ws){const t=cur?cur+' '+w:w;if(X.measureText(t).width>maxw&&cur){out.push(cur);cur=w}else cur=t}if(cur)out.push(cur);return out}
-function drawCover(T){const a=T<COVER_T-.25?1:clamp((COVER_T-T)/.25,0,1);if(a<=0)return;const {txt,em}=coverText();
+function drawCover(T){const a=T<COVER_T-.3?1:clamp((COVER_T-T)/.3,0,1);if(a<=0)return;const {txt,em}=coverText();
   X.save();X.setTransform(1,0,0,1,0,0);X.globalAlpha=a;
-  const g=X.createLinearGradient(0,0,0,H);g.addColorStop(0,'rgba(0,0,0,.72)');g.addColorStop(.55,'rgba(0,0,0,.15)');g.addColorStop(1,'rgba(0,0,0,.55)');X.fillStyle=g;X.fillRect(0,0,W,H);
-  // tag: series / story name + part
-  const tag=(META.name+(META.ep?'  •  '+META.ep.toUpperCase():'')).toUpperCase();X.font='400 64px Bangers,Impact,Arial';let tw_=X.measureText(tag).width;let fs=64;if(tw_>900){fs=Math.floor(64*900/tw_);X.font=`400 ${fs}px Bangers,Impact,Arial`;tw_=X.measureText(tag).width}
-  X.save();X.translate(540,170);X.rotate(-.03);X.fillStyle='#111';X.beginPath();X.roundRect(-tw_/2-36+10,-52+10,tw_+72,104,22);X.fill();X.fillStyle=SER.col;X.beginPath();X.roundRect(-tw_/2-36,-52,tw_+72,104,22);X.fill();X.lineWidth=7;X.strokeStyle='#111';X.stroke();
-  X.fillStyle='#fff';X.textAlign='center';X.textBaseline='middle';X.fillText(tag,0,4);X.restore();
-  // title
-  let size=118;let font=`800 ${size}px "Baloo 2",Arial`;let L=wrapWords(txt,font,900);while(L.length>3&&size>70){size-=8;font=`800 ${size}px "Baloo 2",Arial`;L=wrapWords(txt,font,900)}
-  const rh=size*1.12,cy=STY.cover==='band'?1500:STY.cover==='sticker'?560:520;
-  X.save();X.translate(540,cy);if(STY.cover==='sticker')X.rotate(-.045);X.font=font;X.textAlign='center';X.textBaseline='middle';X.lineJoin='round';
-  if(STY.cover!=='center'){const mw=Math.max(...L.map(l=>X.measureText(l).width))+90,bh=L.length*rh+50;
-    X.fillStyle='#111';X.beginPath();X.roundRect(-mw/2+14,-bh/2+14,mw,bh,26);X.fill();X.fillStyle=STY.cover==='band'?'#fff':'#ffd23f';X.beginPath();X.roundRect(-mw/2,-bh/2,mw,bh,26);X.fill();X.lineWidth=8;X.strokeStyle='#111';X.stroke()}
-  L.forEach((l,k)=>{const y=(k-(L.length-1)/2)*rh+6;const last=k===L.length-1;
-    if(STY.cover==='center'){X.lineWidth=22;X.strokeStyle='#111';X.strokeText(l,0,y);X.fillStyle=last?HL:'#fff';X.fillText(l,0,y)}
-    else{X.fillStyle=last?SER.col:'#111';X.fillText(l,0,y)}});
-  X.restore();
-  // emoji sticker
-  const ex=STY.cover==='band'?900:540,ey=STY.cover==='band'?360:1640;
-  X.save();X.translate(ex,ey);X.rotate(.12);X.fillStyle='#fff';X.beginPath();X.arc(0,0,118,0,7);X.fill();X.lineWidth=9;X.strokeStyle='#111';X.stroke();
-  X.font='150px "Noto Color Emoji","Apple Color Emoji",sans-serif';X.textAlign='center';X.textBaseline='middle';X.fillText(em,0,10);X.restore();
+  const g=X.createLinearGradient(0,0,0,900);g.addColorStop(0,'rgba(0,0,0,.62)');g.addColorStop(1,'rgba(0,0,0,0)');X.fillStyle=g;X.fillRect(0,0,W,900);
+  const tag=(META.name+(META.ep?'  •  '+META.ep.toUpperCase():'')).toUpperCase();let fs=50;X.font=`400 ${fs}px Bangers,Impact,Arial`;let tw_=X.measureText(tag).width;if(tw_>820){fs=Math.floor(fs*820/tw_);X.font=`400 ${fs}px Bangers,Impact,Arial`;tw_=X.measureText(tag).width}
+  X.fillStyle=SER.col;X.beginPath();X.roundRect(540-tw_/2-30,118,tw_+60,78,39);X.fill();X.fillStyle='#fff';X.textAlign='center';X.textBaseline='middle';X.fillText(tag,540,160);
+  let size=104;let font=`800 ${size}px "Baloo 2",Arial`;let L=wrapWords(txt,font,920);while(L.length>3&&size>64){size-=8;font=`800 ${size}px "Baloo 2",Arial`;L=wrapWords(txt,font,920)}
+  const rh=size*1.14,top=STY.cover==='band'?250:280;X.font=font;X.lineJoin='round';
+  L.forEach((l,k)=>{const y=top+rh/2+k*rh;const pop=1+.06*back(clamp((T-.08*k)/.25,0,1))-.06;X.save();X.translate(540,y);X.scale(pop,pop);
+    X.lineWidth=20;X.strokeStyle='#111';X.strokeText(l,0,0);X.fillStyle=k===L.length-1?HL:'#fff';X.fillText(l,0,0);X.restore()});
+  X.font='96px "Noto Color Emoji","Apple Color Emoji",sans-serif';X.fillText(em,960,160);
   X.restore()}
-LOOK_EXTRA={coverOn:T=>T<COVER_T-.05,top:T=>drawCover(T)};
+function chip2(T){const t0=COVER_T,t1=t0+2.2,t2=t1+5;if(T<t0-.05||T>t2+.4)return;
+  const a=clamp((T-t0)/.3,0,1)*(1-clamp((T-t2)/.4,0,1)),sh=sm(clamp((T-t1)/.5,0,1)),sc=lerp(1,.62,sh),x=lerp(540,70,sh),y=lerp(140,92,sh);
+  X.save();X.setTransform(1,0,0,1,0,0);X.globalAlpha=a;X.translate(x,y);X.scale(sc,sc);
+  X.font='400 66px Bangers,Impact,Arial';const nm='RAMESH KI KAHANIYA',nw=X.measureText(nm).width,tot=96+18+nw,ox=sh<.5?-tot/2*(1-sh*2):0;X.translate(ox,0);
+  X.beginPath();X.arc(48,0,48,0,7);X.fillStyle='#1fb85a';X.fill();X.lineWidth=7;X.strokeStyle='#111';X.stroke();
+  X.font='800 58px "Baloo 2",Arial';X.textAlign='center';X.textBaseline='middle';X.fillStyle='#fff';X.fillText('R',48,4);
+  X.font='400 66px Bangers,Impact,Arial';X.textAlign='left';X.lineJoin='round';X.lineWidth=12;X.strokeStyle='#111';X.strokeText(nm,114,4);X.fillStyle='#ffd23f';X.fillText(nm,114,4);
+  X.restore()}
+LOOK_EXTRA={coverOn:T=>T<COVER_T-.05,top:T=>drawCover(T),chip2:T=>chip2(T)};
 function world(T){
   const order=Object.keys(CH);
   for(const k of order){const s=drawChar(CH[k],T); if(k==='R'&&s&&s.vis>.3)reg('charR',s.x,(s.w(s.hc).y+GY)/2-60,230,GY-s.w(s.hc).y+120)}
@@ -167,9 +157,10 @@ function world(T){
   for(let i=0;i<N;i++){
     const ln=SPEC.lines[i], t0=i?LS(i):0, t1=LE(i);
     if(ln.burst) burst(i%2?380:700, 560, 115, ln.burst, i%2?'#ffd23f':'#7cff9b', T, t0+.3, Math.min(2.2,t1-t0));
+    if(T<COVER_T-.1)continue;
     const sh=ln.show&&(typeof ln.show==='string'?{icon:ln.show}:ln.show);
-    if(sh&&!(ln.card&&ln.card.length)) card('s'+i,T,t0+.1,t1,620,430,()=>{panel(620,430,'#fff',40);
-      G.save();G.font='200px "Noto Color Emoji","Apple Color Emoji",sans-serif';G.textAlign='center';G.textBaseline='middle';G.fillText(sh.icon||'❓',0,sh.text?-40:0);G.restore();
+    if(sh&&!(ln.card&&ln.card.length)) card('s'+i,T,t0+.1,t1,560,390,()=>{panel(560,390,'#fff',40);
+      G.save();G.font='170px "Noto Color Emoji","Apple Color Emoji",sans-serif';G.textAlign='center';G.textBaseline='middle';G.fillText(sh.icon||'❓',0,sh.text?-40:0);G.restore();
       if(sh.text)stext(sh.text,0,150,sh.text.length>16?40:50,'#0a0d2a')},{y:530});
     if(ln.card&&ln.card.length) card('c'+i,T,t0,t1,680,300,()=>{panel(680,300,'#fff');
       stext(ln.card[0]||'',0,-92,50,SER.col); if(ln.card[1])stext(ln.card[1],0,-14,48,'#0a0d2a'); if(ln.card[2])stext(ln.card[2],0,62,40,'#444')},{y:500});
