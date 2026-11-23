@@ -66,7 +66,7 @@ function winFx(T,mode){const x=770,y=430,w=230,h=270;X.save();
   if(mode==='shadow'){const px=x-60+((T*170)%(w+160));X.fillStyle='rgba(20,10,20,.88)';X.beginPath();X.ellipse(px,y+92,34,40,0,0,7);X.fill();X.beginPath();X.roundRect(px-42,y+130,84,150,30);X.fill()}
   X.restore()}
 
-const SET_ALIAS={corridor:'society',gallery:'society',galiyara:'society',building:'society',flat:'door',darwaza:'door',living:'hall',drawing:'hall',ghar:'home',house:'home',kamra:'room',bed:'bedroom',rasoi:'kitchen',boss:'cabin',tv:'gaming',game:'gaming',match:'stadium',ground:'stadium',wedding:'hall',shaadi:'hall',gym:'hall'};
+const SET_ALIAS={corridor:'society',gallery:'society',galiyara:'society',building:'society',flat:'door',darwaza:'door',living:'hall',drawing:'hall',ghar:'home',house:'home',kamra:'room',bed:'bedroom',rasoi:'kitchen',boss:'cabin',tv:'gaming',game:'gaming',match:'stadium',ground:'stadium',wedding:'baraat',shaadi:'baraat',baraat:'baraat',dj:'baraat',street:'road',gali:'road',sadak:'road',bazaar:'road',market:'road',road:'road',elevator:'lift',lift:'lift',gym:'gym',train:'train',bus:'train',metro:'train',coach:'train',park:'park',garden:'park'};
 function normSet(v){if(!v)return null;v=String(v).toLowerCase().trim();if(SETS[v])return v;for(const w of v.split(/[^a-z]+/)){if(SETS[w])return w;if(SET_ALIAS[w])return SET_ALIAS[w]}return null}
 let SCENES=[];   // [{t0,t1,set}]
 function setAt(T){let s=SCENES.length?SCENES[0].set:'home';for(const c of SCENES){if(c.t0<=T)s=c.set;else break}return s}
@@ -108,7 +108,7 @@ function build(){COVER_T=null;
   }
 }
 var LOOK_EXTRA;
-const DARKSETS=new Set(['door','hall','room','kitchen','store','gaming','bedroom']);
+const DARKSETS=new Set(['door','hall','room','kitchen','store','gaming','bedroom','baraat','gym']);
 window.LOOK={bg(T){applyCam(T);const k=setAt(T),f=SETS[k]||SETS.home;const r=f(T);
     if(SPEC.series==='flat7'&&!DARKSETS.has(k)){X.save();X.globalCompositeOperation='multiply';X.fillStyle='#3a4580';X.fillRect(0,0,W,H);X.restore();
       const g=X.createRadialGradient(540,700,80,540,800,1100);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,10,.55)');X.fillStyle=g;X.fillRect(0,0,W,H)}
