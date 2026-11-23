@@ -20,8 +20,8 @@ const STY={frame:pick(['none','none','cine'],4),
   cover:pick(['center','band','sticker'],8), cam:pick(['cinema','cinema','push'],9)};
 const THEME={hl:HL};
 // v2 rule (17 Nov): captions = small plain text, no box, never over a face; sit in the floor zone
-const CAPS={mode:'none',font:'800 60px "Baloo 2",Arial',size:60,rowh:74,maxw:880,txt:'#fff',ink:'#111',hlw:11,hl:HL,hls:null,sh:0,lw:0,pad:40};
-CAPY=1705;
+const CAPS={mode:'none',font:'800 48px "Baloo 2",Arial',size:48,rowh:60,maxw:820,txt:'#fff',ink:'#111',hlw:9,hl:HL,hls:null,sh:0,lw:0,pad:30};
+CAPY=1770;
 const CHPS={fill:SER.fill,ink:SER.ink,sh:'#000',a:SER.txt,b:SER.ink,r:.5};
 PS={ink:'#0a0d2a',lw:9};
 
