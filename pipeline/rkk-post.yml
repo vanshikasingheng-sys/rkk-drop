@@ -60,16 +60,18 @@ jobs:
         env:
           MAKE_WEBHOOK: ${{ secrets.MAKE_WEBHOOK }}
         run: python pipeline/run_next.py post
-      - name: Keep Flat No. 7 parts for the weekly long video
+      - name: Save the reel (all reels release + story parts for the weekly long video)
         if: success() && hashFiles('work/ready.json') != '' && inputs.dry_run != true && inputs.write_only != true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ID=$(python -c "import json;print(json.load(open('work/ready.json'))['id'])")
+          FINAL=$(python -c "import json;print(json.load(open('work/ready.json'))['final'])")
+          cp "$FINAL" "/tmp/rkk_$ID.mp4"
+          gh release view all-reels >/dev/null 2>&1 || gh release create all-reels --title "All posted reels" --notes "Every reel the automation posted. Download any of them from here."
+          gh release upload all-reels "/tmp/rkk_$ID.mp4" --clobber
           case "$ID" in flat7-*|kahani-*)
-            FINAL=$(python -c "import json;print(json.load(open('work/ready.json'))['final'])")
-            cp "$FINAL" "/tmp/rkk_$ID.mp4"
-            gh release view flat7-parts >/dev/null 2>&1 || gh release create flat7-parts --title "Flat No. 7 parts" --notes "Posted parts, used for the weekly long video."
+            gh release view flat7-parts >/dev/null 2>&1 || gh release create flat7-parts --title "Story parts" --notes "Posted parts, used for the weekly long video."
             gh release upload flat7-parts "/tmp/rkk_$ID.mp4" --clobber ;;
           esac
       - name: Prefetch voice for the next reels (uses spare free quota)
