@@ -17,7 +17,9 @@ TTS_MODELS = ["gemini-2.5-flash-preview-tts", "gemini-3.1-flash-tts-preview", "g
 class DailyLimit(Exception): pass
 
 # ---------------------------------------------------------------- TTS
-def _tts_request(body, key, mi):
+def _tts_request(body, key, mi, allow_switch=True):
+    """One TTS call. A reel keeps ONE model for all its parts (different models sound different),
+    so a model switch is only allowed before the reel's first part exists."""
     for attempt in range(8):
         url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (TTS_MODELS[mi[0]], key)
         try:
@@ -30,9 +32,9 @@ def _tts_request(body, key, mi):
             msg = e.read()[:3000].decode("utf-8", "ignore")
             daily = "PerDay" in msg or "per day" in msg.lower()
             if (e.code == 429 and daily) or e.code in (400, 404):
-                if mi[0] < len(TTS_MODELS) - 1:
+                if allow_switch and mi[0] < len(TTS_MODELS) - 1:
                     mi[0] += 1; print("   switching TTS model ->", TTS_MODELS[mi[0]]); continue
-                if daily: raise DailyLimit("all TTS models hit their daily limit")
+                if daily: raise DailyLimit("TTS model %s hit its daily limit" % TTS_MODELS[mi[0]])
             if e.code == 429:
                 print("   per-minute limit, waiting 40s"); time.sleep(40); continue
             raise RuntimeError("TTS HTTP %s: %s" % (e.code, msg[:200]))
@@ -49,7 +51,10 @@ def chunk_lines(lines):
     return chunks
 
 def make_voice(spec, wd, key):
-    lines = spec["lines"]; mi = [0]; pcm = b""; meta = []; t = 0.0
+    lines = spec["lines"]; pcm = b""; meta = []; t = 0.0
+    mfile = os.path.join(wd, "tts_model.txt")
+    locked = open(mfile).read().strip() if os.path.exists(mfile) else None
+    mi = [TTS_MODELS.index(locked) if locked in TTS_MODELS else 0]
     for n, idx in enumerate(chunk_lines(lines)):
         cp = os.path.join(wd, "chunk%02d.pcm" % n)
         whos = []
@@ -57,7 +62,9 @@ def make_voice(spec, wd, key):
             if lines[i]["who"] not in whos: whos.append(lines[i]["who"])
         if not (os.path.exists(cp) and os.path.getsize(cp) > 1000):
             names = [CAST[w]["name"] for w in whos]
-            direction = "Hindi cartoon comedy/suspense reel. Natural lively pacing, clear Hindi. " + " ".join(
+            direction = ("Ek Hindi kahani ka voiceover. Bilkul asli insaan ki tarah bolo — natural, conversational, bhaav ke saath, "
+                         "jaise dost ko kahani suna rahe ho. Robot jaisa sapaat ya bahut tez mat bolo. Comma, '...' aur sawaal par halka natural pause. "
+                         "English words (EMI, phone, boss) Indian andaaz me. ") + " ".join(
                 "%s is %s." % (CAST[w]["name"], CAST[w]["style"]) for w in whos)
             script = "\n".join("%s: %s" % (CAST[lines[i]["who"]]["name"], lines[i]["text"]) for i in idx)
             if len(whos) == 1:
@@ -70,8 +77,10 @@ def make_voice(spec, wd, key):
             body = {"contents": [{"parts": [{"text": text}]}],
                     "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": cfg}}
             print("  TTS chunk %d: %s | lines %d-%d" % (n + 1, "+".join(whos), idx[0] + 1, idx[-1] + 1))
-            raw = _tts_request(body, key, mi)
+            raw = _tts_request(body, key, mi, allow_switch=locked is None)
             open(cp, "wb").write(raw)
+            if locked is None:
+                locked = TTS_MODELS[mi[0]]; open(mfile, "w").write(locked)
             time.sleep(22)  # stay under per-minute limit
         raw = open(cp, "rb").read()
         d = len(raw) / 2 / RATE

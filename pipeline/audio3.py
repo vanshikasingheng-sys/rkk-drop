@@ -216,6 +216,6 @@ def save(n,x):
     with wave.open(n,'wb') as f: f.setnchannels(1);f.setsampwidth(2);f.setframerate(SR);f.writeframes((x*32767).astype(np.int16).tobytes())
 save('music.wav',mus*fade);save('sfx.wav',sfx*fade)
 subprocess.run(['ffmpeg','-y','-loglevel','error','-i','voice.mp3','-ar','44100','-ac','1','-af',f'apad=whole_dur={END},atrim=0:{END},highpass=f=70,acompressor=threshold=-20dB:ratio=3,volume=1.4','vo.wav'],check=True)
-flt='[2:a]asplit=2[vo][sc];[0:a]volume=0.45[m];[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=15:release=300[md];[1:a]volume=0.55[s];[md][s][vo]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[out]'
+flt='[2:a]asplit=2[vo][sc];[0:a]volume=0.30[m];[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=15:release=300[md];[1:a]volume=0.55[s];[md][s][vo]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[out]'
 subprocess.run(['ffmpeg','-y','-loglevel','error','-i','music.wav','-i','sfx.wav','-i','vo.wav','-filter_complex',flt,'-map','[out]','-ar','44100','-ac','2','mix.wav'],check=True)
 print('audio ok',v,END)

@@ -9,7 +9,7 @@ import build_reel
 
 ROOT = build_reel.ROOT
 STATE = os.path.join(ROOT, "state.json")
-MAX_PER_DAY = 3
+MAX_PER_DAY = 2
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
 
 def load_state():
@@ -22,7 +22,10 @@ def queue():
     """Reels in posting order: week folders sorted; inside a week one of each series per day (flat7, ai, comedy).
     Multi-part "kahani" stories (and "dil") are pooled from all folders and slotted in as every 4th reel."""
     order, dil = [], []
+    pk = os.path.join(ROOT, "parked.json")
+    parked = set(json.load(open(pk))) if os.path.exists(pk) else set()   # old batches kept for reference, never posted
     for wk in sorted(glob.glob(os.path.join(ROOT, "weeks", "*"))):
+        if os.path.basename(wk) in parked: continue
         series = {}
         for f in sorted(glob.glob(os.path.join(wk, "*.json"))):
             data = json.load(open(f))
@@ -39,6 +42,12 @@ def queue():
         out.append(spec)
         if n % 3 == 2 and dil: out.append(dil.pop(0))
     return out + dil
+
+def queue_all():
+    out = []
+    for f in sorted(glob.glob(os.path.join(ROOT, "weeks", "*", "*.json"))):
+        d = json.load(open(f)); out += d if isinstance(d, list) else [d]
+    return out
 
 def post(spec, url, hook):
     payload = {"video_url": url, "title": spec.get("title", "")[:100], "description": spec.get("description", ""),

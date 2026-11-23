@@ -1,13 +1,57 @@
 {
- "R": {"name":"Ramesh",  "voice":"Orus",    "style":"Ramesh, a funny relatable young Indian office guy. Natural, lively, good comic timing"},
- "N": {"name":"Narrator","voice":"Puck",    "style":"a fast, energetic Hindi cartoon narrator with snappy comic timing"},
- "M": {"name":"Manager", "voice":"Charon",  "style":"a strict, sarcastic Indian office manager. Deep and smug"},
- "F": {"name":"Dost",    "voice":"Fenrir",  "style":"an excitable young Indian friend, fast and hyped"},
- "W": {"name":"Wife",    "voice":"Despina", "style":"Ramesh's wife, warm but sharp, natural Hindi"},
- "A": {"name":"Aunty",   "voice":"Kore",    "style":"a nosy padosan aunty, dramatic and gossipy"},
- "D": {"name":"Dadi",    "voice":"Sulafat", "style":"a sweet but strict elderly Indian grandmother, slightly slow, old-sounding"},
- "K": {"name":"Kaka",    "voice":"Algenib", "style":"an old society chowkidar kaka, gravelly, slow and mysterious"},
- "B": {"name":"Robot",   "voice":"Iapetus", "style":"a calm deadpan AI robot, flat and precise"},
- "U": {"name":"Uncle",   "voice":"Rasalgethi","style":"a loud know-it-all Indian uncle"},
- "C": {"name":"Bachcha", "voice":"Leda",    "style":"a small scared child, soft voice"}
+ "R": {
+  "name": "Ramesh",
+  "voice": "Orus",
+  "style": "Ramesh, a relatable young Indian office guy; natural conversational Hindi, real emotions, good comic timing, not exaggerated"
+ },
+ "N": {
+  "name": "Narrator",
+  "voice": "Puck",
+  "style": "a warm, natural Hindi storyteller, relaxed but engaging pace, like telling a story to a friend over chai"
+ },
+ "M": {
+  "name": "Manager",
+  "voice": "Charon",
+  "style": "a strict, sarcastic Indian office manager. Deep and smug"
+ },
+ "F": {
+  "name": "Dost",
+  "voice": "Fenrir",
+  "style": "Ramesh's friend, casual and cheeky, natural everyday Hindi"
+ },
+ "W": {
+  "name": "Wife",
+  "voice": "Despina",
+  "style": "Ramesh's wife, warm but sharp, natural Hindi"
+ },
+ "A": {
+  "name": "Aunty",
+  "voice": "Kore",
+  "style": "a nosy padosan aunty, dramatic and gossipy"
+ },
+ "D": {
+  "name": "Dadi",
+  "voice": "Sulafat",
+  "style": "a sweet but strict elderly Indian grandmother, slightly slow, old-sounding"
+ },
+ "K": {
+  "name": "Kaka",
+  "voice": "Algenib",
+  "style": "an old society chowkidar kaka, gravelly, slow and mysterious"
+ },
+ "B": {
+  "name": "Robot",
+  "voice": "Iapetus",
+  "style": "a calm, friendly AI robot, clear and precise, slightly dry humour"
+ },
+ "U": {
+  "name": "Uncle",
+  "voice": "Rasalgethi",
+  "style": "a loud know-it-all Indian uncle"
+ },
+ "C": {
+  "name": "Bachcha",
+  "voice": "Leda",
+  "style": "a small scared child, soft voice"
+ }
 }

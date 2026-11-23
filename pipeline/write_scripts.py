@@ -17,7 +17,8 @@ MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest", "gemini-3.1-pro-pre
 IDEAS = os.path.join(ROOT, "ideas.md")
 
 def brief():
-    s = open(os.path.join(ROOT, "WEEKLY_PROMPT.md"), encoding="utf-8").read()
+    v2 = os.path.join(ROOT, "BRIEF_V2.md")
+    s = open(v2 if os.path.exists(v2) else os.path.join(ROOT, "WEEKLY_PROMPT.md"), encoding="utf-8").read()
     b = re.findall(r"```\n(.*?)```", s, re.S)[0]
     return b.replace('Samajh gaye to sirf "OK" likho.', "").strip()
 
@@ -131,8 +132,8 @@ def task_text(series, n, start, by, ideas):
         n, start, start + n - 1, topics, used_titles)
 
 
-KAHANI_PARTS = 5
-KAHANI_LOW = 5          # write a new multi-part story when fewer than this many story parts are waiting
+KAHANI_PARTS = 3
+KAHANI_LOW = 2          # write a new multi-part story when fewer than this many story parts are waiting
 
 def trends(key):
     """Ask Gemini (with Google Search) what Indian audiences are talking about right now."""
@@ -164,7 +165,7 @@ SABSE ZAROORI — kahani ZINDA lage, robot jaisi nahi:
 - Comedy + thoda emotion: har part me kam se kam 2 hasaane wale moments; kahani ke end me ek dil chhoo lene wala ya zabardast twist.
 - Poori kahani pehle socho: Part 1 = mazedaar setup + bada problem; beech ke parts = problem badhta jaye, naye mod; Part %d = climax + twist + achha ending.
 - Har part ki pehli line = hook (pichhle part ki yaad ya naya jhatka) taaki naya viewer bhi samajh jaye.
-- Har part 11-13 lines, har line 6-16 words.
+- Har part 8-10 lines, har line 5-13 words (reel 35-45 sec).
 - Har part me bolne wale sirf Narrator + 2 characters (baaki log scene me dikh sakte hain par bolein nahi) — voice limit ke liye zaroori. Alag part me alag 2 characters chal sakte hain.
 - Part 1 se Part %d tak: aakhri se pehle line = cliffhanger; aakhri line exactly: "आगे क्या हुआ? जानने के लिए फॉलो करो — Part <agla number> जल्दी आ रहा है!"
 - Part %d (last): aakhri se pehle line = twist/payoff; aakhri line = comment-sawaal + "ऐसी और कहानियों के लिए फॉलो करो!"
@@ -216,7 +217,36 @@ def main():
     folder = os.path.join(ROOT, "weeks", "auto-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M"))
     os.makedirs(folder, exist_ok=True)
     wrote = 0
-    for series in (("flat7", "ai", "comedy") if need_main else ()):
+    BATCHES = ["- 2 horror-comedy (series flat7, badge KAALI RAAT)\n- 3 roz ki comedy (series comedy; 1 me paise wala dard, badge PAISA PANGA)\n- 1 AI/phone wali comedy (series ai, badge RAMESH vs AI)\n- 1 dil chhoo lene wali (series dil, badge DIL KI BAAT)",
+               "- 1 horror-comedy (flat7, KAALI RAAT)\n- 4 roz ki comedy (comedy, FULL ON COMEDY / PAISA PANGA)\n- 1 AI/online (ai, RAMESH vs AI)\n- 1 dil chhoo lene wali (dil, DIL KI BAAT)"]
+    if need_main:
+        done = "; ".join(s_.get("title", "")[:50] for s_ in run_next.queue_all()[-40:])
+        own = [i for k in ("comedy", "ai", "dil", "flat7") for i in ideas.get(k, [])][:7]
+        start = len(glob.glob(os.path.join(ROOT, "weeks", "*", "*.json"))) * 100
+        for b, mix in enumerate(BATCHES):
+            task = ("ABHI YE BATCH DO — 7 alag standalone reels, aaj kal ke trend/mausam/tyohaar ke hisaab se, sab alag situations:\n%s\n%s"
+                    "Pehle ho chuke (repeat mat karna): %s\nHar reel 80-110 words, 8-10 lines. Sirf JSON array.") % (
+                mix, ("Owner ke ideas (inhe pehle use karo): " + " | ".join(own) + "\n") if own and b == 0 else "", done)
+            try:
+                items = gemini(brief() + "\n\n" + task, key)
+            except Exception as e:
+                print("   batch failed:", e); continue
+            good = []
+            for n, sp in enumerate(items if isinstance(items, list) else []):
+                ser = sp.get("series") if sp.get("series") in ("comedy", "ai", "dil", "flat7") else "comedy"
+                slug = re.sub(r"[^a-z0-9]+", "-", str(sp.get("id", "reel")).lower()).strip("-")[:36] or "reel"
+                sp.update({"id": "a%d-%s-%s" % (start + b * 10 + n, ser, slug), "series": ser, "ep": "", "badge": str(sp.get("badge", "")).upper()[:18]})
+                for l in sp.get("lines", []):
+                    if l.get("who") not in build_reel.CAST: l["who"] = "N"
+                try:
+                    build_reel.validate(sp)
+                    if 6 <= len(sp["lines"]) <= 13: good.append(sp)
+                except AssertionError as e:
+                    print("   dropped", sp.get("id"), e)
+            if good:
+                json.dump(good, open(os.path.join(folder, "batch%d.json" % (b + 1)), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                wrote += len(good); print("   saved batch", b + 1, len(good))
+    for series in ():
         prev = by.get(series, [])
         nums = [int(m.group(1)) for s in prev for m in [re.match(r"%s-(\d+)" % series, s["id"])] if m]
         start = (max(nums) + 1) if nums else 1

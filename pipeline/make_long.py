@@ -22,12 +22,20 @@ def dur(f):
                                 capture_output=True, text=True, check=True).stdout.strip())
 
 def part_num(i):
-    m = re.match(r"flat7-(\d+)", i); return int(m.group(1)) if m else 0
+    m = re.match(r"(?:flat7|kahani)-(\d+)", i); return int(m.group(1)) if m else 0
 
 def todo(st):
+    """Posted multi-part story parts not yet in a long video: the bigger group (Flat No. 7 or a kahani story)."""
     done = set(st.get("long_done", []))
-    ids = [x for x in st["posted"] if x.startswith("flat7-") and x not in done]
-    return sorted(ids, key=part_num)
+    groups = {}
+    specs = {s["id"]: s for s in run_next.queue_all()}
+    for x in st["posted"]:
+        if x in done or not re.match(r"(flat7|kahani)-\d+", x): continue
+        sp = specs.get(x, {}); key = sp.get("sname") or x.split("-")[0]
+        groups.setdefault(key, []).append(x)
+    if not groups: return []
+    best = max(groups.values(), key=len)
+    return sorted(best, key=part_num)
 
 def fetch(pid):
     """Get the posted mp4 of a part: release asset first, then the cached work dir."""
@@ -73,15 +81,16 @@ def build():
     # re-encode at a modest bitrate so the file stays small for Make's download step
     sh("ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c:v", "libx264", "-preset", "slow",
        "-crf", "30", "-maxrate", "700k", "-bufsize", "1400k", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", final)
-    specs = {s["id"]: s for s in run_next.queue()}
+    specs = {s["id"]: s for s in run_next.queue_all()}
     chapters, t = [], 0.0
     for (i, f), w in zip(have, wides):
         title = re.sub(r"\s*#\w+", "", specs.get(i, {}).get("title", i)).strip()
         chapters.append("%d:%02d Part %d - %s" % (int(t // 60), int(t % 60), part_num(i), title)); t += dur(w)
-    title = "Flat No. 7 | Part %d-%d | पूरी कहानी एक साथ 😱 | Ramesh Ki Kahaniya" % (a, b)
-    desc = ("Flat No. 7 की रहस्यमयी कहानी - Part %d से %d तक एक ही वीडियो में!\n\n%s\n\n"
-            "आगे क्या होगा? रोज़ नए पार्ट के लिए Subscribe करो! 🔔\n#RameshKiKahaniya #Flat7 #HindiCartoon #HindiStory") % (
-        a, b, "\n".join(chapters))
+    sname = specs.get(have[0][0], {}).get("sname") or "Flat No. 7"
+    title = "%s | Part %d-%d | पूरी कहानी एक साथ 😱 | Ramesh Ki Kahaniya" % (sname, a, b)
+    desc = ("%s - Part %d से %d तक पूरी कहानी एक ही वीडियो में!\n\n%s\n\n"
+            "ऐसी और कहानियों के लिए Subscribe करो! 🔔\n#RameshKiKahaniya #HindiCartoon #HindiStory #Comedy") % (
+        sname, a, b, "\n".join(chapters))
     json.dump({"ids": [i for i, _ in have], "final": final, "name": name, "title": title[:100], "description": desc},
               open(READY, "w"), ensure_ascii=False)
     print("LONG READY", name, "%.1f MB" % (os.path.getsize(final) / 1e6), "%.0fs" % dur(final))
