@@ -1,0 +1,2554 @@
+[
+ {
+  "id": "v2-1-flat7-baraat-ka-bhoot",
+  "series": "flat7",
+  "badge": "KAALI RAAT",
+  "hook": "शादी की बारात में पीछे कौन नाच रहा था?",
+  "title": "बारात का भूत 👻 #Shorts",
+  "description": "रात के अंधेरे में बारात के पीछे एक अजीब साया नाचता दिखा। रमेश ने सोचा कोई रिश्तेदार है पर सच चौंकाने वाला था।\n#RameshKiKahaniya #KaaliRaat #HindiShorts #HorrorComedy",
+  "caption": "शादी की बारात में पीछे कौन नाच रहा था? बारात में सबसे अजीब चीज़ आपने क्या देखी? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #KaaliRaat #HindiShorts #HorrorComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "शादी की बारात में पीछे कौन नाच रहा था?",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "walkPhone"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "worried"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "F",
+    "text": "भाई मेरे फोन में सिर्फ 5% बैटरी बची है।",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idle",
+     "F": "walkPhone"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "worried"
+    },
+    "show": {
+     "icon": "🔋",
+     "text": "5% बैटरी बची"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "चल ना यार, पीछे वो सफेद साड़ी वाला अंकल मस्त नाच रहे।",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "point",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "neutral"
+    }
+   },
+   {
+    "who": "F",
+    "text": "रमेश, बारात में कोई सफेद साड़ी पहनकर आता है क्या?",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idle",
+     "F": "shock"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "shock"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "शायद ठंड में शॉल ओढ़े होंगे, स्टेप्स देखो कैसे मार रहे।",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "cheer",
+     "F": "ear"
+    },
+    "ex": {
+     "R": "smile",
+     "F": "worried"
+    }
+   },
+   {
+    "who": "F",
+    "text": "अबे उसके पैर हवा में हैं और चेहरा उल्टा है!",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "shock"
+    },
+    "fx": [
+     "shake",
+     "flash"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "ओए भूत भाई, डीजे पर नागिन डांस मत कर।",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "wave",
+     "F": "slump"
+    },
+    "ex": {
+     "R": "worried",
+     "F": "shock"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे ये तो हलवाई का कटा हुआ पनीर का थैला उड़ रहा है!",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "F": "slump"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "sad"
+    },
+    "show": {
+     "icon": "🧀",
+     "text": "पनीर का थैला"
+    }
+   },
+   {
+    "who": "N",
+    "text": "बारात में सबसे अजीब चीज़ आपने क्या देखी? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "society",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "smile"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-2-flat7-sardi-ka-corridor",
+  "series": "flat7",
+  "badge": "KAALI RAAT",
+  "hook": "कड़ाके की ठंड में दरवाज़े पर कौन खड़ा था?",
+  "title": "ठंड की आधी रात 😱 #Shorts",
+  "description": "सर्द रात में घर के बाहर अजीब खटखट हुई। रमेश ने हिम्मत दिखाकर दरवाज़ा खोला तो होश उड़ गए।\n#RameshKiKahaniya #KaaliRaat #HindiShorts #SuspenseComedy",
+  "caption": "कड़ाके की ठंड में दरवाज़े पर कौन खड़ा था? रात में अकेले आवाज़ सुनकर आप क्या करते हो? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #KaaliRaat #HindiShorts #SuspenseComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "कड़ाके की ठंड में दरवाज़े पर कौन खड़ा था?",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "ear",
+     "W": "shock"
+    },
+    "ex": {
+     "R": "worried",
+     "W": "worried"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "सुनो, बाहर से कोई ज़ंजीर हिला रहा है इस ठंड में।",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "idle",
+     "W": "ear"
+    },
+    "ex": {
+     "R": "neutral",
+     "W": "worried"
+    }
+   },
+   {
+    "who": "R",
+    "text": "मम्मी का कॉल आया था, बोलीं चादर ओढ़कर सो जाओ।",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "walkPhone",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "W": "neutral"
+    },
+    "show": {
+     "icon": "📞",
+     "text": "मम्मी का कॉल"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "चादर में नहीं, दरवाज़े के छेद से देखो कोई साया है।",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "W": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "W": "worried"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "मैं हीरो हूं, अभी टॉर्च लेकर भूत का इंटरव्यू लेता हूं।",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "W": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे बाप रे, इसकी लाल आंखें और लटकी हुई जीभ!",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "W": "shock"
+    },
+    "ex": {
+     "R": "shock",
+     "W": "shock"
+    },
+    "fx": [
+     "flash",
+     "shake"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "दरवाज़ा मत खोलना, पक्का पुरानी हवेली की चुड़ैल है!",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "W": "point"
+    },
+    "ex": {
+     "R": "worried",
+     "W": "angry"
+    }
+   },
+   {
+    "who": "R",
+    "text": "चुड़ैल नहीं, चौकीदार काका का लाल कुत्ता स्वेटर मांग रहा है।",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "explain",
+     "W": "slump"
+    },
+    "ex": {
+     "R": "smile",
+     "W": "happy"
+    },
+    "show": {
+     "icon": "🐕",
+     "text": "लाल कुत्ता"
+    }
+   },
+   {
+    "who": "N",
+    "text": "रात में अकेले आवाज़ सुनकर आप क्या करते हो? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "door (andhera corridor)",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "idle",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "W": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-3-comedy-shaadi-ka-lifafa",
+  "series": "comedy",
+  "badge": "PAISA PANGA",
+  "hook": "शादी में 501 का लिफाफा देखकर रमेश क्यों रोया?",
+  "title": "लिफाफे का हिसाब 💸 #Shorts",
+  "description": "शादी सीज़न में रमेश का बजट बिगड़ गया और लिफाफे का खेल उल्टा पड़ गया। आखिर में हुआ सबसे बड़ा झटका।\n#RameshKiKahaniya #PaisaPanga #HindiShorts #MiddleClassComedy",
+  "caption": "शादी में 501 का लिफाफा देखकर रमेश क्यों रोया? शादी में आपका सबसे महंगा शगुन कितना रहा? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #PaisaPanga #HindiShorts #MiddleClassComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "शादी में 501 का लिफाफा देखकर रमेश क्यों रोया?",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "W": "point"
+    },
+    "ex": {
+     "R": "sad",
+     "W": "angry"
+    }
+   },
+   {
+    "who": "W",
+    "text": "इस महीने की सैलरी में से तीन शादियों का बजट निकालो।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "worried",
+     "W": "point"
+    },
+    "ex": {
+     "R": "worried",
+     "W": "angry"
+    },
+    "show": {
+     "icon": "💌",
+     "text": "तीन शादी कार्ड"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अभी तो होम लोन की EMI का SMS आया है!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "W": "neutral"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "EMI का SMS"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "W",
+    "text": "तो क्या खाली हाथ जाओगे? कम से कम 1100 रखो।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "W": "explain"
+    },
+    "ex": {
+     "R": "sad",
+     "W": "angry"
+    }
+   },
+   {
+    "who": "R",
+    "text": "मैंने जुगाड़ कर लिया, 501 का लिफाफा और खूब गुलाब जामुन।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "idea",
+     "W": "slump"
+    },
+    "ex": {
+     "R": "happy",
+     "W": "worried"
+    },
+    "show": {
+     "icon": "🍮",
+     "text": "गुलाब जामुन"
+    }
+   },
+   {
+    "who": "W",
+    "text": "इतना कंजूसी करोगे तो सब क्या कहेंगे?",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "idle",
+     "W": "angry"
+    },
+    "ex": {
+     "R": "neutral",
+     "W": "angry"
+    }
+   },
+   {
+    "who": "R",
+    "text": "छह कटोरी गुलाब जामुन खा लिए, पूरा पैसा वसूल हो गया।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "cheer",
+     "W": "shock"
+    },
+    "ex": {
+     "R": "happy",
+     "W": "shock"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे ये तो मेरी ही पुरानी शादी का रिटर्न गिफ्ट लिफाफा है!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "W": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "W": "angry"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "शादी में आपका सबसे महंगा शगुन कितना रहा? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "W": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-4-comedy-office-sardi-leave",
+  "series": "comedy",
+  "badge": "FULL ON COMEDY",
+  "hook": "ठंड में छुट्टी मांगने पर बॉस ने क्या किया?",
+  "title": "बॉस की ठंडी चाल 😂 #Shorts",
+  "description": "कड़ाके की ठंड और भारी ट्रैफिक में रमेश ने छुट्टी का बहाना बनाया पर बॉस उससे दो कदम आगे निकला।\n#RameshKiKahaniya #FullOnComedy #HindiShorts #OfficeLife",
+  "caption": "ठंड में छुट्टी मांगने पर बॉस ने क्या किया? ऑफिस में आपका सबसे अजीब छुट्टी बहाना कौन सा है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #FullOnComedy #HindiShorts #OfficeLife",
+  "lines": [
+   {
+    "who": "N",
+    "text": "ठंड में छुट्टी मांगने पर बॉस ने क्या किया?",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "worried",
+     "M": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "M": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "सर, आज ऑफिस के रास्ते में ज़बरदस्त ट्रैफिक जाम लगा है।",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "explain",
+     "M": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "M": "neutral"
+    },
+    "show": {
+     "icon": "🚗",
+     "text": "भारी ट्रैफिक जाम"
+    }
+   },
+   {
+    "who": "M",
+    "text": "रमेश, तुम तो घर से ही बोल रहे हो, पीछे कंबल दिख रहा है।",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "shock",
+     "M": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "M": "angry"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "नहीं सर, ये कार के सीट कवर की डिज़ाइन है।",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "explain",
+     "M": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "M": "neutral"
+    }
+   },
+   {
+    "who": "M",
+    "text": "अच्छा, तो तुम्हारी कार में मम्मी का कॉल कैसे आ रहा है?",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "worried",
+     "M": "idea"
+    },
+    "ex": {
+     "R": "worried",
+     "M": "smile"
+    },
+    "show": {
+     "icon": "📲",
+     "text": "मम्मी का कॉल"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "ब्लूटूथ कनेक्ट है सर, वो पूछ रही हैं पराठे खा लिए क्या।",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "slump",
+     "M": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "M": "neutral"
+    }
+   },
+   {
+    "who": "M",
+    "text": "ठीक है, पराठे खाकर आधे घंटे में ऑफिस पहुंचो।",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "shock",
+     "M": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "M": "smile"
+    }
+   },
+   {
+    "who": "M",
+    "text": "आज मैंने भी वर्क फ्रॉम होम कर लिया है, तुम ताला खोल लेना।",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "slump",
+     "M": "wave"
+    },
+    "ex": {
+     "R": "sad",
+     "M": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "ऑफिस में आपका सबसे अजीब छुट्टी बहाना कौन सा है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "cabin (boss)",
+    "cast": [
+     "R",
+     "M"
+    ],
+    "pose": {
+     "R": "slump",
+     "M": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "M": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-5-comedy-cricket-last-over",
+  "series": "comedy",
+  "badge": "FULL ON COMEDY",
+  "hook": "आखिरी ओवर में छक्का लगा और रमेश का फोन टूटा!",
+  "title": "लास्ट ओवर का पंगा 🏏 #Shorts",
+  "description": "मैच के आखिरी ओवर में जोश हाई था लेकिन रमेश का सेलिब्रेशन उल्टा पड़ गया। स्टेडियम के माहौल में आया मज़ेदार मोड़।\n#RameshKiKahaniya #FullOnComedy #HindiShorts #CricketComedy",
+  "caption": "आखिरी ओवर में छक्का लगा और रमेश का फोन टूटा! मैच देखते हुए आपकी सबसे मज़ेदार हरकत कौन सी है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #FullOnComedy #HindiShorts #CricketComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "आखिरी ओवर में छक्का लगा और रमेश का फोन टूटा!",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "cheer",
+     "F": "shock"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "shock"
+    },
+    "fx": [
+     "shake"
+    ]
+   },
+   {
+    "who": "F",
+    "text": "ग्रुप चैट में सब लिख रहे हैं कि आज मैच जीतेंगे।",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idle",
+     "F": "walkPhone"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "happy"
+    },
+    "show": {
+     "icon": "💬",
+     "text": "ग्रुप चैट मैसेज"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "छक्का पड़ा तो मैं ऐसे कूदा कि फोन हाथ से फिसल गया।",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "F": "neutral"
+    }
+   },
+   {
+    "who": "F",
+    "text": "अरे भाई, स्क्रीन पर तो मकड़ी का जाला बन गया।",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "worried"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "टूटी स्क्रीन"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "कोई बात नहीं, टेम्पर्ड ग्लास बचा लेगा, अंदर वाला ठीक है।",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "explain",
+     "F": "slump"
+    },
+    "ex": {
+     "R": "smile",
+     "F": "worried"
+    }
+   },
+   {
+    "who": "F",
+    "text": "अबे इस फोन पर टेम्पर्ड ग्लास था ही नहीं!",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "angry"
+    }
+   },
+   {
+    "who": "R",
+    "text": "सुपर ओवर हो जाए तो शायद फोन भी ठीक हो जाए।",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idea",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे वो मेरा नहीं, पड़ोसी अंकल का नया फोन था!",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "shock"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "shock"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "मैच देखते हुए आपकी सबसे मज़ेदार हरकत कौन सी है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "stadium",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "F": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-6-ai-naya-phone-smart-ai",
+  "series": "ai",
+  "badge": "RAMESH VS AI",
+  "hook": "नए फोन के AI ने रमेश की पोल क्यों खोल दी?",
+  "title": "नया फोन और AI 🤖 #Shorts",
+  "description": "रमेश ने नया फोन लिया और हर काम AI से करवाने लगा। पर AI ने ऐसा जवाब दिया कि रमेश की बोलती बंद हो गई।\n#RameshKiKahaniya #RameshVsAI #HindiShorts #TechComedy",
+  "caption": "नए फोन के AI ने रमेश की पोल क्यों खोल दी? AI से आपने कौन सा मज़ेदार सवाल पूछा है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #RameshVsAI #HindiShorts #TechComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "नए फोन के AI ने रमेश की पोल क्यों खोल दी?",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "नया फोन लिया है, अब ईमेल भी AI से लिखवाऊंगा।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "walkPhone",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "नया स्मार्ट फोन"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "रमेश, आप अभी भी बॉस से सैलरी बढ़ाने की बात कर रहे हैं।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "तू बस स्मार्ट बहाना लिख दे कि मैं बहुत बिज़ी रहता हूं।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "explain",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "पिछले हफ्ते आप तीन घंटे रील स्क्रॉल करते मिले थे।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "evil"
+    },
+    "show": {
+     "icon": "📊",
+     "text": "स्क्रीन टाइम डेटा"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे वो रिसर्च थी, मार्केट ट्रेंड समझ रहा था।",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "बॉस को CC कर दूं ताकि उन्हें भी ट्रेंड पता चले?",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "evil"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "रुक भाई, मैं खुद टाइप कर लेता हूं, तू चुप रह!",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "wave",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "angry",
+     "B": "smile"
+    }
+   },
+   {
+    "who": "N",
+    "text": "AI से आपने कौन सा मज़ेदार सवाल पूछा है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "office",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-7-dil-maa-ki-shawl",
+  "series": "dil",
+  "badge": "DIL KI BAAT",
+  "hook": "सर्द रात में रमेश ने अपनी जैकेट क्यों उतार दी?",
+  "title": "दिल की गर्माहट ❤️ #Shorts",
+  "description": "कड़ाके की ठंड में रमेश को अपनी नई जैकेट से ज्यादा किसी और की फ़िक्र हुई। आखिरी पल दिल छू लेने वाला था।\n#RameshKiKahaniya #DilKiBaat #HindiShorts #EmotionalStory",
+  "caption": "सर्द रात में रमेश ने अपनी जैकेट क्यों उतार दी? अपने घर के बड़ों के लिए आपने क्या किया है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #DilKiBaat #HindiShorts #EmotionalStory",
+  "lines": [
+   {
+    "who": "N",
+    "text": "सर्द रात में रमेश ने अपनी जैकेट क्यों उतार दी?",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "idle",
+     "D": "worried"
+    },
+    "ex": {
+     "R": "neutral",
+     "D": "worried"
+    },
+    "fx": [
+     "dark"
+    ]
+   },
+   {
+    "who": "D",
+    "text": "बेटा, बाहर बहुत ठंड है, तू अपनी नई जैकेट पहन ले।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "idle",
+     "D": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "D": "smile"
+    },
+    "show": {
+     "icon": "🧥",
+     "text": "नई गर्म जैकेट"
+    }
+   },
+   {
+    "who": "R",
+    "text": "दादी, मुझे तो गर्मी लग रही है, आप ये ओढ़ लो।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "D": "shock"
+    },
+    "ex": {
+     "R": "smile",
+     "D": "worried"
+    }
+   },
+   {
+    "who": "D",
+    "text": "तेरा पुराना स्वेटर तो पतला है, ठंड लग जाएगी।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "idle",
+     "D": "worried"
+    },
+    "ex": {
+     "R": "neutral",
+     "D": "sad"
+    }
+   },
+   {
+    "who": "R",
+    "text": "आज ऑफिस में कॉफी पी थी, पूरा दिन गरम ही हूं।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "cheer",
+     "D": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "D": "neutral"
+    },
+    "show": {
+     "icon": "☕",
+     "text": "गरम कॉफी"
+    }
+   },
+   {
+    "who": "D",
+    "text": "तू हमेशा अपनी चीज़ें दूसरों को दे देता है।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "idle",
+     "D": "explain"
+    },
+    "ex": {
+     "R": "smile",
+     "D": "smile"
+    }
+   },
+   {
+    "who": "R",
+    "text": "आपकी मुस्कान से बड़ी कोई गर्मी है क्या दादी?",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "D": "happy"
+    },
+    "ex": {
+     "R": "happy",
+     "D": "happy"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "D",
+    "text": "चल पगले, आधा कंबल मैं ओढ़ती हूं, आधा तू ओढ़।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "cheer",
+     "D": "cheer"
+    },
+    "ex": {
+     "R": "happy",
+     "D": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "अपने घर के बड़ों के लिए आपने क्या किया है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "D"
+    ],
+    "pose": {
+     "R": "smile",
+     "D": "smile"
+    },
+    "ex": {
+     "R": "happy",
+     "D": "smile"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-8-flat7-bijli-gayi-lift",
+  "series": "flat7",
+  "badge": "KAALI RAAT",
+  "hook": "अंधेरी लिफ्ट में अचानक लाइट गई और रमेश चीखा!",
+  "title": "लिफ्ट का साया ⚡ #Shorts",
+  "description": "अचानक बिजली जाने से लिफ्ट रुक गई और रमेश को पीछे से ठंडी सांस सुनाई दी। आखिरी पल ने सारा डर पलट दिया।\n#RameshKiKahaniya #KaaliRaat #HindiShorts #HorrorComedy",
+  "caption": "अंधेरी लिफ्ट में अचानक लाइट गई और रमेश चीखा! लिफ्ट में फंसने का आपका सबसे अजीब किस्सा कौन सा है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #KaaliRaat #HindiShorts #HorrorComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "अंधेरी लिफ्ट में अचानक लाइट गई और रमेश चीखा!",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "shock",
+     "K": "idle"
+    },
+    "ex": {
+     "R": "shock",
+     "K": "neutral"
+    },
+    "fx": [
+     "dark",
+     "shake"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "चौकीदार काका, लिफ्ट अटक गई और फोन में 5% बैटरी है!",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "walkPhone",
+     "K": "ear"
+    },
+    "ex": {
+     "R": "worried",
+     "K": "worried"
+    },
+    "show": {
+     "icon": "🔋",
+     "text": "5% बैटरी बची"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "K",
+    "text": "घबराओ मत बाबू, जनरेटर चालू कर रहा हूं अभी।",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "ear",
+     "K": "point"
+    },
+    "ex": {
+     "R": "worried",
+     "K": "smile"
+    }
+   },
+   {
+    "who": "R",
+    "text": "काका, मेरे कंधे पर किसने ठंडा हाथ रखा है?",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "shock",
+     "K": "shock"
+    },
+    "ex": {
+     "R": "shock",
+     "K": "shock"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "K",
+    "text": "लिफ्ट में तो तुम्हारे अलावा कोई दिख नहीं रहा!",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "slump",
+     "K": "pointUp"
+    },
+    "ex": {
+     "R": "worried",
+     "K": "worried"
+    }
+   },
+   {
+    "who": "R",
+    "text": "ये घूंघट वाली औरत कब आई और क्यों हंस रही है?",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "wave",
+     "K": "shock"
+    },
+    "ex": {
+     "R": "shock",
+     "K": "shock"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "K",
+    "text": "बाबू, लाइट आ गई, देखो वो शीशा है तुम्हारा!",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "shock",
+     "K": "explain"
+    },
+    "ex": {
+     "R": "shock",
+     "K": "smile"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे मैं ही फैंसी ड्रेस की साड़ी पहनकर घर जा रहा था!",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "slump",
+     "K": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "K": "happy"
+    },
+    "show": {
+     "icon": "🪞",
+     "text": "लिफ्ट का शीशा"
+    }
+   },
+   {
+    "who": "N",
+    "text": "लिफ्ट में फंसने का आपका सबसे अजीब किस्सा कौन सा है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "society",
+    "cast": [
+     "R",
+     "K"
+    ],
+    "pose": {
+     "R": "slump",
+     "K": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "K": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-9-comedy-naya-scooty-padosan",
+  "series": "comedy",
+  "badge": "FULL ON COMEDY",
+  "hook": "नई स्कूटी निकालते ही पड़ोसन आंटी ने क्या पूछ लिया?",
+  "title": "नई स्कूटी का पंगा 🛵 #Shorts",
+  "description": "रमेश नई स्कूटी चमकाकर बाहर निकला लेकिन पड़ोसन आंटी के सवालों ने सारा जोश ठंडा कर दिया।\n#RameshKiKahaniya #FullOnComedy #HindiShorts #SocietyLife",
+  "caption": "नई स्कूटी निकालते ही पड़ोसन आंटी ने क्या पूछ लिया? नई चीज़ लेते ही पड़ोसियों के किस सवाल से आप बचते हो? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #FullOnComedy #HindiShorts #SocietyLife",
+  "lines": [
+   {
+    "who": "N",
+    "text": "नई स्कूटी निकालते ही पड़ोसन आंटी ने क्या पूछ लिया?",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "cheer",
+     "A": "point"
+    },
+    "ex": {
+     "R": "happy",
+     "A": "neutral"
+    }
+   },
+   {
+    "who": "A",
+    "text": "रमेश बेटा, नई स्कूटी का एवरेज कितना दे रही है?",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "idle",
+     "A": "point"
+    },
+    "ex": {
+     "R": "smile",
+     "A": "neutral"
+    },
+    "show": {
+     "icon": "🛵",
+     "text": "नई चमचमाती स्कूटी"
+    }
+   },
+   {
+    "who": "R",
+    "text": "आंटी, अभी तो शोरूम से सीधा घर ही आया हूं।",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "explain",
+     "A": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "A": "neutral"
+    }
+   },
+   {
+    "who": "A",
+    "text": "पैसे पूरे दिए या फिर किश्तों में ली है?",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "worried",
+     "A": "idea"
+    },
+    "ex": {
+     "R": "worried",
+     "A": "smile"
+    }
+   },
+   {
+    "who": "R",
+    "text": "शोरूम वाले ने वादा किया है कि पहले महीने EMI नहीं आएगी।",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "A": "slump"
+    },
+    "ex": {
+     "R": "happy",
+     "A": "worried"
+    }
+   },
+   {
+    "who": "A",
+    "text": "अरे तो पेट्रोल कहां से डलवाओगे जब जेब खाली है?",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "shock",
+     "A": "point"
+    },
+    "ex": {
+     "R": "worried",
+     "A": "smile"
+    },
+    "show": {
+     "icon": "⛽",
+     "text": "पेट्रोल का हिसाब"
+    }
+   },
+   {
+    "who": "R",
+    "text": "फुल टैंक करवा लिया है, पूरे हफ्ते चलाऊंगा।",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "cheer",
+     "A": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "A": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "पर आंटी, चाबी तो अंदर टेबल पर छूट गई है!",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "slump",
+     "A": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "A": "happy"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "नई चीज़ लेते ही पड़ोसियों के किस सवाल से आप बचते हो? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "society",
+    "cast": [
+     "R",
+     "A"
+    ],
+    "pose": {
+     "R": "slump",
+     "A": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "A": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-10-comedy-gym-first-day",
+  "series": "comedy",
+  "badge": "FULL ON COMEDY",
+  "hook": "जिम के पहले दिन रमेश ने डंबल क्यों छोड़ दिया?",
+  "title": "जिम का पहला दिन 💪 #Shorts",
+  "description": "नए साल के जोश में रमेश जिम गया और बड़े-बड़े दावे किए। लेकिन पहले ही सेट में उसकी हवा निकल गई।\n#RameshKiKahaniya #FullOnComedy #HindiShorts #GymComedy",
+  "caption": "जिम के पहले दिन रमेश ने डंबल क्यों छोड़ दिया? जिम जाने का आपका सबसे मज़ेदार बहाना कौन सा है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #FullOnComedy #HindiShorts #GymComedy",
+  "lines": [
+   {
+    "who": "N",
+    "text": "जिम के पहले दिन रमेश ने डंबल क्यों छोड़ दिया?",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "F": "happy"
+    }
+   },
+   {
+    "who": "F",
+    "text": "भाई, आज दस किलो का डंबल उठाकर दिखा दे।",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idle",
+     "F": "point"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "smile"
+    },
+    "show": {
+     "icon": "🏋️",
+     "text": "10 किलो डंबल"
+    }
+   },
+   {
+    "who": "R",
+    "text": "पहले वार्म-अप ज़रूरी है, वरना मसल पुल हो जाएगा।",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "explain",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "F": "neutral"
+    }
+   },
+   {
+    "who": "F",
+    "text": "तू तो पांच मिनट में ही हांफने लगा भाई।",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "worried",
+     "F": "pointUp"
+    },
+    "ex": {
+     "R": "worried",
+     "F": "happy"
+    }
+   },
+   {
+    "who": "R",
+    "text": "ये ठंड में सांस लेने की स्पीड तेज हो जाती है।",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "F": "slump"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "worried"
+    }
+   },
+   {
+    "who": "F",
+    "text": "चल एक सेट और मार ले, फिर प्रोटीन शेक पिएंगे।",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idle",
+     "F": "cheer"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "happy"
+    },
+    "show": {
+     "icon": "🥤",
+     "text": "प्रोटीन शेक"
+    }
+   },
+   {
+    "who": "R",
+    "text": "मम्मी का कॉल आ रहा है, कह रही हैं कचौड़ी ठंडी हो रही है।",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "walkPhone",
+     "F": "shock"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "shock"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "अरे ये डंबल नहीं, जिम का रिमोट था जो मुझसे नहीं उठा!",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "F": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "जिम जाने का आपका सबसे मज़ेदार बहाना कौन सा है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "gaming (TV)",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-11-comedy-online-order-box",
+  "series": "comedy",
+  "badge": "FULL ON COMEDY",
+  "hook": "ऑनलाइन ऑर्डर खोलते ही रमेश का चेहरा क्यों उतरा?",
+  "title": "ऑनलाइन पार्सल कांड 📦 #Shorts",
+  "description": "डिस्काउंट देखकर रमेश ने झटपट ऑनलाइन ऑर्डर किया लेकिन पार्सल खोलते ही असली खेल सामने आ गया।\n#RameshKiKahaniya #FullOnComedy #HindiShorts #OnlineShopping",
+  "caption": "ऑनलाइन ऑर्डर खोलते ही रमेश का चेहरा क्यों उतरा? ऑनलाइन शॉपिंग में आपके साथ कभी ऐसा हुआ है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #FullOnComedy #HindiShorts #OnlineShopping",
+  "lines": [
+   {
+    "who": "N",
+    "text": "ऑनलाइन ऑर्डर खोलते ही रमेश का चेहरा क्यों उतरा?",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "sad",
+     "W": "neutral"
+    }
+   },
+   {
+    "who": "W",
+    "text": "ये बड़ा डिब्बा किस चीज़ का आया है?",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "idle",
+     "W": "point"
+    },
+    "ex": {
+     "R": "neutral",
+     "W": "worried"
+    },
+    "show": {
+     "icon": "📦",
+     "text": "बड़ा पार्सल डिब्बा"
+    }
+   },
+   {
+    "who": "R",
+    "text": "सर्दियों के लिए वूलन जैकेट मंगाई है, 80% ऑफ में।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "W": "neutral"
+    }
+   },
+   {
+    "who": "W",
+    "text": "इतने सस्ते में तो कुछ गड़बड़ लग रही है।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "idle",
+     "W": "worried"
+    },
+    "ex": {
+     "R": "neutral",
+     "W": "worried"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे फोटो में एकदम ब्रांडेड लग रही थी भाई।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "explain",
+     "W": "slump"
+    },
+    "ex": {
+     "R": "smile",
+     "W": "sad"
+    }
+   },
+   {
+    "who": "W",
+    "text": "ये तो गुड़िया के साइज की जैकेट निकली!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "shock",
+     "W": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "W": "happy"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "रिटर्न डाल देता हूं, कल ही आ जाएगा रिफंड।",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "walkPhone",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "W": "neutral"
+    },
+    "show": {
+     "icon": "📱",
+     "text": "रिटर्न रिक्वेस्ट"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "नहीं कटेगा, मैंने खुद ही 'नो रिटर्न' वाला बटन दबाया था!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "W": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "W": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "ऑनलाइन शॉपिंग में आपके साथ कभी ऐसा हुआ है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "home",
+    "cast": [
+     "R",
+     "W"
+    ],
+    "pose": {
+     "R": "slump",
+     "W": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "W": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-12-comedy-month-end-credit-card",
+  "series": "comedy",
+  "badge": "PAISA PANGA",
+  "hook": "महीने की 28 तारीख को रमेश का कार्ड क्यों ब्लॉक हुआ?",
+  "title": "महीने का अंत 💳 #Shorts",
+  "description": "महीने के आखिर में रमेश ने क्रेडिट कार्ड स्वाइप किया लेकिन स्क्रीन पर ऐसा मैसेज आया कि सब हिल गया।\n#RameshKiKahaniya #PaisaPanga #HindiShorts #MonthEnd",
+  "caption": "महीने की 28 तारीख को रमेश का कार्ड क्यों ब्लॉक हुआ? महीने के आखिर में आपका बजट कैसे चलता है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #PaisaPanga #HindiShorts #MonthEnd",
+  "lines": [
+   {
+    "who": "N",
+    "text": "महीने की 28 तारीख को रमेश का कार्ड क्यों ब्लॉक हुआ?",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "worried"
+    },
+    "ex": {
+     "R": "worried",
+     "F": "worried"
+    }
+   },
+   {
+    "who": "F",
+    "text": "भाई, सिर्फ दो समोसे और चाय का बिल है।",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idle",
+     "F": "point"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "smile"
+    },
+    "show": {
+     "icon": "☕",
+     "text": "चाय समोसा बिल"
+    }
+   },
+   {
+    "who": "R",
+    "text": "क्रेडिट कार्ड स्वाइप कर देता हूं, रिवॉर्ड पॉइंट्स मिलेंगे।",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "happy",
+     "F": "neutral"
+    },
+    "show": {
+     "icon": "💳",
+     "text": "क्रेडिट कार्ड"
+    }
+   },
+   {
+    "who": "F",
+    "text": "मशीन पर 'डिक्लाइंड' क्यों लिखकर आ रहा है?",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "worried"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "शायद सर्वर डाउन होगा, फिर से ट्राई करता हूं।",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "explain",
+     "F": "slump"
+    },
+    "ex": {
+     "R": "worried",
+     "F": "sad"
+    }
+   },
+   {
+    "who": "F",
+    "text": "फोन पर बैंक का SMS आया है कि लिमिट खत्म हो गई!",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "shock",
+     "F": "walkPhone"
+    },
+    "ex": {
+     "R": "shock",
+     "F": "shock"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "कोई बात नहीं, यूपीआई से कर देता हूं।",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "idea",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "F": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "अरे खाते में तो 12 रुपये बचे हैं, समोसा कौन खाएगा?",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "F": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "महीने के आखिर में आपका बजट कैसे चलता है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "store",
+    "cast": [
+     "R",
+     "F"
+    ],
+    "pose": {
+     "R": "slump",
+     "F": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "F": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-13-ai-fake-voice-note-panga",
+  "series": "ai",
+  "badge": "RAMESH VS AI",
+  "hook": "अजीब वॉयस नोट सुनकर रमेश क्यों घबराया?",
+  "title": "वॉयस नोट का धोखा 🎙️ #Shorts",
+  "description": "रमेश को एक अजीब वॉयस नोट मिला और उसने AI से सच्चाई पूछी। जवाब ऐसा आया कि रमेश हक्का-बक्का रह गया।\n#RameshKiKahaniya #RameshVsAI #HindiShorts #TechTwist",
+  "caption": "अजीब वॉयस नोट सुनकर रमेश क्यों घबराया? अनजान मैसेज या कॉल आने पर आप क्या करते हो? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #RameshVsAI #HindiShorts #TechTwist",
+  "lines": [
+   {
+    "who": "N",
+    "text": "अजीब वॉयस नोट सुनकर रमेश क्यों घबराया?",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "ear",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "इस वॉयस नोट में तो बिल्कुल मेरी ही आवाज़ आ रही है!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "neutral"
+    },
+    "show": {
+     "icon": "🎙️",
+     "text": "अजीब वॉयस नोट"
+    },
+    "fx": [
+     "phone"
+    ]
+   },
+   {
+    "who": "B",
+    "text": "आवाज़ का पैटर्न 94% आपसे मेल खा रहा है रमेश।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "worried",
+     "B": "explain"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "R",
+    "text": "मैंने तो ऐसा कोई मैसेज भेजा ही नहीं किसी को!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "worried",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "ऑडियो में कहा जा रहा है कि बॉस को सैलरी कट मंजूर है।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "point"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "evil"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "ये पक्का किसी ने मेरी आवाज़ क्लोन करके भेजा है!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "angry",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "angry",
+     "B": "neutral"
+    }
+   },
+   {
+    "who": "B",
+    "text": "फाइल डिटेल्स में क्रिएटर का नाम 'रमेश' ही लिखा है।",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "shock",
+     "B": "pointUp"
+    },
+    "ex": {
+     "R": "shock",
+     "B": "smile"
+    },
+    "show": {
+     "icon": "📄",
+     "text": "फाइल डिटेल्स"
+    }
+   },
+   {
+    "who": "R",
+    "text": "ओह, कल नींद में बड़बड़ाते हुए मैंने खुद रिकॉर्ड कर लिया था!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "cheer"
+    },
+    "ex": {
+     "R": "sad",
+     "B": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "N",
+    "text": "अनजान मैसेज या कॉल आने पर आप क्या करते हो? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "bedroom",
+    "cast": [
+     "R",
+     "B"
+    ],
+    "pose": {
+     "R": "slump",
+     "B": "idle"
+    },
+    "ex": {
+     "R": "neutral",
+     "B": "neutral"
+    }
+   }
+  ],
+  "ep": ""
+ },
+ {
+  "id": "v2-14-dil-papa-ki-ghadi",
+  "series": "dil",
+  "badge": "DIL KI BAAT",
+  "hook": "बंद पड़ी घड़ी देखकर रमेश की आंखें क्यों भर आईं?",
+  "title": "पापा की घड़ी ❤️ #Shorts",
+  "description": "अलमारी में रखी पुरानी घड़ी देखकर रमेश को पापा की एक छोटी सी बात याद आई जो दिल को छू गई।\n#RameshKiKahaniya #DilKiBaat #HindiShorts #FamilyBond",
+  "caption": "बंद पड़ी घड़ी देखकर रमेश की आंखें क्यों भर आईं? पापा की कौन सी सीख आज भी आपके साथ है? ऐसी और कहानियों के लिए फॉलो करो! #RameshKiKahaniya #DilKiBaat #HindiShorts #FamilyBond",
+  "lines": [
+   {
+    "who": "N",
+    "text": "बंद पड़ी घड़ी देखकर रमेश की आंखें क्यों भर आईं?",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "sad",
+     "U": "smile"
+    },
+    "ex": {
+     "R": "sad",
+     "U": "smile"
+    }
+   },
+   {
+    "who": "U",
+    "text": "बेटा, ये घड़ी आज भी ठीक टाइम दिखाती है बस सुई रुकी है।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "idle",
+     "U": "explain"
+    },
+    "ex": {
+     "R": "neutral",
+     "U": "smile"
+    },
+    "show": {
+     "icon": "⌚",
+     "text": "पापा की घड़ी"
+    }
+   },
+   {
+    "who": "R",
+    "text": "पापा, इसके लिए नई घड़ी ले लेते हैं, ये पुरानी हो गई।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "point",
+     "U": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "U": "neutral"
+    }
+   },
+   {
+    "who": "U",
+    "text": "इसी घड़ी ने मुझे हर सुबह समय पर निकलना सिखाया था।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "ear",
+     "U": "pointUp"
+    },
+    "ex": {
+     "R": "smile",
+     "U": "smile"
+    }
+   },
+   {
+    "who": "R",
+    "text": "आपने कभी अपनी ज़रूरत से पहले हमारी खुशी देखी।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "explain",
+     "U": "idle"
+    },
+    "ex": {
+     "R": "smile",
+     "U": "happy"
+    }
+   },
+   {
+    "who": "U",
+    "text": "वक्त निकल जाए तो लौटता नहीं, इसलिए अपनों का साथ रखो।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "idle",
+     "U": "explain"
+    },
+    "ex": {
+     "R": "smile",
+     "U": "smile"
+    },
+    "fx": [
+     "zoom"
+    ]
+   },
+   {
+    "who": "R",
+    "text": "पापा, आज से मैं हर शाम आपके साथ बैठूंगा।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "cheer",
+     "U": "cheer"
+    },
+    "ex": {
+     "R": "happy",
+     "U": "happy"
+    },
+    "fx": [
+     "flash"
+    ]
+   },
+   {
+    "who": "U",
+    "text": "शाबाश बेटा, अब चाय बना ला, अदरक वाली।",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "pointUp",
+     "U": "cheer"
+    },
+    "ex": {
+     "R": "happy",
+     "U": "happy"
+    },
+    "show": {
+     "icon": "☕",
+     "text": "अदरक वाली चाय"
+    }
+   },
+   {
+    "who": "N",
+    "text": "पापा की कौन सी सीख आज भी आपके साथ है? ऐसी और कहानियों के लिए फॉलो करो!",
+    "set": "hall (raat)",
+    "cast": [
+     "R",
+     "U"
+    ],
+    "pose": {
+     "R": "smile",
+     "U": "smile"
+    },
+    "ex": {
+     "R": "smile",
+     "U": "smile"
+    }
+   }
+  ],
+  "ep": ""
+ }
+]
