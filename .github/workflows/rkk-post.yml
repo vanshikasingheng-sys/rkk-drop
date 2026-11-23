@@ -1,10 +1,9 @@
 name: RKK auto reel
 on:
   schedule:
-    # 3 slots a day (UTC). Each scheduled run also waits a random 0-80 min, so post times vary.
-    - cron: "17 4 * * *"    # ~10:00-11:20 IST
-    - cron: "41 10 * * *"   # ~16:10-17:30 IST
-    - cron: "23 15 * * *"   # ~20:50-22:10 IST
+    # 2 slots a day (UTC). Each scheduled run also waits a random 0-80 min, so post times vary.
+    - cron: "47 5 * * *"    # ~11:15-12:35 IST
+    - cron: "13 13 * * *"   # ~18:45-20:05 IST (evening prime time)
   workflow_dispatch:
     inputs:
       reel_id: {description: "Build a specific reel id (optional)", required: false, default: ""}
@@ -67,7 +66,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ID=$(python -c "import json;print(json.load(open('work/ready.json'))['id'])")
-          case "$ID" in flat7-*)
+          case "$ID" in flat7-*|kahani-*)
             FINAL=$(python -c "import json;print(json.load(open('work/ready.json'))['final'])")
             cp "$FINAL" "/tmp/rkk_$ID.mp4"
             gh release view flat7-parts >/dev/null 2>&1 || gh release create flat7-parts --title "Flat No. 7 parts" --notes "Posted parts, used for the weekly long video."
