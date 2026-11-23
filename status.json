@@ -76,13 +76,20 @@
    "result": "success",
    "reel": "v2-1-flat7-baraat-ka-bhoot",
    "run": "45118664765"
+  },
+  {
+   "at": "2026-11-23T20:35+05:30",
+   "kind": "reel",
+   "result": "success",
+   "reel": "v2-6-ai-naya-phone-smart-ai",
+   "run": "45194612839"
   }
  ],
- "updated": "2026-11-23T11:53+05:30",
- "waiting": 16,
+ "updated": "2026-11-23T20:35+05:30",
+ "waiting": 15,
  "next": [
-  "v2-6-ai-naya-phone-smart-ai",
   "v2-3-comedy-shaadi-ka-lifafa",
-  "v2-2-flat7-sardi-ka-corridor"
+  "v2-2-flat7-sardi-ka-corridor",
+  "v2-13-ai-fake-voice-note-panga"
  ]
 }
