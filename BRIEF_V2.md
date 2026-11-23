@@ -31,7 +31,8 @@ FORMAT (har reel):
 
 SCREEN (scene dikhe jo bola ja raha hai):
 - "show": {"icon":"<1 emoji>","text":"<max 4 words>"} sirf 3-4 lines me, jab koi cheez dikhani ho (SMS, bill, phone, ticket).
-- "set": bedroom, home, hall (raat), room (raat), kitchen (raat), store, door (andhera corridor), society, office, cabin (boss), gaming (TV), stadium.
+- "set" (kahani jahan ho wahi chuno): bedroom, home, hall (raat), room (raat), kitchen (raat), store, door (andhera corridor), society, office, cabin (boss), gaming (TV), stadium, baraat (shaadi/DJ raat), road (gali/dukaanein/auto), lift, gym, train (train/bus), park.
+  Kahani me jagah badle to set bhi badlo (max 2-3 sets per reel).
 - "pose": idle, ear, shock, point, pointUp, idea, slump, cheer, explain, wave, walkPhone.  "ex": neutral, worried, happy, shock, angry, evil, sad, smile.
 - "fx" (kabhi kabhi): flash, dark, shake, zoom, phone.
 - who: N=Narrator, R=Ramesh, W=Wife, F=Dost, M=Boss, A=Padosan Aunty, D=Dadi/Maa, K=Chowkidar Kaka, U=Uncle/Papa, C=Bachcha, B=AI Robot.
