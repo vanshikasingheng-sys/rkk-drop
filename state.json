@@ -10,14 +10,15 @@
   "kahani-2-boss-aur-5-percent-battery",
   "v2-1-flat7-baraat-ka-bhoot",
   "v2-6-ai-naya-phone-smart-ai",
-  "v2-3-comedy-shaadi-ka-lifafa"
+  "v2-3-comedy-shaadi-ka-lifafa",
+  "v2-2-flat7-sardi-ka-corridor"
  ],
  "days": {
   "2026-11-20": 3,
   "2026-11-21": 3,
   "2026-11-22": 3,
   "2026-11-23": 2,
-  "2026-11-24": 1
+  "2026-11-24": 2
  },
  "drop_files": [],
  "log": [
@@ -79,6 +80,11 @@
    "id": "v2-3-comedy-shaadi-ka-lifafa",
    "at": "2026-11-24T13:15+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-3-comedy-shaadi-ka-lifafa.mp4"
+  },
+  {
+   "id": "v2-2-flat7-sardi-ka-corridor",
+   "at": "2026-11-24T20:18+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-2-flat7-sardi-ka-corridor.mp4"
   }
  ]
 }
