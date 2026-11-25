@@ -11,14 +11,16 @@
   "v2-1-flat7-baraat-ka-bhoot",
   "v2-6-ai-naya-phone-smart-ai",
   "v2-3-comedy-shaadi-ka-lifafa",
-  "v2-2-flat7-sardi-ka-corridor"
+  "v2-2-flat7-sardi-ka-corridor",
+  "v2-13-ai-fake-voice-note-panga"
  ],
  "days": {
   "2026-11-20": 3,
   "2026-11-21": 3,
   "2026-11-22": 3,
   "2026-11-23": 2,
-  "2026-11-24": 2
+  "2026-11-24": 2,
+  "2026-11-25": 1
  },
  "drop_files": [],
  "log": [
@@ -85,6 +87,11 @@
    "id": "v2-2-flat7-sardi-ka-corridor",
    "at": "2026-11-24T20:18+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-2-flat7-sardi-ka-corridor.mp4"
+  },
+  {
+   "id": "v2-13-ai-fake-voice-note-panga",
+   "at": "2026-11-25T13:26+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-13-ai-fake-voice-note-panga.mp4"
   }
  ]
 }
