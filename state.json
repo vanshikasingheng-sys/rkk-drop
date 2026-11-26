@@ -13,7 +13,8 @@
   "v2-3-comedy-shaadi-ka-lifafa",
   "v2-2-flat7-sardi-ka-corridor",
   "v2-13-ai-fake-voice-note-panga",
-  "v2-4-comedy-office-sardi-leave"
+  "v2-4-comedy-office-sardi-leave",
+  "v2-8-flat7-bijli-gayi-lift"
  ],
  "days": {
   "2026-11-20": 3,
@@ -21,7 +22,8 @@
   "2026-11-22": 3,
   "2026-11-23": 2,
   "2026-11-24": 2,
-  "2026-11-25": 2
+  "2026-11-25": 2,
+  "2026-11-26": 1
  },
  "drop_files": [],
  "log": [
@@ -98,6 +100,11 @@
    "id": "v2-4-comedy-office-sardi-leave",
    "at": "2026-11-25T20:55+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-4-comedy-office-sardi-leave.mp4"
+  },
+  {
+   "id": "v2-8-flat7-bijli-gayi-lift",
+   "at": "2026-11-26T12:45+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-8-flat7-bijli-gayi-lift.mp4"
   }
  ]
 }

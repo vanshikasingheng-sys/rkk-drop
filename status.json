@@ -111,13 +111,20 @@
    "result": "success",
    "reel": "v2-4-comedy-office-sardi-leave",
    "run": "45634107359"
+  },
+  {
+   "at": "2026-11-26T12:47+05:30",
+   "kind": "reel",
+   "result": "success",
+   "reel": "v2-8-flat7-bijli-gayi-lift",
+   "run": "45770452027"
   }
  ],
- "updated": "2026-11-25T20:56+05:30",
- "waiting": 11,
+ "updated": "2026-11-26T12:47+05:30",
+ "waiting": 24,
  "next": [
-  "v2-8-flat7-bijli-gayi-lift",
   "v2-5-comedy-cricket-last-over",
-  "v2-9-comedy-naya-scooty-padosan"
+  "v2-9-comedy-naya-scooty-padosan",
+  "kahani-3-aunty-aur-dadi-ki-entry"
  ]
 }
