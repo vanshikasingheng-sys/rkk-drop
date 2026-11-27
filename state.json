@@ -15,7 +15,8 @@
   "v2-13-ai-fake-voice-note-panga",
   "v2-4-comedy-office-sardi-leave",
   "v2-8-flat7-bijli-gayi-lift",
-  "v2-5-comedy-cricket-last-over"
+  "v2-5-comedy-cricket-last-over",
+  "v2-9-comedy-naya-scooty-padosan"
  ],
  "days": {
   "2026-11-20": 3,
@@ -24,7 +25,8 @@
   "2026-11-23": 2,
   "2026-11-24": 2,
   "2026-11-25": 2,
-  "2026-11-26": 2
+  "2026-11-26": 2,
+  "2026-11-27": 1
  },
  "drop_files": [],
  "log": [
@@ -111,6 +113,11 @@
    "id": "v2-5-comedy-cricket-last-over",
    "at": "2026-11-26T21:17+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-5-comedy-cricket-last-over.mp4"
+  },
+  {
+   "id": "v2-9-comedy-naya-scooty-padosan",
+   "at": "2026-11-27T12:51+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-9-comedy-naya-scooty-padosan.mp4"
   }
  ]
 }
