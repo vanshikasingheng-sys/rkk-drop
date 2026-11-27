@@ -16,7 +16,8 @@
   "v2-4-comedy-office-sardi-leave",
   "v2-8-flat7-bijli-gayi-lift",
   "v2-5-comedy-cricket-last-over",
-  "v2-9-comedy-naya-scooty-padosan"
+  "v2-9-comedy-naya-scooty-padosan",
+  "kahani-3-aunty-aur-dadi-ki-entry"
  ],
  "days": {
   "2026-11-20": 3,
@@ -26,7 +27,7 @@
   "2026-11-24": 2,
   "2026-11-25": 2,
   "2026-11-26": 2,
-  "2026-11-27": 1
+  "2026-11-27": 2
  },
  "drop_files": [],
  "log": [
@@ -118,6 +119,11 @@
    "id": "v2-9-comedy-naya-scooty-padosan",
    "at": "2026-11-27T12:51+05:30",
    "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_v2-9-comedy-naya-scooty-padosan.mp4"
+  },
+  {
+   "id": "kahani-3-aunty-aur-dadi-ki-entry",
+   "at": "2026-11-27T20:26+05:30",
+   "url": "https://raw.githubusercontent.com/vanshikasingheng-sys/rkk-drop/media/rkk_kahani-3-aunty-aur-dadi-ki-entry.mp4"
   }
  ]
 }
