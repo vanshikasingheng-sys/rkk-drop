@@ -139,13 +139,20 @@
    "result": "success",
    "reel": "kahani-3-aunty-aur-dadi-ki-entry",
    "run": "46015434716"
+  },
+  {
+   "at": "2026-11-28T13:25+05:30",
+   "kind": "reel",
+   "result": "success",
+   "reel": "v2-10-comedy-gym-first-day",
+   "run": "46118059463"
   }
  ],
- "updated": "2026-11-27T20:28+05:30",
- "waiting": 21,
+ "updated": "2026-11-28T13:25+05:30",
+ "waiting": 20,
  "next": [
-  "v2-10-comedy-gym-first-day",
   "v2-11-comedy-online-order-box",
-  "v2-12-comedy-month-end-credit-card"
+  "v2-12-comedy-month-end-credit-card",
+  "kahani-4-dost-ka-bakra-aur-naya-twist"
  ]
 }
